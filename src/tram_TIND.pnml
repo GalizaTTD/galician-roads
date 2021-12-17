@@ -1,0 +1,100 @@
+spriteset (TIND_guiSpriteset, "src/gfx/roads/ELRL/gui.gimp.png") { roadGuiTemplate() }
+
+spriteset (TIND_underlaySpriteset, "src/gfx/roads/TIND/underlay.gimp.png") { roadUnderlayTemplate() }
+spriteset (TIND_overlaySpriteset, "src/gfx/roads/RAIL/overlay.gimp.png") { roadUnderlayTemplate() }
+
+spriteset (TIND_bridgesSpriteset, "src/gfx/roads/TIND/bridges.gimp.png") { roadBridgeOverlayTemplate() }
+spriteset (TIND_bridgesSnowSpriteset, "src/gfx/roads/TIND/bridgesSnow.gimp.png") { roadBridgeOverlayTemplate() }
+
+spriteset (TIND_depotsSpriteset, "src/gfx/roads/TIND/depots.gimp.png") { roadDepotsTemplate() }
+spriteset (TIND_depotsSnowSpriteset, "src/gfx/roads/TIND/depotsSnow.gimp.png") { roadDepotsTemplate() }
+
+
+spriteset (TIND_catenaryFronOldSpriteset, "src/gfx/roads/ELRL/catenaryFronOld.gimp.png") { roadCatenaryTemplate() }
+spriteset (TIND_catenaryFronModSpriteset, "src/gfx/roads/ELRL/catenaryFronMod.gimp.png") { roadCatenaryTemplate() }
+spriteset (TIND_catenaryFronCorSpriteset, "src/gfx/roads/ELRL/catenaryFronCor.gimp.png") { roadCatenaryTemplate() }
+spriteset (TIND_catenaryBackOldSpriteset, "src/gfx/roads/ELRL/catenaryBackOld.gimp.png") { roadCatenaryTemplate() }
+spriteset (TIND_catenaryBackModSpriteset, "src/gfx/roads/ELRL/catenaryBackMod.gimp.png") { roadCatenaryTemplate() }
+spriteset (TIND_catenaryBackCorSpriteset, "src/gfx/roads/ELRL/catenaryBackCor.gimp.png") { roadCatenaryTemplate() }
+
+switch (FEAT_TRAMTYPES, SELF, TIND_bridgesTerrainCheckSwitch, terrain_type) {
+	TILETYPE_SNOW: TIND_bridgesSnowSpriteset;
+	TIND_bridgesSpriteset;
+}
+switch (FEAT_TRAMTYPES, SELF, TIND_depotsTerrainCheckSwitch, terrain_type) {
+	TILETYPE_SNOW: TIND_depotsSnowSpriteset;
+	TIND_depotsSpriteset;
+}
+
+switch (FEAT_TRAMTYPES, SELF, TIND_catenaryFrontTownZoneSwitch, town_zone) {
+	TOWNZONE_CENTRE: TIND_catenaryFronCorSpriteset;
+	TOWNZONE_INNER_SUBURB: TIND_catenaryFronCorSpriteset;
+	TOWNZONE_OUTER_SUBURB: TIND_catenaryFronCorSpriteset;
+	TOWNZONE_OUTSKIRT: TIND_catenaryFronCorSpriteset;
+	TIND_catenaryFronModSpriteset;
+	//(year_loaded < 1950) ? TIND_catenaryFronOldSpriteset : TIND_catenaryFronModSpriteset;
+}
+
+switch (FEAT_TRAMTYPES, SELF, TIND_catenaryBackTownZoneSwitch, town_zone) {
+	TOWNZONE_CENTRE: TIND_catenaryBackCorSpriteset;
+	TOWNZONE_INNER_SUBURB: TIND_catenaryBackCorSpriteset;
+	TOWNZONE_OUTER_SUBURB: TIND_catenaryBackCorSpriteset;
+	TOWNZONE_OUTSKIRT: TIND_catenaryBackCorSpriteset;
+	TIND_catenaryBackModSpriteset;
+	//(year_loaded < 1950) ? TIND_catenaryBackOldSpriteset : TIND_catenaryBackModSpriteset;
+}
+
+
+if (param_speed_units == SPEED_UNITY_MPH) {
+	item(FEAT_TRAMTYPES, item_tram_TIND) {
+		property {	
+			speed_limit:                 param_speedlimit_TIND mph;
+		}
+	}
+}
+if (param_speed_units == SPEED_UNITY_KMH) {
+	item(FEAT_TRAMTYPES, item_tram_TIND) {
+		property {	
+			speed_limit:                 param_speedlimit_TIND km/h;
+		}
+	}
+}
+if (param_speed_units == SPEED_UNITY_MPS) {
+	item(FEAT_TRAMTYPES, item_tram_TIND) {
+		property {	
+			speed_limit:                 param_speedlimit_TIND m/s;
+		}
+	}
+}
+
+item(FEAT_TRAMTYPES, item_tram_TIND) {
+	property {
+		label:                       "TIND";
+		introduction_date:           0;
+		name:                        string(STR_TRAM_TIND_NAME);
+		toolbar_caption:             string(STR_TRAM_TIND_TOOLBAR);
+		menu_text:                   string(STR_TRAM_TIND_MENU);
+		build_window_caption:        string(STR_TRAM_BUILD_VEHICLE);
+		autoreplace_text:            string(STR_TRAM_AUTOREPLACE);
+		new_engine_text:             string(STR_TRAM_NEW_ENGINE);
+		powered_tramtype_list:       ["RAIL", "ELRL"];
+//		tramtype_flags:              bitmask(TRAMTYPE_FLAG_CATENARY);
+		construction_cost:           8; //Defaults: ROAD = 8, ELRD = 16, ELRL = 8, ELRL = 16
+		maintenance_cost:            16; //Defaults: ROAD = 16, ELRD = 24, ELRL = 16, ELRL = 24		
+//		speed_limit:                 85 mph;
+		sort_order:                  00;		
+//		map_colour:                  ?;
+//		requires_roadtype_list:      ?;
+//		introduces_roadtype_list:    ?;
+//		alternative_roadtype_list:   ?;
+	}
+	graphics {
+		gui:						 TIND_guiSpriteset;
+		track_overlay:               TIND_overlaySpriteset;
+		underlay:                    TIND_underlaySpriteset;
+		bridge_surfaces:             TIND_bridgesTerrainCheckSwitch;
+		catenary_front:              TIND_catenaryFrontTownZoneSwitch;
+		catenary_back:               TIND_catenaryBackTownZoneSwitch;
+		depots:	                     TIND_depotsTerrainCheckSwitch;
+	}
+}

@@ -1,0 +1,92 @@
+spriteset (DIRT_guiSpriteset, "src/gfx/roads/DIRT/gui.gimp.png") { roadGuiTemplate() }
+
+spriteset (DIRT_underlaySpriteset, "src/gfx/roads/DIRT/underlay.gimp.png") { roadUnderlayTemplate() }
+spriteset (DIRT_underlaySnowSpriteset, "src/gfx/roads/DIRT/underlaySnow.gimp.png") { roadUnderlayTemplate() }
+spriteset (DIRT_underlayCitySpriteset, "src/gfx/roads/DIRT/underlayCity.gimp.png") { roadUnderlayTemplate() }
+spriteset (DIRT_underlayCitySnowSpriteset, "src/gfx/roads/DIRT/underlayCitySnow.gimp.png") { roadUnderlayTemplate() }
+
+spriteset (DIRT_bridgesSpriteset, "src/gfx/roads/DIRT/bridges.gimp.png") { roadBridgeOverlayTemplate() }
+spriteset (DIRT_bridgesSnowSpriteset, "src/gfx/roads/DIRT/bridgesSnow.gimp.png") { roadBridgeOverlayTemplate() }
+
+spriteset (DIRT_stopsSpriteset, "src/gfx/roads/DIRT/stops.gimp.png") { roadStopsTemplate() }
+spriteset (DIRT_stopsSnowSpriteset, "src/gfx/roads/DIRT/stopsSnow.gimp.png") { roadStopsTemplate() }
+
+spriteset (DIRT_depotsSpriteset, "src/gfx/roads/DIRT/depots.gimp.png") { roadDepotsTemplate() }
+spriteset (DIRT_depotsSnowSpriteset, "src/gfx/roads/DIRT/depotsSnow.gimp.png") { roadDepotsTemplate() }
+
+
+switch (FEAT_ROADTYPES, SELF, DIRT_stopsTerrainCheckSwitch, terrain_type) {
+	TILETYPE_SNOW: DIRT_stopsSnowSpriteset;
+	DIRT_stopsSpriteset;
+}
+switch (FEAT_ROADTYPES, SELF, DIRT_bridgesTerrainCheckSwitch, terrain_type) {
+	TILETYPE_SNOW: DIRT_bridgesSnowSpriteset;
+	DIRT_bridgesSpriteset;
+}
+switch (FEAT_ROADTYPES, SELF, DIRT_depotsTerrainCheckSwitch, terrain_type) {
+	TILETYPE_SNOW: DIRT_depotsSnowSpriteset;
+	DIRT_depotsSpriteset;
+}
+
+switch (FEAT_ROADTYPES, SELF, DIRT_underlayCityTerrainCheckSwitch, terrain_type) {
+	TILETYPE_SNOW: DIRT_underlayCitySnowSpriteset;
+	DIRT_underlayCitySpriteset;
+}
+switch (FEAT_ROADTYPES, SELF, DIRT_underlayTerrainCheckSwitch, terrain_type) {
+	TILETYPE_SNOW: DIRT_underlaySnowSpriteset;
+	DIRT_underlaySpriteset;
+}
+
+switch (FEAT_ROADTYPES, SELF, DIRT_underlayTownZoneSwitch, town_zone) {
+	TOWNZONE_CENTRE: DIRT_underlayCityTerrainCheckSwitch;
+	TOWNZONE_INNER_SUBURB: DIRT_underlayCityTerrainCheckSwitch;
+	TOWNZONE_OUTER_SUBURB: DIRT_underlayCityTerrainCheckSwitch;
+	TOWNZONE_OUTSKIRT: DIRT_underlayCityTerrainCheckSwitch;
+	DIRT_underlayTerrainCheckSwitch;
+}
+
+if (param_speed_units == SPEED_UNITY_MPH) {
+	item(FEAT_ROADTYPES, item_road_DIRT) {
+		property {	
+			speed_limit:                 param_speedlimit_DIRT mph;
+		}
+	}
+}
+if (param_speed_units == SPEED_UNITY_KMH) {
+	item(FEAT_ROADTYPES, item_road_DIRT) {
+		property {	
+			speed_limit:                 param_speedlimit_DIRT km/h;
+		}
+	}
+}
+if (param_speed_units == SPEED_UNITY_MPS) {
+	item(FEAT_ROADTYPES, item_road_DIRT) {
+		property {	
+			speed_limit:                 param_speedlimit_DIRT m/s;
+		}
+	}
+}
+item(FEAT_ROADTYPES, item_road_DIRT) {
+	property {
+		label:                       "DIRT";
+		introduction_date:           0;
+		name:                        string(STR_ROAD_DIRT_NAME);
+		toolbar_caption:             string(STR_ROAD_DIRT_TOOLBAR);
+		menu_text:                   string(STR_ROAD_DIRT_MENU);
+		build_window_caption:        string(STR_GENERIC_BUILD_VEHICLE);
+		autoreplace_text:            string(STR_GENERIC_AUTOREPLACE);
+		new_engine_text:             string(STR_GENERIC_NEW_ENGINE);
+		powered_roadtype_list:       ["OLD_", "DIRT", "DIRT", "ROAD", "ASP1", "ASP2", "HWAY", "ELSP", "ELRD", "ELA1", "ELA2", "ASP0"];
+//		roadtype_flags:              bitmask(ROADTYPE_FLAG_TOWN_BUILD);
+		construction_cost:           3; //Defaults: ROAD = 8, ELRD = 16, RAIL = 8, ELRL = 16
+		maintenance_cost:            6; //Defaults: ROAD = 16, ELRD = 24, RAIL = 16, ELRL = 24		
+		sort_order:                  02;		
+	}
+	graphics {
+		gui:						 DIRT_guiSpriteset;
+		underlay:                    DIRT_underlayTownZoneSwitch;
+		roadstops:                   DIRT_stopsTerrainCheckSwitch;
+		bridge_surfaces:             DIRT_bridgesTerrainCheckSwitch;
+		depots:	                     DIRT_depotsTerrainCheckSwitch;
+	}
+}

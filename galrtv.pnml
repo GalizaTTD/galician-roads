@@ -22,3 +22,13 @@
 #include "src/road_SETT.pnml"
 #include "src/road_GRAV.pnml"
 #include "src/road_R4X4.pnml"
+#include "src/road_DIRT.pnml"
+#include "src/road_EIND.pnml"
+#include "src/road_ASF0.pnml"
+#include "src/road_ASF1.pnml"
+#include "src/road_ASF2.pnml"
+#include "src/road_HWAY.pnml"
+
+#include "src/tram_RAIL.pnml"
+#include "src/tram_ELRL.pnml"
+#include "src/tram_TIND.pnml"

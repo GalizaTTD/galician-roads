@@ -33,6 +33,10 @@ STR_GENERIC_BUILD_VEHICLE            :Build New Road Vehicles
 STR_GENERIC_AUTOREPLACE              :Road Vehicles
 STR_GENERIC_NEW_ENGINE               :road
 
+STR_TRAM_BUILD_VEHICLE             :Build New Tram Vehicles
+STR_TRAM_AUTOREPLACE               :Tram Vehicles
+STR_TRAM_NEW_ENGINE                :tram
+
 # Cadeas de texto das estradas 
 STR_ROAD_SETT_NAME          :Sett Paved Road
 STR_ROAD_SETT_TOOLBAR       :Sett Paved Road Construction

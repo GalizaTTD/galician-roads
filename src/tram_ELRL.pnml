@@ -1,0 +1,105 @@
+spriteset (ELRL_guiSpriteset, "src/gfx/roads/ELRL/gui.gimp.png") { roadGuiTemplate() }
+
+spriteset (ELRL_underlaySpriteset, "src/gfx/roads/RAIL/underlay.gimp.png") { roadUnderlayTemplate() }
+spriteset (ELRL_underlaySnowSpriteset, "src/gfx/roads/RAIL/underlaySnow.gimp.png") { roadUnderlayTemplate() }
+spriteset (ELRL_overlaySpriteset, "src/gfx/roads/RAIL/overlay.gimp.png") { roadUnderlayTemplate() }
+
+spriteset (ELRL_bridgesSpriteset, "src/gfx/roads/RAIL/bridges.gimp.png") { roadBridgeOverlayTemplate() }
+spriteset (ELRL_bridgesSnowSpriteset, "src/gfx/roads/RAIL/bridgesSnow.gimp.png") { roadBridgeOverlayTemplate() }
+
+spriteset (ELRL_depotsSpriteset, "src/gfx/roads/ELRL/depots.gimp.png") { roadDepotsTemplate() }
+spriteset (ELRL_depotsSnowSpriteset, "src/gfx/roads/ELRL/depotsSnow.gimp.png") { roadDepotsTemplate() }
+
+
+spriteset (ELRL_catenaryFronOldSpriteset, "src/gfx/roads/ELRL/catenaryFronOld.gimp.png") { roadCatenaryTemplate() }
+spriteset (ELRL_catenaryFronModSpriteset, "src/gfx/roads/ELRL/catenaryFronMod.gimp.png") { roadCatenaryTemplate() }
+spriteset (ELRL_catenaryFronCorSpriteset, "src/gfx/roads/ELRL/catenaryFronCor.gimp.png") { roadCatenaryTemplate() }
+spriteset (ELRL_catenaryBackOldSpriteset, "src/gfx/roads/ELRL/catenaryBackOld.gimp.png") { roadCatenaryTemplate() }
+spriteset (ELRL_catenaryBackModSpriteset, "src/gfx/roads/ELRL/catenaryBackMod.gimp.png") { roadCatenaryTemplate() }
+spriteset (ELRL_catenaryBackCorSpriteset, "src/gfx/roads/ELRL/catenaryBackCor.gimp.png") { roadCatenaryTemplate() }
+
+switch (FEAT_TRAMTYPES, SELF, ELRL_bridgesTerrainCheckSwitch, terrain_type) {
+	TILETYPE_SNOW: ELRL_bridgesSnowSpriteset;
+	ELRL_bridgesSpriteset;
+}
+switch (FEAT_TRAMTYPES, SELF, ELRL_depotsTerrainCheckSwitch, terrain_type) {
+	TILETYPE_SNOW: ELRL_depotsSnowSpriteset;
+	ELRL_depotsSpriteset;
+}
+switch (FEAT_TRAMTYPES, SELF, ELRL_underlayTerrainCheckSwitch, terrain_type) {
+	TILETYPE_SNOW: ELRL_underlaySnowSpriteset;
+	ELRL_underlaySpriteset;
+}
+
+switch (FEAT_TRAMTYPES, SELF, ELRL_catenaryFrontTownZoneSwitch, town_zone) {
+	TOWNZONE_CENTRE: ELRL_catenaryFronCorSpriteset;
+	TOWNZONE_INNER_SUBURB: ELRL_catenaryFronCorSpriteset;
+	TOWNZONE_OUTER_SUBURB: ELRL_catenaryFronCorSpriteset;
+	TOWNZONE_OUTSKIRT: ELRL_catenaryFronCorSpriteset;
+	ELRL_catenaryFronModSpriteset;
+	//(year_loaded < 1950) ? ELRL_catenaryFronOldSpriteset : ELRL_catenaryFronModSpriteset;
+}
+
+switch (FEAT_TRAMTYPES, SELF, ELRL_catenaryBackTownZoneSwitch, town_zone) {
+	TOWNZONE_CENTRE: ELRL_catenaryBackCorSpriteset;
+	TOWNZONE_INNER_SUBURB: ELRL_catenaryBackCorSpriteset;
+	TOWNZONE_OUTER_SUBURB: ELRL_catenaryBackCorSpriteset;
+	TOWNZONE_OUTSKIRT: ELRL_catenaryBackCorSpriteset;
+	ELRL_catenaryBackModSpriteset;
+	//(year_loaded < 1950) ? ELRL_catenaryBackOldSpriteset : ELRL_catenaryBackModSpriteset;
+}
+
+
+if (param_speed_units == SPEED_UNITY_MPH) {
+	item(FEAT_TRAMTYPES, item_tram_ELRL) {
+		property {	
+			speed_limit:                 param_speedlimit_ELRL mph;
+		}
+	}
+}
+if (param_speed_units == SPEED_UNITY_KMH) {
+	item(FEAT_TRAMTYPES, item_tram_ELRL) {
+		property {	
+			speed_limit:                 param_speedlimit_ELRL km/h;
+		}
+	}
+}
+if (param_speed_units == SPEED_UNITY_MPS) {
+	item(FEAT_TRAMTYPES, item_tram_ELRL) {
+		property {	
+			speed_limit:                 param_speedlimit_ELRL m/s;
+		}
+	}
+}
+
+item(FEAT_TRAMTYPES, item_tram_ELRL) {
+	property {
+		label:                       "ELRL";
+		introduction_date:           0;
+		name:                        string(STR_TRAM_ELRL_NAME);
+		toolbar_caption:             string(STR_TRAM_ELRL_TOOLBAR);
+		menu_text:                   string(STR_TRAM_ELRL_MENU);
+		build_window_caption:        string(STR_TRAM_BUILD_VEHICLE);
+		autoreplace_text:            string(STR_TRAM_AUTOREPLACE);
+		new_engine_text:             string(STR_TRAM_NEW_ENGINE);
+		powered_tramtype_list:       ["RAIL", "ELRL"];
+//		tramtype_flags:              bitmask(TRAMTYPE_FLAG_CATENARY);
+		construction_cost:           8; //Defaults: ROAD = 8, ELRD = 16, ELRL = 8, ELRL = 16
+		maintenance_cost:            16; //Defaults: ROAD = 16, ELRD = 24, ELRL = 16, ELRL = 24		
+//		speed_limit:                 85 mph;
+		sort_order:                  00;		
+//		map_colour:                  ?;
+//		requires_roadtype_list:      ?;
+//		introduces_roadtype_list:    ?;
+//		alternative_roadtype_list:   ?;
+	}
+	graphics {
+		gui:						 ELRL_guiSpriteset;
+		track_overlay:               ELRL_overlaySpriteset;
+		underlay:                    ELRL_underlayTerrainCheckSwitch;
+		bridge_surfaces:             ELRL_bridgesTerrainCheckSwitch;
+		catenary_front:              ELRL_catenaryFrontTownZoneSwitch;
+		catenary_back:               ELRL_catenaryBackTownZoneSwitch;
+		depots:	                     ELRL_depotsTerrainCheckSwitch;
+	}
+}

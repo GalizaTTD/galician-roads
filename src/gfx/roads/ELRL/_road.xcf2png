@@ -1,6 +1,3 @@
-src/gfx/roads/ELRL/underlay.gimp.png          src/xcf/roads/underlay.xcf     Background ELRL
-src/gfx/roads/ELRL/underlaySnow.gimp.png          src/xcf/roads/underlay.xcf     Background ELRL_SNOW
-
 src/gfx/roads/ELRL/catenaryBackOld.gimp.png          src/xcf/roads/catenarys.xcf     Background BACK_OLD
 src/gfx/roads/ELRL/catenaryBackMod.gimp.png          src/xcf/roads/catenarys.xcf     Background BACK_MOD
 src/gfx/roads/ELRL/catenaryBackCor.gimp.png          src/xcf/roads/catenarys.xcf     Background BACK_COR
