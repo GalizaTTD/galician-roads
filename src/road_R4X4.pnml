@@ -1,0 +1,78 @@
+spriteset (R4X4_guiSpriteset, "src/gfx/roads/R4X4/gui.gimp.png") { roadGuiTemplate() }
+
+spriteset (R4X4_underlaySpriteset, "src/gfx/roads/R4X4/underlay.gimp.png") { roadUnderlayTemplate() }
+spriteset (R4X4_underlaySnowSpriteset, "src/gfx/roads/R4X4/underlaySnow.gimp.png") { roadUnderlayTemplate() }
+
+spriteset (R4X4_bridgesSpriteset, "src/gfx/roads/R4X4/bridges.gimp.png") { roadBridgeOverlayTemplate() }
+spriteset (R4X4_bridgesSnowSpriteset, "src/gfx/roads/R4X4/bridgesSnow.gimp.png") { roadBridgeOverlayTemplate() }
+
+spriteset (R4X4_stopsSpriteset, "src/gfx/roads/R4X4/stops.gimp.png") { roadStopsTemplate() }
+spriteset (R4X4_stopsSnowSpriteset, "src/gfx/roads/R4X4/stopsSnow.gimp.png") { roadStopsTemplate() }
+
+spriteset (R4X4_depotsSpriteset, "src/gfx/roads/R4X4/depots.gimp.png") { roadDepotsTemplate() }
+spriteset (R4X4_depotsSnowSpriteset, "src/gfx/roads/R4X4/depotsSnow.gimp.png") { roadDepotsTemplate() }
+
+
+switch (FEAT_ROADTYPES, SELF, R4X4_stopsTerrainCheckSwitch, terrain_type) {
+	TILETYPE_SNOW: R4X4_stopsSnowSpriteset;
+	R4X4_stopsSpriteset;
+}
+switch (FEAT_ROADTYPES, SELF, R4X4_bridgesTerrainCheckSwitch, terrain_type) {
+	TILETYPE_SNOW: R4X4_bridgesSnowSpriteset;
+	R4X4_bridgesSpriteset;
+}
+switch (FEAT_ROADTYPES, SELF, R4X4_depotsTerrainCheckSwitch, terrain_type) {
+	TILETYPE_SNOW: R4X4_depotsSnowSpriteset;
+	R4X4_depotsSpriteset;
+}
+
+switch (FEAT_ROADTYPES, SELF, R4X4_underlayTerrainCheckSwitch, terrain_type) {
+	TILETYPE_SNOW: R4X4_underlaySnowSpriteset;
+	R4X4_underlaySpriteset;
+}
+
+if (param_speed_units == SPEED_UNITY_MPH) {
+	item(FEAT_ROADTYPES, item_road_R4X4) {
+		property {	
+			speed_limit:                 param_speedlimit_R4X4 mph;
+		}
+	}
+}
+if (param_speed_units == SPEED_UNITY_KMH) {
+	item(FEAT_ROADTYPES, item_road_R4X4) {
+		property {	
+			speed_limit:                 param_speedlimit_R4X4 km/h;
+		}
+	}
+}
+if (param_speed_units == SPEED_UNITY_MPS) {
+	item(FEAT_ROADTYPES, item_road_R4X4) {
+		property {	
+			speed_limit:                 param_speedlimit_R4X4 m/s;
+		}
+	}
+}
+item(FEAT_ROADTYPES, item_road_R4X4) {
+	property {
+		label:                       "R4X4";
+		introduction_date:           0;
+		name:                        string(STR_ROAD_R4X4_NAME);
+		toolbar_caption:             string(STR_ROAD_R4X4_TOOLBAR);
+		menu_text:                   string(STR_ROAD_R4X4_MENU);
+		build_window_caption:        string(STR_GENERIC_BUILD_VEHICLE);
+		autoreplace_text:            string(STR_GENERIC_AUTOREPLACE);
+		new_engine_text:             string(STR_GENERIC_NEW_ENGINE);
+		powered_roadtype_list:       ["OLD_", "DIRT", "SETT", "ROAD", "ASP1", "ASP2", "HWAY", "ELSP", "ELRD", "ELA1", "ELA2", "ASP0"];
+//		roadtype_flags:              bitmask(ROADTYPE_FLAG_TOWN_BUILD);
+		construction_cost:           3; //Defaults: ROAD = 8, ELRD = 16, RAIL = 8, ELRL = 16
+		maintenance_cost:            6; //Defaults: ROAD = 16, ELRD = 24, RAIL = 16, ELRL = 24		
+		sort_order:                  02;		
+	}
+	graphics {
+		gui:						 R4X4_guiSpriteset;
+		underlay:                    R4X4_underlayTerrainCheckSwitch;
+		roadstops:                   R4X4_stopsTerrainCheckSwitch;
+		bridge_surfaces:             R4X4_bridgesTerrainCheckSwitch;
+		depots:	                     R4X4_depotsTerrainCheckSwitch;
+	}
+}

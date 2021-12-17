@@ -1,0 +1,9 @@
+src/gfx/roads/TIND/underlay.gimp.png          src/xcf/roads/underlay.xcf     Background TIND
+
+src/gfx/roads/TIND/bridges.gimp.png          src/xcf/roads/bridges.xcf     Background TIND
+src/gfx/roads/TIND/bridgesSnow.gimp.png          src/xcf/roads/bridges.xcf     Background TIND_SNOW
+
+src/gfx/roads/TIND/gui.gimp.png          src/xcf/roads/gui.xcf     Background TIND
+
+src/gfx/roads/TIND/depots.gimp.png          src/xcf/roads/depots.xcf     Background TIND
+src/gfx/roads/TIND/depotsSnow.gimp.png          src/xcf/roads/depots.xcf     Background TIND_SNOW

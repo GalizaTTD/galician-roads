@@ -1,0 +1,3 @@
+src/gfx/roads/tunnels/classic.gimp.png          src/xcf/roads/tunnels.xcf     Background CLASSIC
+src/gfx/roads/tunnels/opengfx.gimp.png          src/xcf/roads/tunnels.xcf     Background OPENGFX
+src/gfx/roads/tunnels/ubify.gimp.png            src/xcf/roads/tunnels.xcf     Background UBIFY

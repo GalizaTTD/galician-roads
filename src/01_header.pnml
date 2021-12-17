@@ -10,15 +10,15 @@ grf {
 	name: 						string(STR_GRF_NAME);
 	desc: 						string(STR_GRF_DESCRIPTION);
 	version: 					1;  //alpha-1
-	min_compatible_version:		1;  //alpha-1
+	min_compatible_version:		1;  //alpha-1	
     param {
         param_tunnels {
             type:   int;
             name:   string(STR_PARAM_TUNNELS_NAME);
             desc:   string(STR_PARAM_TUNNELS_DESC);
             min_value:  0;
-            max_value:  2;
-            def_value:  0;
+            max_value:  3;
+            def_value:  3;
             names:  {
 						0: string(STR_PARAM_TUNNELS_DISABLED);
 						1: string(STR_PARAM_TUNNELS_OPENGFX);
@@ -27,8 +27,168 @@ grf {
 			};
         }
 	}
+	param {
+		param_intro_year {
+			type:      int;
+			name:      string(STR_PARAM_INTRO_YEAR_NAME);
+			desc:      string(STR_PARAM_INTRO_YEAR_DESC);
+			min_value: 0;
+			max_value: 1;
+			def_value: 0;
+			names: {
+				0: string(STR_PARAM_INTRO_YEAR_DEF);
+				1: string(STR_PARAM_INTRO_YEAR_REMOVE);
+			};
+		}
+	}
+	param {
+		param_speed_units {
+			type:      int;
+			name:      string(STR_PARAM_SPEED_UNITS_NAME);
+			desc:      string(STR_PARAM_SPEED_UNITS_DESC);
+			min_value: 0;
+			max_value: 2;
+			def_value: 1;
+			names: {
+				0: string(STR_PARAM_UNITS_MPH);
+				1: string(STR_PARAM_UNITS_KMH);
+				2: string(STR_PARAM_UNITS_MPS);
+			};
+		}
+	}
+	param {
+		param_speedlimit_SETT {
+			type:      int;
+			name:      string(STR_PARAM_SPEED_LIMIT_NAME, string(STR_ROAD_SETT_NAME));
+			desc:      string(STR_PARAM_SPEED_LIMIT_DESC, string(STR_ROAD_SETT_NAME));
+			min_value: 0;
+			max_value: 1000;
+			def_value: 30;
+		}
+	}
+	
+    param {
+		param_speedlimit_R4X4 {
+			type:      int;
+			name:      string(STR_PARAM_SPEED_LIMIT_NAME, string(STR_ROAD_R4X4_NAME));
+			desc:      string(STR_PARAM_SPEED_LIMIT_DESC, string(STR_ROAD_R4X4_NAME));
+			min_value: 0;
+			max_value: 1000;
+			def_value: 30;
+		}
+	}
+	
+    param {
+		param_speedlimit_DIRT {
+			type:      int;
+			name:      string(STR_PARAM_SPEED_LIMIT_NAME, string(STR_ROAD_DIRT_NAME));
+			desc:      string(STR_PARAM_SPEED_LIMIT_DESC, string(STR_ROAD_DIRT_NAME));
+			min_value: 0;
+			max_value: 1000;
+			def_value: 30;
+		}
+	}
+	
+    param {
+		param_speedlimit_GRAV {
+			type:      int;
+			name:      string(STR_PARAM_SPEED_LIMIT_NAME, string(STR_ROAD_GRAV_NAME));
+			desc:      string(STR_PARAM_SPEED_LIMIT_DESC, string(STR_ROAD_GRAV_NAME));
+			min_value: 0;
+			max_value: 1000;
+			def_value: 30;
+		}
+	}
+	
+    param {
+		param_speedlimit_ASF0 {
+			type:      int;
+			name:      string(STR_PARAM_SPEED_LIMIT_NAME, string(STR_ROAD_ASF0_NAME));
+			desc:      string(STR_PARAM_SPEED_LIMIT_DESC, string(STR_ROAD_ASF0_NAME));
+			min_value: 0;
+			max_value: 1000;
+			def_value: 50;
+		}
+	}
+	
+    param {
+		param_speedlimit_EIND {
+			type:      int;
+			name:      string(STR_PARAM_SPEED_LIMIT_NAME, string(STR_ROAD_EIND_NAME));
+			desc:      string(STR_PARAM_SPEED_LIMIT_DESC, string(STR_ROAD_EIND_NAME));
+			min_value: 0;
+			max_value: 1000;
+			def_value: 50;
+		}
+	}
+	
+    param {
+		param_speedlimit_ASF1 {
+			type:      int;
+			name:      string(STR_PARAM_SPEED_LIMIT_NAME, string(STR_ROAD_ASF1_NAME));
+			desc:      string(STR_PARAM_SPEED_LIMIT_DESC, string(STR_ROAD_ASF1_NAME));
+			min_value: 0;
+			max_value: 1000;
+			def_value: 70;
+		}
+	}
+	
+    param {
+		param_speedlimit_ASF2 {
+			type:      int;
+			name:      string(STR_PARAM_SPEED_LIMIT_NAME, string(STR_ROAD_ASF2_NAME));
+			desc:      string(STR_PARAM_SPEED_LIMIT_DESC, string(STR_ROAD_ASF2_NAME));
+			min_value: 0;
+			max_value: 1000;
+			def_value: 70;
+		}
+	}
+	
+    param {
+		param_speedlimit_HWAY {
+			type:      int;
+			name:      string(STR_PARAM_SPEED_LIMIT_NAME, string(STR_ROAD_HWAY_NAME));
+			desc:      string(STR_PARAM_SPEED_LIMIT_DESC, string(STR_ROAD_HWAY_NAME));
+			min_value: 0;
+			max_value: 1000;
+			def_value: 120;
+		}
+	}
+	
+    param {
+		param_speedlimit_RAIL {
+			type:      int;
+			name:      string(STR_PARAM_SPEED_LIMIT_NAME, string(STR_TRAM_RAIL_NAME));
+			desc:      string(STR_PARAM_SPEED_LIMIT_DESC, string(STR_TRAM_RAIL_NAME));
+			min_value: 0;
+			max_value: 1000;
+			def_value: 0;
+		}
+	}
+	
+    param {
+		param_speedlimit_ELRL {
+			type:      int;
+			name:      string(STR_PARAM_SPEED_LIMIT_NAME, string(STR_TRAM_ELRL_NAME));
+			desc:      string(STR_PARAM_SPEED_LIMIT_DESC, string(STR_TRAM_ELRL_NAME));
+			min_value: 0;
+			max_value: 1000;
+			def_value: 0;
+		}
+	}
+	
+    param {
+		param_speedlimit_TIND {
+			type:      int;
+			name:      string(STR_PARAM_SPEED_LIMIT_NAME, string(STR_TRAM_TIND_NAME));
+			desc:      string(STR_PARAM_SPEED_LIMIT_DESC, string(STR_TRAM_TIND_NAME));
+			min_value: 0;
+			max_value: 1000;
+			def_value: 0;
+		}
+	}
 }
 
-if (ttd_platform != PLATFORM_OPENTTD || (openttd_version < version_openttd(1, 10, 0, 0))) {
+if (ttd_platform != PLATFORM_OPENTTD || (openttd_version < version_openttd(1, 12, 0, 0))) {
 	error(FATAL, REQUIRES_OPENTTD, string(STR_MIN_OPENTTD_VERSION));
 }

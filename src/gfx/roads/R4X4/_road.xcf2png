@@ -1,0 +1,13 @@
+src/gfx/roads/R4X4/underlay.gimp.png          src/xcf/roads/underlay.xcf     Background R4X4
+src/gfx/roads/R4X4/underlaySnow.gimp.png          src/xcf/roads/underlay.xcf     Background R4X4_SNOW
+
+src/gfx/roads/R4X4/bridges.gimp.png          src/xcf/roads/bridges.xcf     Background R4X4
+src/gfx/roads/R4X4/bridgesSnow.gimp.png          src/xcf/roads/bridges.xcf     Background R4X4_SNOW
+
+src/gfx/roads/R4X4/gui.gimp.png          src/xcf/roads/gui.xcf     Background R4X4
+
+src/gfx/roads/R4X4/stops.gimp.png          src/xcf/roads/stops.xcf     Background R4X4
+src/gfx/roads/R4X4/stopsSnow.gimp.png          src/xcf/roads/stops.xcf     Background R4X4
+
+src/gfx/roads/R4X4/depots.gimp.png          src/xcf/roads/depots.xcf     Background R4X4
+src/gfx/roads/R4X4/depotsSnow.gimp.png          src/xcf/roads/depots.xcf     Background R4X4_SNOW

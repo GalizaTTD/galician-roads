@@ -1,0 +1,93 @@
+/*
+#    OpenTTD Galician Roads, Trams & Vehicles (GALRTV) -  Copyright (C) 2021  Pablo Villaverde Castro
+#    This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+#    This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+#	 You should have received a copy of the GNU General Public License along with this program.  If not, see <https://github.com/pvillaverde/openttd-spanish-railsets/blob/main/LICENSE>.
+*/
+
+// Underlays
+template roadUnderlayTemplate () {
+	[   0,        0,       64,    31,     -31,        0]  // NW-SE
+	[  70,        0,       64,    31,     -31,        0]  // NE-SW
+	[ 140,        0,       64,    31,     -31,        0]  // 4-way
+	[ 210,        0,       64,    31,     -31,        0]  // NE Cross
+	[ 280,        0,       64,    31,     -31,        0]  // NW Cross
+	[   0,       35,       64,    31,     -31,        0]  // SW Cross
+	[  70,       35,       64,    31,     -31,        0]  // SE Cross
+	[ 140,       35,       64,    31,     -31,        0]  // E Corner
+	[ 210,       35,       64,    31,     -31,        0]  // S Corner
+	[ 280,       35,       64,    31,     -31,        0]  // W Corner
+	[   0,       70,       64,    31,     -31,        0]  // N Corner
+	[  70,       70,       64,    39,     -31,       -8]  // NE Slope
+	[ 140,       70,       64,    23,     -31,        0]  // SE Slope
+	[ 210,       70,       64,    23,     -31,        0]  // SW Slope
+	[ 280,       70,       64,    39,     -31,       -8]  // NW Slope
+	[   0,      110,       64,    31,     -31,        0, ANIM]  // SW end
+	[  70,      110,       64,    31,     -31,        0, ANIM]  // NW end
+	[ 140,      110,       64,    31,     -31,        0, ANIM]  // NE end
+	[ 210,      110,       64,    31,     -31,        0, ANIM]  // SE end
+}
+
+// GUI
+template roadGuiTemplate () {
+	[   0,        0,    20,    20,       0,        0]  // NW-SE Toolbar
+	[  25,        0,    20,    20,       0,        0]  // NE-SW Toolbar
+	[  50,        0,    20,    20,       0,        0]  // 4-way Toolbar
+	[  75,        0,    20,    20,       0,        0]  // Depot Toolbar
+	[ 105,        0,    20,    20,       0,        0]  // Tunnel Toolbar
+	[ 130,        0,    20,    20,       0,        0]  // Convert Toolbar
+	[   0,       25,    32,    32,       0,        0]  // NW-SE Cursor
+	[  50,       25,    32,    32,       0,        0]  // NE-SW Cursor
+	[ 105,       25,    32,    32,       0,        0]  // 4-way Cursor
+	[   0,       65,    32,    32,       0,        0]  // Depot Cursor
+	[  50,       65,    32,    32,       0,        0]  // Tunnel Cursor
+	[ 105,       65,    32,    32,       0,        0]  // Convert Cursor
+}
+
+// Terminal Stops
+template roadStopsTemplate () {
+	[   0,       0,       64,    31,     -31,        0]  // NE
+	[  70,       0,       64,    31,     -31,        0]  // SE
+	[ 140,       0,       64,    31,     -31,        0]  // SW
+	[ 210,       0,       64,    31,     -31,        0]  // NW
+}
+
+// Bridge Overlay
+template roadBridgeOverlayTemplate() {
+	[   0,       0,       64,    31,     -31,        0]  // NW-SE Flat
+	[  70,       0,       64,    31,     -31,        0]  // NE-SW Flat
+	[ 140,       0,       64,    39,     -31,       -8]  // NE Slope
+	[   0,      40,       64,    23,     -31,        0]  // SE Slope
+	[  70,      40,       64,    23,     -31,        0]  // SW Slope
+	[ 140,      40,       64,    39,     -31,       -8]  // NW Slope
+}
+
+// Tunnels
+template roadTunnelsTemplate(y) {
+	[ 113,   y,  64,  39, -31,  -8] // SW bottom
+	[ 193,   y,  64,  39, -31, -38] // SW top
+	[ 653,   y,  64,  23, -31,   0] // NW bottom
+	[ 733,   y,  64,  23, -31, -30] // NW top
+	[ 337,   y,  64,  23, -31,   0] // NE bottom
+	[ 417,   y,  64,  23, -31, -30] // NE top
+	[ 877,   y,  64,  39, -31,  -8] // SE bottom
+	[ 957,   y,  64,  39, -31, -38] // SE top
+}
+
+// Tunnels Overlay
+template roadTunnelOverlaysTemplate() {
+	[   0,       0,       64,    31,     -31,        0]  // NE
+	[  70,       0,       64,    31,     -31,        0]  // SE
+	[ 140,       0,       64,    31,     -31,        0]  // SW
+	[ 210,       0,       64,    31,     -31,        0]  // NW
+}
+
+// Depots
+template roadDepotsTemplate () {
+    [140, 0, 64, 61, -31, -30]  // SE Road
+    [210, 0, 64, 61, -1, -45]   // SE Building
+    [  0, 0, 64, 61, -31, -30]  // SW Road
+    [ 70, 0, 64, 61, -61, -45]  // SW Building
+    [280, 0, 64, 61, -61, -45]  // NE Building
+    [350, 0, 64, 61, -1, -45]   // NW Building
+}

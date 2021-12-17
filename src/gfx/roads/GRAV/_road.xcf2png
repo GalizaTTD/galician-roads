@@ -1,0 +1,13 @@
+src/gfx/roads/GRAV/underlay.gimp.png          src/xcf/roads/underlay.xcf     Background GRAV
+src/gfx/roads/GRAV/underlaySnow.gimp.png          src/xcf/roads/underlay.xcf     Background GRAV_SNOW
+
+src/gfx/roads/GRAV/bridges.gimp.png          src/xcf/roads/bridges.xcf     Background GRAV
+src/gfx/roads/GRAV/bridgesSnow.gimp.png          src/xcf/roads/bridges.xcf     Background GRAV_SNOW
+
+src/gfx/roads/GRAV/gui.gimp.png          src/xcf/roads/gui.xcf     Background GRAV
+
+src/gfx/roads/GRAV/stops.gimp.png          src/xcf/roads/stops.xcf     Background GRAV
+src/gfx/roads/GRAV/stopsSnow.gimp.png          src/xcf/roads/stops.xcf     Background GRAV
+
+src/gfx/roads/GRAV/depots.gimp.png          src/xcf/roads/depots.xcf     Background GRAV
+src/gfx/roads/GRAV/depotsSnow.gimp.png          src/xcf/roads/depots.xcf     Background GRAV_SNOW

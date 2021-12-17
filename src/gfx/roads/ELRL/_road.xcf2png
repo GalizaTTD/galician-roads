@@ -1,0 +1,15 @@
+src/gfx/roads/ELRL/underlay.gimp.png          src/xcf/roads/underlay.xcf     Background ELRL
+src/gfx/roads/ELRL/underlaySnow.gimp.png          src/xcf/roads/underlay.xcf     Background ELRL_SNOW
+
+src/gfx/roads/ELRL/catenaryBackOld.gimp.png          src/xcf/roads/catenarys.xcf     Background BACK_OLD
+src/gfx/roads/ELRL/catenaryBackMod.gimp.png          src/xcf/roads/catenarys.xcf     Background BACK_MOD
+src/gfx/roads/ELRL/catenaryBackCor.gimp.png          src/xcf/roads/catenarys.xcf     Background BACK_COR
+
+src/gfx/roads/ELRL/catenaryFronOld.gimp.png          src/xcf/roads/catenarys.xcf     Background FRON_OLD
+src/gfx/roads/ELRL/catenaryFronMod.gimp.png          src/xcf/roads/catenarys.xcf     Background FRON_MOD
+src/gfx/roads/ELRL/catenaryFronCor.gimp.png          src/xcf/roads/catenarys.xcf     Background FRON_COR
+
+src/gfx/roads/ELRL/gui.gimp.png          src/xcf/roads/gui.xcf     Background ELRL
+
+src/gfx/roads/ELRL/depots.gimp.png          src/xcf/roads/depots.xcf     Background ELRL
+src/gfx/roads/ELRL/depotsSnow.gimp.png          src/xcf/roads/depots.xcf     Background ELRL_SNOW

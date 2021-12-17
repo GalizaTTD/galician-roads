@@ -13,6 +13,12 @@
 /* Common definitions */
 
 #include "src/02_def_common.pnml" 
-#include "src/03_templates.pnml" 
+#include "src/03_road_templates.pnml" 
 
 
+
+#include "src/10_tunnels.pnml"
+
+#include "src/road_SETT.pnml"
+#include "src/road_GRAV.pnml"
+#include "src/road_R4X4.pnml"

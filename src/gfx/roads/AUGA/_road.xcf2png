@@ -1,0 +1,8 @@
+src/gfx/roads/AUGA/underlay.gimp.png          src/xcf/roads/underlay.xcf     Background AUGA
+
+src/gfx/roads/AUGA/bridges.gimp.png          src/xcf/roads/bridges.xcf     Background AUGA
+
+src/gfx/roads/AUGA/gui.gimp.png          src/xcf/roads/gui.xcf     Background AUGA
+
+src/gfx/roads/AUGA/depots.gimp.png          src/xcf/roads/depots.xcf     Background AUGA
+src/gfx/roads/AUGA/depotsSnow.gimp.png          src/xcf/roads/depots.xcf     Background AUGA_SNOW

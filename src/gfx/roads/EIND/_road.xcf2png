@@ -1,0 +1,12 @@
+src/gfx/roads/EIND/underlay.gimp.png          src/xcf/roads/underlay.xcf     Background EIND
+
+src/gfx/roads/EIND/bridges.gimp.png          src/xcf/roads/bridges.xcf     Background EIND
+src/gfx/roads/EIND/bridgesSnow.gimp.png          src/xcf/roads/bridges.xcf     Background EIND_SNOW
+
+src/gfx/roads/EIND/gui.gimp.png          src/xcf/roads/gui.xcf     Background EIND
+
+src/gfx/roads/EIND/stops.gimp.png          src/xcf/roads/stops.xcf     Background EIND
+src/gfx/roads/EIND/stopsSnow.gimp.png          src/xcf/roads/stops.xcf     Background EIND_SNOW
+
+src/gfx/roads/EIND/depots.gimp.png          src/xcf/roads/depots.xcf     Background EIND
+src/gfx/roads/EIND/depotsSnow.gimp.png          src/xcf/roads/depots.xcf     Background EIND_SNOW

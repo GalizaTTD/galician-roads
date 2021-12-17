@@ -1,0 +1,18 @@
+src/gfx/roads/ASF0/underlay.gimp.png          src/xcf/roads/underlay.xcf     Background ASF0
+src/gfx/roads/ASF0/underlaySnow.gimp.png          src/xcf/roads/underlay.xcf     Background ASF0_SNOW
+src/gfx/roads/ASF0/underlayCity.gimp.png          src/xcf/roads/underlay.xcf     Background ASF0_CITY Atrezzo_Contedores
+src/gfx/roads/ASF0/underlayCitySnow.gimp.png          src/xcf/roads/underlay.xcf     Background ASF0_CITY_SNOW Atrezzo_Contedores
+
+src/gfx/roads/ASF0/bridges.gimp.png          src/xcf/roads/bridges.xcf     Background ASF0
+src/gfx/roads/ASF0/bridgesSnow.gimp.png          src/xcf/roads/bridges.xcf     Background ASF0_SNOW
+src/gfx/roads/ASF0/bridgesCitySnow.gimp.png          src/xcf/roads/bridges.xcf     Background ASF0_CITY_SNOW
+
+src/gfx/roads/ASF0/gui.gimp.png          src/xcf/roads/gui.xcf     Background ASF0
+
+src/gfx/roads/ASF0/stops.gimp.png          src/xcf/roads/stops.xcf     Background ASF0
+src/gfx/roads/ASF0/stopsSnow.gimp.png          src/xcf/roads/stops.xcf     Background ASF0_SNOW
+src/gfx/roads/ASF0/stopsCity.gimp.png          src/xcf/roads/stops.xcf     Background ASF0_CITY
+src/gfx/roads/ASF0/stopsCitySnow.gimp.png          src/xcf/roads/stops.xcf     Background ASF0_CITY_SNOW
+
+src/gfx/roads/ASF0/depots.gimp.png          src/xcf/roads/depots.xcf     Background ASF0
+src/gfx/roads/ASF0/depotsSnow.gimp.png          src/xcf/roads/depots.xcf     Background ASF0_SNOW

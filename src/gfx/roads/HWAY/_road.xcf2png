@@ -1,0 +1,11 @@
+src/gfx/roads/HWAY/underlay.gimp.png          src/xcf/roads/underlay.xcf     Background HWAY
+
+src/gfx/roads/HWAY/bridges.gimp.png          src/xcf/roads/bridges.xcf     Background HWAY
+
+src/gfx/roads/HWAY/gui.gimp.png          src/xcf/roads/gui.xcf     Background HWAY
+
+src/gfx/roads/HWAY/stops.gimp.png          src/xcf/roads/stops.xcf     Background HWAY
+src/gfx/roads/HWAY/stopsSnow.gimp.png          src/xcf/roads/stops.xcf     Background HWAY_SNOW
+
+src/gfx/roads/HWAY/depots.gimp.png          src/xcf/roads/depots.xcf     Background HWAY
+src/gfx/roads/HWAY/depotsSnow.gimp.png          src/xcf/roads/depots.xcf     Background HWAY_SNOW

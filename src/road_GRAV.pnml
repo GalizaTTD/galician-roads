@@ -1,0 +1,78 @@
+spriteset (GRAV_guiSpriteset, "src/gfx/roads/GRAV/gui.gimp.png") { roadGuiTemplate() }
+
+spriteset (GRAV_underlaySpriteset, "src/gfx/roads/GRAV/underlay.gimp.png") { roadUnderlayTemplate() }
+spriteset (GRAV_underlaySnowSpriteset, "src/gfx/roads/GRAV/underlaySnow.gimp.png") { roadUnderlayTemplate() }
+
+spriteset (GRAV_bridgesSpriteset, "src/gfx/roads/GRAV/bridges.gimp.png") { roadBridgeOverlayTemplate() }
+spriteset (GRAV_bridgesSnowSpriteset, "src/gfx/roads/GRAV/bridgesSnow.gimp.png") { roadBridgeOverlayTemplate() }
+
+spriteset (GRAV_stopsSpriteset, "src/gfx/roads/GRAV/stops.gimp.png") { roadStopsTemplate() }
+spriteset (GRAV_stopsSnowSpriteset, "src/gfx/roads/GRAV/stopsSnow.gimp.png") { roadStopsTemplate() }
+
+spriteset (GRAV_depotsSpriteset, "src/gfx/roads/GRAV/depots.gimp.png") { roadDepotsTemplate() }
+spriteset (GRAV_depotsSnowSpriteset, "src/gfx/roads/GRAV/depotsSnow.gimp.png") { roadDepotsTemplate() }
+
+
+switch (FEAT_ROADTYPES, SELF, GRAV_stopsTerrainCheckSwitch, terrain_type) {
+	TILETYPE_SNOW: GRAV_stopsSnowSpriteset;
+	GRAV_stopsSpriteset;
+}
+switch (FEAT_ROADTYPES, SELF, GRAV_bridgesTerrainCheckSwitch, terrain_type) {
+	TILETYPE_SNOW: GRAV_bridgesSnowSpriteset;
+	GRAV_bridgesSpriteset;
+}
+switch (FEAT_ROADTYPES, SELF, GRAV_depotsTerrainCheckSwitch, terrain_type) {
+	TILETYPE_SNOW: GRAV_depotsSnowSpriteset;
+	GRAV_depotsSpriteset;
+}
+
+switch (FEAT_ROADTYPES, SELF, GRAV_underlayTerrainCheckSwitch, terrain_type) {
+	TILETYPE_SNOW: GRAV_underlaySnowSpriteset;
+	GRAV_underlaySpriteset;
+}
+
+if (param_speed_units == SPEED_UNITY_MPH) {
+	item(FEAT_ROADTYPES, item_road_GRAV) {
+		property {	
+			speed_limit:                 param_speedlimit_GRAV mph;
+		}
+	}
+}
+if (param_speed_units == SPEED_UNITY_KMH) {
+	item(FEAT_ROADTYPES, item_road_GRAV) {
+		property {	
+			speed_limit:                 param_speedlimit_GRAV km/h;
+		}
+	}
+}
+if (param_speed_units == SPEED_UNITY_MPS) {
+	item(FEAT_ROADTYPES, item_road_GRAV) {
+		property {	
+			speed_limit:                 param_speedlimit_GRAV m/s;
+		}
+	}
+}
+item(FEAT_ROADTYPES, item_road_GRAV) {
+	property {
+		label:                       "GRAV";
+		introduction_date:           0;
+		name:                        string(STR_ROAD_GRAV_NAME);
+		toolbar_caption:             string(STR_ROAD_GRAV_TOOLBAR);
+		menu_text:                   string(STR_ROAD_GRAV_MENU);
+		build_window_caption:        string(STR_GENERIC_BUILD_VEHICLE);
+		autoreplace_text:            string(STR_GENERIC_AUTOREPLACE);
+		new_engine_text:             string(STR_GENERIC_NEW_ENGINE);
+		powered_roadtype_list:       ["OLD_", "DIRT", "GRAV", "ROAD", "ASP1", "ASP2", "HWAY", "ELSP", "ELRD", "ELA1", "ELA2", "ASP0"];
+//		roadtype_flags:              bitmask(ROADTYPE_FLAG_TOWN_BUILD);
+		construction_cost:           3; //Defaults: ROAD = 8, ELRD = 16, RAIL = 8, ELRL = 16
+		maintenance_cost:            6; //Defaults: ROAD = 16, ELRD = 24, RAIL = 16, ELRL = 24		
+		sort_order:                  02;		
+	}
+	graphics {
+		gui:						 GRAV_guiSpriteset;
+		underlay:                    GRAV_underlayTerrainCheckSwitch;
+		roadstops:                   GRAV_stopsTerrainCheckSwitch;
+		bridge_surfaces:             GRAV_bridgesTerrainCheckSwitch;
+		depots:	                     GRAV_depotsTerrainCheckSwitch;
+	}
+}

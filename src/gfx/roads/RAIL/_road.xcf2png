@@ -1,0 +1,11 @@
+src/gfx/roads/RAIL/underlay.gimp.png          src/xcf/roads/underlay.xcf     Background RAIL
+src/gfx/roads/RAIL/underlaySnow.gimp.png          src/xcf/roads/underlay.xcf     Background RAIL_SNOW
+src/gfx/roads/RAIL/overlay.gimp.png          src/xcf/roads/underlay.xcf     Background RAIL_OVERLAY
+
+src/gfx/roads/RAIL/bridges.gimp.png          src/xcf/roads/bridges.xcf     Background RAIL
+src/gfx/roads/RAIL/bridgesSnow.gimp.png          src/xcf/roads/bridges.xcf     Background RAIL_SNOW
+
+src/gfx/roads/RAIL/gui.gimp.png          src/xcf/roads/gui.xcf     Background RAIL
+
+src/gfx/roads/RAIL/depots.gimp.png          src/xcf/roads/depots.xcf     Background RAIL
+src/gfx/roads/RAIL/depotsSnow.gimp.png          src/xcf/roads/depots.xcf     Background RAIL_SNOW

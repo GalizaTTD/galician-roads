@@ -1,0 +1,15 @@
+src/gfx/roads/DIRT/underlay.gimp.png          src/xcf/roads/underlay.xcf     Background DIRT
+src/gfx/roads/DIRT/underlaySnow.gimp.png          src/xcf/roads/underlay.xcf     Background DIRT_SNOW
+src/gfx/roads/DIRT/underlayCity.gimp.png          src/xcf/roads/underlay.xcf     Background DIRT_CITY
+src/gfx/roads/DIRT/underlayCitySnow.gimp.png          src/xcf/roads/underlay.xcf     Background DIRT_CITY_SNOW
+
+src/gfx/roads/DIRT/bridges.gimp.png          src/xcf/roads/bridges.xcf     Background DIRT
+src/gfx/roads/DIRT/bridgesSnow.gimp.png          src/xcf/roads/bridges.xcf     Background DIRT_SNOW
+
+src/gfx/roads/DIRT/gui.gimp.png          src/xcf/roads/gui.xcf     Background DIRT
+
+src/gfx/roads/DIRT/stops.gimp.png          src/xcf/roads/stops.xcf     Background DIRT
+src/gfx/roads/DIRT/stopsSnow.gimp.png          src/xcf/roads/stops.xcf     Background DIRT_SNOW
+
+src/gfx/roads/DIRT/depots.gimp.png          src/xcf/roads/depots.xcf     Background DIRT
+src/gfx/roads/DIRT/depotsSnow.gimp.png          src/xcf/roads/depots.xcf     Background DIRT_SNOW

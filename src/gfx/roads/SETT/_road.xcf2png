@@ -1,0 +1,14 @@
+src/gfx/roads/SETT/underlay.gimp.png          src/xcf/roads/underlay.xcf     Background SETT
+src/gfx/roads/SETT/underlaySnow.gimp.png          src/xcf/roads/underlay.xcf     Background SETT_SNOW
+src/gfx/roads/SETT/underlayCity.gimp.png          src/xcf/roads/underlay.xcf     Background SETT_CITY
+
+src/gfx/roads/SETT/bridges.gimp.png          src/xcf/roads/bridges.xcf     Background SETT
+src/gfx/roads/SETT/bridgesSnow.gimp.png          src/xcf/roads/bridges.xcf     Background SETT_SNOW
+
+src/gfx/roads/SETT/gui.gimp.png          src/xcf/roads/gui.xcf     Background SETT
+
+src/gfx/roads/SETT/stops.gimp.png          src/xcf/roads/stops.xcf     Background SETT
+src/gfx/roads/SETT/stopsSnow.gimp.png          src/xcf/roads/stops.xcf     Background SETT
+
+src/gfx/roads/SETT/depots.gimp.png          src/xcf/roads/depots.xcf     Background SETT
+src/gfx/roads/SETT/depotsSnow.gimp.png          src/xcf/roads/depots.xcf     Background SETT_SNOW

@@ -5,6 +5,21 @@
 # GRF name and description
 STR_GRF_NAME        :Galician Roads, Trams & Vehicles (GALRTV) {VERSION}
 STR_GRF_DESCRIPTION :{TITLE} - Set of Roads, Trams & Road Vehicles for GalizaTTD.
+STR_MIN_OPENTTD_VERSION  :Requires OpenTTD >= 1.12.0
+
+STR_PARAM_INTRO_YEAR_NAME      :Roadtype Availability
+STR_PARAM_INTRO_YEAR_DESC      :This parameter changes the availability of roadtypes based on date. {ORANGE}Year-Dependent{BLACK} is default behavior where each roadtype is introduced only after certain years, while {ORANGE}Always Available{BLACK} makes all roadtypes, well, always available
+STR_PARAM_INTRO_YEAR_DEF       :Year-Dependent {SILVER}(Default)
+STR_PARAM_INTRO_YEAR_REMOVE    :Always Available
+
+STR_PARAM_SPEED_UNITS_NAME     :Speed Units
+STR_PARAM_SPEED_UNITS_DESC     :Choose your preferred units for speed {ORANGE}(make sure this is the same as your game setting!){BLACK}. This makes sure your speed limits look 'realistic', e.g. no more silly 57 km/h speed limits due to unit conversions
+STR_PARAM_UNITS_MPH            :MPH
+STR_PARAM_UNITS_KMH            :KM/H
+STR_PARAM_UNITS_MPS            :M/S
+
+STR_PARAM_SPEED_LIMIT_NAME               :Speed Limits for {LTBLUE}{STRING}
+STR_PARAM_SPEED_LIMIT_DESC               :Adjust the Speed Limit for {LTBLUE}{STRING}
 
 STR_PARAM_TUNNELS_NAME             		 	:Estilo dos tuneis
 STR_PARAM_TUNNELS_DESC              		:Selecciona o estilo dos túneis de estrada
@@ -12,3 +27,61 @@ STR_PARAM_TUNNELS_DISABLED					:Disabled (default)
 STR_PARAM_TUNNELS_OPENGFX					:OpenGFX
 STR_PARAM_TUNNELS_CLASSIC					:Clásicos
 STR_PARAM_TUNNELS_UBIFY						:Ubify U&RaTT
+
+# Cadenas de texto xenéricas para todas as estradas
+STR_GENERIC_BUILD_VEHICLE            :Build New Road Vehicles
+STR_GENERIC_AUTOREPLACE              :Road Vehicles
+STR_GENERIC_NEW_ENGINE               :road
+
+# Cadeas de texto das estradas 
+STR_ROAD_SETT_NAME          :Sett Paved Road
+STR_ROAD_SETT_TOOLBAR       :Sett Paved Road Construction
+STR_ROAD_SETT_MENU          :Sett Paved Road construction
+
+STR_ROAD_R4X4_NAME          :R4X4 Paved Road
+STR_ROAD_R4X4_TOOLBAR       :R4X4 Paved Road Construction
+STR_ROAD_R4X4_MENU          :R4X4 Paved Road construction
+
+STR_ROAD_DIRT_NAME          :DIRT Paved Road
+STR_ROAD_DIRT_TOOLBAR       :DIRT Paved Road Construction
+STR_ROAD_DIRT_MENU          :DIRT Paved Road construction
+
+STR_ROAD_GRAV_NAME          :GRAV Paved ROAD
+STR_ROAD_GRAV_TOOLBAR       :GRAV Paved ROAD Construction
+STR_ROAD_GRAV_MENU          :GRAV Paved ROAD construction
+
+STR_ROAD_EIND_NAME          :EIND Paved Road
+STR_ROAD_EIND_TOOLBAR       :EIND Paved Road Construction
+STR_ROAD_EIND_MENU          :EIND Paved Road construction
+
+STR_ROAD_ASF0_NAME          :ASF0 Paved Road
+STR_ROAD_ASF0_TOOLBAR       :ASF0 Paved Road Construction
+STR_ROAD_ASF0_MENU          :ASF0 Paved Road construction
+
+STR_ROAD_ASF1_NAME          :ASF1 Paved Road
+STR_ROAD_ASF1_TOOLBAR       :ASF1 Paved Road Construction
+STR_ROAD_ASF1_MENU          :ASF1 Paved Road construction
+
+STR_ROAD_ASF2_NAME          :ASF2 Paved Road
+STR_ROAD_ASF2_TOOLBAR       :ASF2 Paved Road Construction
+STR_ROAD_ASF2_MENU          :ASF2 Paved Road construction
+
+STR_ROAD_HWAY_NAME          :HWAY Paved Road
+STR_ROAD_HWAY_TOOLBAR       :HWAY Paved Road Construction
+STR_ROAD_HWAY_MENU          :HWAY Paved Road construction
+
+STR_TRAM_AUGA_NAME          :AUGA Paved TRAM
+STR_TRAM_AUGA_TOOLBAR       :AUGA Paved TRAM Construction
+STR_TRAM_AUGA_MENU          :AUGA Paved TRAM construction
+
+STR_TRAM_RAIL_NAME          :RAIL Paved TRAM
+STR_TRAM_RAIL_TOOLBAR       :RAIL Paved TRAM Construction
+STR_TRAM_RAIL_MENU          :RAIL Paved TRAM construction
+
+STR_TRAM_ELRL_NAME          :ELRL Paved TRAM
+STR_TRAM_ELRL_TOOLBAR       :ELRL Paved TRAM Construction
+STR_TRAM_ELRL_MENU          :ELRL Paved TRAM construction
+
+STR_TRAM_TIND_NAME          :TIND Paved TRAM
+STR_TRAM_TIND_TOOLBAR       :TIND Paved TRAM Construction
+STR_TRAM_TIND_MENU          :TIND Paved TRAM construction
