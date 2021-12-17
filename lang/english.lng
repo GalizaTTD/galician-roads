@@ -1,0 +1,14 @@
+##grflangid 0x00
+##plural 0
+# This is the English language file
+
+# GRF name and description
+STR_GRF_NAME        :Galician Roads, Trams & Vehicles (GALRTV) {VERSION}
+STR_GRF_DESCRIPTION :{TITLE} - Set of Roads, Trams & Road Vehicles for GalizaTTD.
+
+STR_PARAM_TUNNELS_NAME             		 	:Estilo dos tuneis
+STR_PARAM_TUNNELS_DESC              		:Selecciona o estilo dos túneis de estrada
+STR_PARAM_TUNNELS_DISABLED					:Disabled (default)
+STR_PARAM_TUNNELS_OPENGFX					:OpenGFX
+STR_PARAM_TUNNELS_CLASSIC					:Clásicos
+STR_PARAM_TUNNELS_UBIFY						:Ubify U&RaTT

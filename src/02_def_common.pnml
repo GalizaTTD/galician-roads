@@ -1,0 +1,18 @@
+/*
+#    OpenTTD Galician Roads, Trams & Vehicles (GALRTV) -  Copyright (C) 2021  Pablo Villaverde Castro
+#    This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+#    This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+#	 You should have received a copy of the GNU General Public License along with this program.  If not, see <https://github.com/pvillaverde/openttd-spanish-railsets/blob/main/LICENSE>.
+*/
+
+#define TUNNEL_OPENGFX	1
+#define TUNNEL_CLASSIC	2
+#define TUNNEL_UBIFY	3
+
+//========================
+//begin defining roadtypes
+//========================
+/* roadtypetable {
+ 	OLD_, DIRT, SETT, ROAD, ASP1, ASP2, HWAY, ELSP, ELRD, ELA1, ELA2, ASP0
+}
+ */
