@@ -1,0 +1,77 @@
+switch (FEAT_ROADTYPES, SELF, ROAD_bridgesTownZoneSwitch, town_zone) {
+	TOWNZONE_CENTRE: SETT_bridgesTerrainCheckSwitch;
+	TOWNZONE_INNER_SUBURB: GRAV_bridgesTerrainCheckSwitch;
+	TOWNZONE_OUTER_SUBURB: GRAV_bridgesTerrainCheckSwitch;
+	TOWNZONE_OUTSKIRT: GRAV_bridgesTerrainCheckSwitch;
+	DIRT_bridgesTerrainCheckSwitch;
+}
+
+switch (FEAT_ROADTYPES, SELF, ROAD_depotsTownZoneSwitch, town_zone) {
+	TOWNZONE_CENTRE: SETT_depotsTerrainCheckSwitch;
+	TOWNZONE_INNER_SUBURB: GRAV_depotsTerrainCheckSwitch;
+	TOWNZONE_OUTER_SUBURB: GRAV_depotsTerrainCheckSwitch;
+	TOWNZONE_OUTSKIRT: GRAV_depotsTerrainCheckSwitch;
+	DIRT_depotsTerrainCheckSwitch;
+}
+
+switch (FEAT_ROADTYPES, SELF, ROAD_stopsTownZoneSwitch, town_zone) {
+	TOWNZONE_CENTRE: SETT_stopsTerrainCheckSwitch;
+	TOWNZONE_INNER_SUBURB: GRAV_stopsTerrainCheckSwitch;
+	TOWNZONE_OUTER_SUBURB: GRAV_stopsTerrainCheckSwitch;
+	TOWNZONE_OUTSKIRT: GRAV_stopsTerrainCheckSwitch;
+	DIRT_stopsTerrainCheckSwitch;
+}
+
+switch (FEAT_ROADTYPES, SELF, ROAD_underlayTownZoneSwitch, town_zone) {
+	TOWNZONE_CENTRE: SETT_underlayTerrainCheckSwitch;
+	TOWNZONE_INNER_SUBURB: GRAV_underlayTerrainCheckSwitch;
+	TOWNZONE_OUTER_SUBURB: GRAV_underlayTerrainCheckSwitch;
+	TOWNZONE_OUTSKIRT: GRAV_underlayTerrainCheckSwitch;
+	DIRT_underlayTerrainCheckSwitch;
+}
+
+if (param_speed_units == SPEED_UNITY_MPH) {
+	item(FEAT_ROADTYPES, item_road_SETT) {
+		property {	
+			speed_limit:                 param_speedlimit_SETT mph;
+		}
+	}
+}
+if (param_speed_units == SPEED_UNITY_KMH) {
+	item(FEAT_ROADTYPES, item_road_SETT) {
+		property {	
+			speed_limit:                 param_speedlimit_SETT km/h;
+		}
+	}
+}
+if (param_speed_units == SPEED_UNITY_MPS) {
+	item(FEAT_ROADTYPES, item_road_SETT) {
+		property {	
+			speed_limit:                 param_speedlimit_SETT m/s;
+		}
+	}
+}
+item(FEAT_ROADTYPES, item_road_SETT) {
+	property {
+		label:                       "ROAD";
+		introduction_date:           0;
+		name:                        string(STR_ROAD_SETT_NAME);
+		toolbar_caption:             string(STR_ROAD_SETT_TOOLBAR);
+		menu_text:                   string(STR_ROAD_SETT_MENU);
+		build_window_caption:        string(STR_GENERIC_BUILD_VEHICLE);
+		autoreplace_text:            string(STR_GENERIC_AUTOREPLACE);
+		new_engine_text:             string(STR_GENERIC_NEW_ENGINE);
+		powered_roadtype_list:       ["ROAD", "SETT", "R4X4", "DIRT", "GRAV", "ASF0", "EIND", "ASF1", "ASF2", "HWAY"];
+		roadtype_flags:              bitmask(ROADTYPE_FLAG_TOWN_BUILD, ROADTYPE_FLAG_HIDDEN);
+		construction_cost:           3;
+		maintenance_cost:            6;
+		sort_order:                  00;		
+	}
+	graphics {
+		gui:						 SETT_guiSpriteset;
+		underlay:                    ROAD_underlayTownZoneSwitch;
+		roadstops:                   ROAD_stopsTownZoneSwitch;
+		bridge_surfaces:             ROAD_bridgesTownZoneSwitch;
+		depots:	                     ROAD_depotsTownZoneSwitch;
+	}
+}

@@ -2,6 +2,9 @@ src/gfx/roads/AUGA/underlay.gimp.png          src/xcf/roads/underlay.xcf     Bac
 
 src/gfx/roads/AUGA/bridges.gimp.png          src/xcf/roads/bridges.xcf     Background AUGA
 
+src/gfx/roads/AUGA/catenaryBackAuga.gimp.png          src/xcf/roads/catenarys.xcf     Background BACK_AUGA
+src/gfx/roads/AUGA/catenaryFronAuga.gimp.png          src/xcf/roads/catenarys.xcf     Background FRON_AUGA
+
 src/gfx/roads/AUGA/gui.gimp.png          src/xcf/roads/gui.xcf     Background AUGA
 
 src/gfx/roads/AUGA/depots.gimp.png          src/xcf/roads/depots.xcf     Background AUGA

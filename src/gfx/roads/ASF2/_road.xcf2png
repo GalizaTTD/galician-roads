@@ -1,9 +1,7 @@
 src/gfx/roads/ASF2/underlay.gimp.png          src/xcf/roads/underlay.xcf     Background ASF2
 src/gfx/roads/ASF2/underlaySnow.gimp.png          src/xcf/roads/underlay.xcf     Background ASF2 RATT_SNOW_1
-src/gfx/roads/ASF2/underlayCity.gimp.png          src/xcf/roads/underlay.xcf     Background ASF1_CITY Atrezzo_Contedores
-src/gfx/roads/ASF2/underlayCitySnow.gimp.png          src/xcf/roads/underlay.xcf     Background ASF1_CITY_SNOW Atrezzo_Contedores
 src/gfx/roads/ASF2/underlayAvenue.gimp.png          src/xcf/roads/underlay.xcf     Background ASF2_AVENUE Atrezzo_Contedores
-src/gfx/roads/ASF2/underlayAvenueSnow.gimp.png          src/xcf/roads/underlay.xcf     Background ASF2_AVENUE_SNOW Atrezzo_Contedores
+src/gfx/roads/ASF2/underlayAvenueSnow.gimp.png          src/xcf/roads/underlay.xcf     Background ASF2_AVENUE_SNOW RATT_SNOW_1 Atrezzo_Contedores
 
 src/gfx/roads/ASF2/bridges.gimp.png          src/xcf/roads/bridges.xcf     Background ASF2
 src/gfx/roads/ASF2/bridgesSnow.gimp.png          src/xcf/roads/bridges.xcf     Background ASF2 RATT_SNOW_1

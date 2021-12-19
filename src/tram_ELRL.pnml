@@ -31,13 +31,22 @@ switch (FEAT_TRAMTYPES, SELF, ELRL_underlayTerrainCheckSwitch, terrain_type) {
 	ELRL_underlaySpriteset;
 }
 
+switch(FEAT_TRAMTYPES,	SELF,	ELRL_catenaryFrontYearSwitch, current_year){ 
+	0 .. 1970 - 1	: ELRL_catenaryFronOldSpriteset ;
+	ELRL_catenaryFronModSpriteset;
+}
+
 switch (FEAT_TRAMTYPES, SELF, ELRL_catenaryFrontTownZoneSwitch, town_zone) {
 	TOWNZONE_CENTRE: ELRL_catenaryFronCorSpriteset;
 	TOWNZONE_INNER_SUBURB: ELRL_catenaryFronCorSpriteset;
 	TOWNZONE_OUTER_SUBURB: ELRL_catenaryFronCorSpriteset;
 	TOWNZONE_OUTSKIRT: ELRL_catenaryFronCorSpriteset;
-	ELRL_catenaryFronModSpriteset;
-	//(year_loaded < 1950) ? ELRL_catenaryFronOldSpriteset : ELRL_catenaryFronModSpriteset;
+	ELRL_catenaryFrontYearSwitch;
+}
+
+switch(FEAT_TRAMTYPES,	SELF,	ELRL_catenaryBackYearSwitch, current_year){ 
+	0 .. 1970 - 1	: ELRL_catenaryBackOldSpriteset ;
+	ELRL_catenaryBackModSpriteset;
 }
 
 switch (FEAT_TRAMTYPES, SELF, ELRL_catenaryBackTownZoneSwitch, town_zone) {
@@ -45,8 +54,7 @@ switch (FEAT_TRAMTYPES, SELF, ELRL_catenaryBackTownZoneSwitch, town_zone) {
 	TOWNZONE_INNER_SUBURB: ELRL_catenaryBackCorSpriteset;
 	TOWNZONE_OUTER_SUBURB: ELRL_catenaryBackCorSpriteset;
 	TOWNZONE_OUTSKIRT: ELRL_catenaryBackCorSpriteset;
-	ELRL_catenaryBackModSpriteset;
-	//(year_loaded < 1950) ? ELRL_catenaryBackOldSpriteset : ELRL_catenaryBackModSpriteset;
+	ELRL_catenaryBackYearSwitch;
 }
 
 
@@ -75,7 +83,7 @@ if (param_speed_units == SPEED_UNITY_MPS) {
 item(FEAT_TRAMTYPES, item_tram_ELRL) {
 	property {
 		label:                       "ELRL";
-		introduction_date:           0;
+		introduction_date:           (param_intro_year == 0) ? date(1900,01,01) : 0;
 		name:                        string(STR_TRAM_ELRL_NAME);
 		toolbar_caption:             string(STR_TRAM_ELRL_TOOLBAR);
 		menu_text:                   string(STR_TRAM_ELRL_MENU);
@@ -83,15 +91,10 @@ item(FEAT_TRAMTYPES, item_tram_ELRL) {
 		autoreplace_text:            string(STR_TRAM_AUTOREPLACE);
 		new_engine_text:             string(STR_TRAM_NEW_ENGINE);
 		powered_tramtype_list:       ["RAIL", "ELRL"];
-//		tramtype_flags:              bitmask(TRAMTYPE_FLAG_CATENARY);
-		construction_cost:           8; //Defaults: ROAD = 8, ELRD = 16, ELRL = 8, ELRL = 16
-		maintenance_cost:            16; //Defaults: ROAD = 16, ELRD = 24, ELRL = 16, ELRL = 24		
-//		speed_limit:                 85 mph;
-		sort_order:                  00;		
-//		map_colour:                  ?;
-//		requires_roadtype_list:      ?;
-//		introduces_roadtype_list:    ?;
-//		alternative_roadtype_list:   ?;
+		tramtype_flags:              bitmask(TRAMTYPE_FLAG_CATENARY);
+		construction_cost:           16;
+		maintenance_cost:            24;
+		sort_order:                  02;	
 	}
 	graphics {
 		gui:						 ELRL_guiSpriteset;

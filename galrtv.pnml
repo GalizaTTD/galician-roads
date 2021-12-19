@@ -14,6 +14,7 @@
 
 #include "src/02_def_common.pnml" 
 #include "src/03_road_templates.pnml" 
+#include "src/04_misc.pnml" 
 
 
 
@@ -29,6 +30,10 @@
 #include "src/road_ASF2.pnml"
 #include "src/road_HWAY.pnml"
 
+#include "src/tram_AUGA.pnml"
 #include "src/tram_RAIL.pnml"
 #include "src/tram_ELRL.pnml"
 #include "src/tram_TIND.pnml"
+
+
+#include "src/road_ROAD.pnml"

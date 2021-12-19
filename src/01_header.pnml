@@ -118,7 +118,7 @@ grf {
 			desc:      string(STR_PARAM_SPEED_LIMIT_DESC, string(STR_ROAD_EIND_NAME));
 			min_value: 0;
 			max_value: 1000;
-			def_value: 50;
+			def_value: 51;
 		}
 	}
 	
@@ -129,7 +129,7 @@ grf {
 			desc:      string(STR_PARAM_SPEED_LIMIT_DESC, string(STR_ROAD_ASF1_NAME));
 			min_value: 0;
 			max_value: 1000;
-			def_value: 70;
+			def_value: 71;
 		}
 	}
 	
@@ -140,7 +140,7 @@ grf {
 			desc:      string(STR_PARAM_SPEED_LIMIT_DESC, string(STR_ROAD_ASF2_NAME));
 			min_value: 0;
 			max_value: 1000;
-			def_value: 70;
+			def_value: 91;
 		}
 	}
 	
@@ -151,7 +151,7 @@ grf {
 			desc:      string(STR_PARAM_SPEED_LIMIT_DESC, string(STR_ROAD_HWAY_NAME));
 			min_value: 0;
 			max_value: 1000;
-			def_value: 120;
+			def_value: 121;
 		}
 	}
 	

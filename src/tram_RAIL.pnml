@@ -59,14 +59,9 @@ item(FEAT_TRAMTYPES, item_tram_RAIL) {
 		new_engine_text:             string(STR_TRAM_NEW_ENGINE);
 		powered_tramtype_list:       ["RAIL", "ELRL"];
 //		tramtype_flags:              bitmask(TRAMTYPE_FLAG_CATENARY);
-		construction_cost:           8; //Defaults: ROAD = 8, ELRD = 16, RAIL = 8, ELRL = 16
-		maintenance_cost:            16; //Defaults: ROAD = 16, ELRD = 24, RAIL = 16, ELRL = 24		
-//		speed_limit:                 85 mph;
-		sort_order:                  00;		
-//		map_colour:                  ?;
-//		requires_roadtype_list:      ?;
-//		introduces_roadtype_list:    ?;
-//		alternative_roadtype_list:   ?;
+		construction_cost:           8;
+		maintenance_cost:            16;
+		sort_order:                  01;	
 	}
 	graphics {
 		gui:						 RAIL_guiSpriteset;

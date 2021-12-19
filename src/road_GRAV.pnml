@@ -62,11 +62,11 @@ item(FEAT_ROADTYPES, item_road_GRAV) {
 		build_window_caption:        string(STR_GENERIC_BUILD_VEHICLE);
 		autoreplace_text:            string(STR_GENERIC_AUTOREPLACE);
 		new_engine_text:             string(STR_GENERIC_NEW_ENGINE);
-		powered_roadtype_list:       ["OLD_", "DIRT", "GRAV", "ROAD", "ASP1", "ASP2", "HWAY", "ELSP", "ELRD", "ELA1", "ELA2", "ASP0"];
-//		roadtype_flags:              bitmask(ROADTYPE_FLAG_TOWN_BUILD);
-		construction_cost:           3; //Defaults: ROAD = 8, ELRD = 16, RAIL = 8, ELRL = 16
-		maintenance_cost:            6; //Defaults: ROAD = 16, ELRD = 24, RAIL = 16, ELRL = 24		
-		sort_order:                  02;		
+		powered_roadtype_list:       ["ROAD", "SETT", "R4X4", "DIRT", "GRAV", "ASF0", "EIND", "ASF1", "ASF2", "HWAY"];
+	//	roadtype_flags:              bitmask(ROADTYPE_FLAG_TOWN_BUILD);
+		construction_cost:           2;
+		maintenance_cost:            4;
+		sort_order:                  03;		
 	}
 	graphics {
 		gui:						 GRAV_guiSpriteset;

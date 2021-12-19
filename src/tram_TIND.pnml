@@ -1,4 +1,4 @@
-spriteset (TIND_guiSpriteset, "src/gfx/roads/ELRL/gui.gimp.png") { roadGuiTemplate() }
+spriteset (TIND_guiSpriteset, "src/gfx/roads/TIND/gui.gimp.png") { roadGuiTemplate() }
 
 spriteset (TIND_underlaySpriteset, "src/gfx/roads/TIND/underlay.gimp.png") { roadUnderlayTemplate() }
 spriteset (TIND_overlaySpriteset, "src/gfx/roads/RAIL/overlay.gimp.png") { roadUnderlayTemplate() }
@@ -26,13 +26,21 @@ switch (FEAT_TRAMTYPES, SELF, TIND_depotsTerrainCheckSwitch, terrain_type) {
 	TIND_depotsSpriteset;
 }
 
+switch(FEAT_TRAMTYPES,	SELF,	TIND_catenaryFrontYearSwitch, current_year){ 
+	0 .. 1970 - 1	: TIND_catenaryFronOldSpriteset ;
+	TIND_catenaryFronModSpriteset;
+}
 switch (FEAT_TRAMTYPES, SELF, TIND_catenaryFrontTownZoneSwitch, town_zone) {
 	TOWNZONE_CENTRE: TIND_catenaryFronCorSpriteset;
 	TOWNZONE_INNER_SUBURB: TIND_catenaryFronCorSpriteset;
 	TOWNZONE_OUTER_SUBURB: TIND_catenaryFronCorSpriteset;
 	TOWNZONE_OUTSKIRT: TIND_catenaryFronCorSpriteset;
-	TIND_catenaryFronModSpriteset;
-	//(year_loaded < 1950) ? TIND_catenaryFronOldSpriteset : TIND_catenaryFronModSpriteset;
+	TIND_catenaryFrontYearSwitch;
+}
+
+switch(FEAT_TRAMTYPES,	SELF,	TIND_catenaryBackYearSwitch, current_year){ 
+	0 .. 1970 - 1	: TIND_catenaryBackOldSpriteset ;
+	TIND_catenaryBackModSpriteset;
 }
 
 switch (FEAT_TRAMTYPES, SELF, TIND_catenaryBackTownZoneSwitch, town_zone) {
@@ -40,8 +48,7 @@ switch (FEAT_TRAMTYPES, SELF, TIND_catenaryBackTownZoneSwitch, town_zone) {
 	TOWNZONE_INNER_SUBURB: TIND_catenaryBackCorSpriteset;
 	TOWNZONE_OUTER_SUBURB: TIND_catenaryBackCorSpriteset;
 	TOWNZONE_OUTSKIRT: TIND_catenaryBackCorSpriteset;
-	TIND_catenaryBackModSpriteset;
-	//(year_loaded < 1950) ? TIND_catenaryBackOldSpriteset : TIND_catenaryBackModSpriteset;
+	TIND_catenaryBackYearSwitch;
 }
 
 
@@ -70,7 +77,7 @@ if (param_speed_units == SPEED_UNITY_MPS) {
 item(FEAT_TRAMTYPES, item_tram_TIND) {
 	property {
 		label:                       "TIND";
-		introduction_date:           0;
+		introduction_date:           (param_intro_year == 0) ? date(1920,01,01) : 0;
 		name:                        string(STR_TRAM_TIND_NAME);
 		toolbar_caption:             string(STR_TRAM_TIND_TOOLBAR);
 		menu_text:                   string(STR_TRAM_TIND_MENU);
@@ -78,15 +85,10 @@ item(FEAT_TRAMTYPES, item_tram_TIND) {
 		autoreplace_text:            string(STR_TRAM_AUTOREPLACE);
 		new_engine_text:             string(STR_TRAM_NEW_ENGINE);
 		powered_tramtype_list:       ["RAIL", "ELRL"];
-//		tramtype_flags:              bitmask(TRAMTYPE_FLAG_CATENARY);
-		construction_cost:           8; //Defaults: ROAD = 8, ELRD = 16, ELRL = 8, ELRL = 16
-		maintenance_cost:            16; //Defaults: ROAD = 16, ELRD = 24, ELRL = 16, ELRL = 24		
-//		speed_limit:                 85 mph;
-		sort_order:                  00;		
-//		map_colour:                  ?;
-//		requires_roadtype_list:      ?;
-//		introduces_roadtype_list:    ?;
-//		alternative_roadtype_list:   ?;
+		tramtype_flags:              bitmask(TRAMTYPE_FLAG_CATENARY,TRAMTYPE_FLAG_NO_HOUSES);
+		construction_cost:           16;
+		maintenance_cost:            24;
+		sort_order:                  03;	
 	}
 	graphics {
 		gui:						 TIND_guiSpriteset;
