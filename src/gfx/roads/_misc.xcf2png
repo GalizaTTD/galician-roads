@@ -1,1 +1,5 @@
-src/gfx/roads/misc.gimp.png          src/xcf/roads/misc.xcf     MISC
+src/gfx/roads/misc_stops_camion.gimp.png          src/xcf/roads/misc_stops.xcf     Background CAMION
+src/gfx/roads/misc_stops_autobus.gimp.png          src/xcf/roads/misc_stops.xcf     Background AUTOBUS
+src/gfx/roads/misc_stops_travesia.gimp.png          src/xcf/roads/misc_stops.xcf     Background TRAVESIA
+src/gfx/roads/misc_vertical_signs.gimp.png          src/xcf/roads/misc_onewaysignals.xcf     Background VERTICAL
+src/gfx/roads/misc_horizontal_signs.gimp.png          src/xcf/roads/misc_onewaysignals.xcf     Background HORIZONTAL

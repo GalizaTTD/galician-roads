@@ -11,6 +11,43 @@ grf {
 	desc: 						string(STR_GRF_DESCRIPTION);
 	version: 					1;  //alpha-1
 	min_compatible_version:		1;  //alpha-1	
+	param {
+		param_intro_year {
+			type:      int;
+			name:      string(STR_PARAM_INTRO_YEAR_NAME);
+			desc:      string(STR_PARAM_INTRO_YEAR_DESC);
+			min_value: 0;
+			max_value: 1;
+			def_value: 0;
+			names: {
+				0: string(STR_PARAM_INTRO_YEAR_DEF);
+				1: string(STR_PARAM_INTRO_YEAR_REMOVE);
+			};
+		}
+	}
+	param {
+		param_custom_road_stops {
+			type:      bool;
+			name:      string(STR_PARAM_CUSTOM_ROAD_STOPS_NAME);
+			desc:      string(STR_PARAM_CUSTOM_ROAD_STOPS_DESC);
+			def_value: 1;
+		}
+	}
+    param {
+        param_signals {
+            type:   int;
+            name:   string(STR_PARAM_SIGNALS_NAME);
+            desc:   string(STR_PARAM_SIGNALS_DESC);
+            min_value:  0;
+            max_value:  2;
+            def_value:  1;
+            names:  {
+						0: string(STR_PARAM_SIGNALS_DISABLED);
+						1: string(STR_PARAM_SIGNALS_VERTICAL);
+						2: string(STR_PARAM_SIGNALS_HORIZONTAL);
+			};
+        }
+	}
     param {
         param_tunnels {
             type:   int;
@@ -26,20 +63,6 @@ grf {
 						3: string(STR_PARAM_TUNNELS_UBIFY);
 			};
         }
-	}
-	param {
-		param_intro_year {
-			type:      int;
-			name:      string(STR_PARAM_INTRO_YEAR_NAME);
-			desc:      string(STR_PARAM_INTRO_YEAR_DESC);
-			min_value: 0;
-			max_value: 1;
-			def_value: 0;
-			names: {
-				0: string(STR_PARAM_INTRO_YEAR_DEF);
-				1: string(STR_PARAM_INTRO_YEAR_REMOVE);
-			};
-		}
 	}
 	param {
 		param_speed_units {
@@ -107,7 +130,7 @@ grf {
 			desc:      string(STR_PARAM_SPEED_LIMIT_DESC, string(STR_ROAD_ASF0_NAME));
 			min_value: 0;
 			max_value: 1000;
-			def_value: 50;
+			def_value: 51;
 		}
 	}
 	

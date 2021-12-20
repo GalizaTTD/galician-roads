@@ -125,3 +125,14 @@ template roadCatenaryTemplate () {
     [240, 240, 64, 46, -31, -23]  // Bridge SW Slope
     [320, 240, 64, 54, -31, -23]  // Bridge NW Slope
 }
+
+// One Way Signals
+
+template roadSignalsTemplate () {
+    [  0,  0, 34, 22, -26, -9]  // SW-NE forbidden
+    [ 40,  0, 34, 22, -6, -20]  // SW-NE one way
+    [ 80,  0, 41, 24, -21, -15, ANIM]	// Bothways NE-SW
+    [  0, 25, 34, 22, -26, -20] // NW-SE one way
+    [ 40, 25, 34, 22, -6, -9]   // NW-SE forbidden
+    [ 80, 25, 41, 24, -18, -15, ANIM]	// Bothways NW-SE
+}

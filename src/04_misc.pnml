@@ -6,37 +6,45 @@
 */
 
 // Nas cidades pon unha capa base. Esto configura as aceras empedradas para que sexa consistente
-replace replace_road_city_universal (1313,"src/gfx/roads/ASF1/underlayCity.gimp.png") {
-	roadUnderlayTemplate()
-}
+replace replace_road_city_universal (1313,"src/gfx/roads/ASF1/underlayCity.gimp.png") { roadUnderlayTemplate()}
 
 // Parámetro que decide que sináis de un só sentido, horizontal ou vertical
+if (param_signals == SIGNALS_VERTICAL){	
+	replacenew replace_oneway_signals_vertical (ONE_WAY_ROAD, "src/gfx/roads/misc_vertical_signs.gimp.png") {	roadSignalsTemplate()	}
+}else if(param_signals == SIGNALS_HORIZONTAL) {
+	replacenew replace_oneway_signals_horizontal (ONE_WAY_ROAD, "src/gfx/roads/misc_horizontal_signs.gimp.png") {	roadSignalsTemplate()	}
+}
+
 // Parada de bús e estación personalizadas?
-
-
-
-
-/* 
-replace replace_road_city_universal (1313, "gfx/misc_sprites.png") { //replaces the base sprites to make sure city roads stay consistent across base sets
-	template_roads_main_new(1, 1)
-}
-replacenew replace_oneway_road_overlays (ONE_WAY_ROAD, "gfx/misc_sprites.png") {
-	[ 1,          113,       17,      9,       -6,       -6]
-	[ 23,         113,       17,      9,      -10,       -5]
-	[ 45,         113,       41,     24,      -21,      -15, ANIM]
-	[ 91,         113,       17,      9,       -6,       -5]
-	[ 113,        113,       17,      9,       -8,       -6]
-	[ 135,        113,       41,     24,      -18,      -15, ANIM]
-}
-
-if (climate == CLIMATE_TROPICAL) { //OpenGFX subtropic city trees need custom offsets to compensate for roads being slightly wider than standard
-	replace replace_subtropical_city_trees (4626, "gfx/misc_sprites.png") { 
-		[ 1,         73,       20,    35,      -9,      -31]
+if (param_custom_road_stops) {
+	replace busTerminalStops (2700,  "src/gfx/roads/misc_stops_autobus.gimp.png") {	
+		[  0,  0,  64, 44,  -5, -26]
+		[ 80,  0,  64, 44, -31, -13]
+		[160,  0,  64, 44, -31, -13]
+		[240,  0,  64, 44, -57, -26]
+		[  0, 50,  64, 44, -57, -26]
+		[ 80, 50,  64, 44, -11, -29]
+		[160, 50,  64, 44, -25, -16]
+		[240, 50,  64, 44, -31, -13]
+	}
+	replace cargoTerminalStops (2712,  "src/gfx/roads/misc_stops_camion.gimp.png") {	
+		[  0,  0,  64, 44, -61, -28]
+		[ 80,  0,  64, 44, -7, -31]
+		[160,  0,  64, 44, -25, -16]
+		[240,  0,  64, 44, -31, -13]
+		[  0, 50,  64, 44,  -5, -26]
+		[ 80, 50,  64, 44, -31, -13]
+		[160, 50,  64, 44, -31, -13]
+		[240, 50,  64, 44, -57, -26]
+	}
+	replacenew driveThroughStops (ROAD_STOPS,  "src/gfx/roads/misc_stops_travesia.gimp.png") {	
+		[  0,  0,  64, 44,  -5, -26]
+		[ 80,  0,  64, 44, -31, -13]
+		[160,  0,  64, 44, -31, -13]
+		[240,  0,  64, 44, -57, -26]
+		[  0, 50,  64, 44,  -5, -26]
+		[ 80, 50,  64, 44, -31, -13]
+		[160, 50,  64, 44, -31, -13]
+		[240, 50,  64, 44, -57, -26]
 	}
 }
-if (year_loaded < 1920) { //Use old street lights for early games; will switch on game reload
-	replace replace_old_street_lamps (1406, "gfx/misc_sprites.png") { //old street lights
-	[ 26,        94,        4,      14,         1,     -13]
-	[ 35,        94,        4,      14,        -4,     -14]
-	}
-} */
