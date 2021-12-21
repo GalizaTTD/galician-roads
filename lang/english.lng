@@ -106,4 +106,7 @@ STR_TRAM_TIND_MENU          :Industrial tramway construction{LTBLUE}
 # Vehicles
 
 STR_VEHICLES_AUGA_FLUMELOG_NAME		:Log
-STR_VEHICLES_AUGA_FLUMELOG_DESC		:Transport Logs by flume water channels
+STR_VEHICLES_AUGA_FLUMELOG_DESC		:{LTBLUE}Transport Logs by flume water channels
+
+STR_VEHICLES_TRAM_CORU32_NAME		:A Coruña Tram
+STR_VEHICLES_TRAM_CORU32_DESC		:{LTBLUE}A Coruña Historical 32/27 Tram, used between 1997-2011. Model 32 is used when built on even years, Model 27 on odd years.

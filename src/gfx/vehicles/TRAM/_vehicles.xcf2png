@@ -1,3 +1,2 @@
-src/gfx/vehicles/AUGA/log_full.gimp.png          src/xcf/vehicles/AUGA.xcf     Background FULL
-src/gfx/vehicles/AUGA/log_loading.gimp.png          src/xcf/vehicles/AUGA.xcf     Background LOADING
-src/gfx/vehicles/AUGA/log_empty.gimp.png          src/xcf/vehicles/AUGA.xcf     Background EMPTY
+src/gfx/vehicles/TRAM/coru32.gimp.png          src/xcf/vehicles/TRAM.xcf     Background CORU32
+src/gfx/vehicles/TRAM/coru27.gimp.png          src/xcf/vehicles/TRAM.xcf     Background CORU27
