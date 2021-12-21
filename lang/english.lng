@@ -46,6 +46,10 @@ STR_TRAM_BUILD_VEHICLE             :Build New Tram Vehicles
 STR_TRAM_AUTOREPLACE               :Tram Vehicles
 STR_TRAM_NEW_ENGINE                :tram
 
+STR_AUGA_BUILD_VEHICLE             :New Logs
+STR_AUGA_AUTOREPLACE               :Flume Logs
+STR_AUGA_NEW_ENGINE                :flume
+
 # Cadeas de texto das estradas 
 STR_ROAD_SETT_NAME          :Stone paved road
 STR_ROAD_SETT_TOOLBAR       :Stone paved road construction{LTBLUE}
@@ -98,3 +102,8 @@ STR_TRAM_ELRL_MENU          :Electric tramway construction{LTBLUE}
 STR_TRAM_TIND_NAME          :Industrial tramway
 STR_TRAM_TIND_TOOLBAR       :Industrial tramway construction{LTBLUE}
 STR_TRAM_TIND_MENU          :Industrial tramway construction{LTBLUE}
+
+# Vehicles
+
+STR_VEHICLES_AUGA_FLUMELOG_NAME		:Log
+STR_VEHICLES_AUGA_FLUMELOG_DESC		:Transport Logs by flume water channels

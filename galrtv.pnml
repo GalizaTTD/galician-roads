@@ -14,11 +14,8 @@
 
 #include "src/02_def_common.pnml" 
 #include "src/03_road_templates.pnml" 
-#include "src/04_misc.pnml" 
-
-
-
-#include "src/10_tunnels.pnml"
+#include "src/04_road_misc.pnml" 
+#include "src/05_road_tunnels.pnml"
 
 #include "src/road_SETT.pnml"
 #include "src/road_GRAV.pnml"
@@ -37,3 +34,6 @@
 
 
 #include "src/road_ROAD.pnml"
+
+
+#include "src/vehicles_AUGA.pnml"

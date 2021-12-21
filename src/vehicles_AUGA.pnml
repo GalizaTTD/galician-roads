@@ -1,0 +1,89 @@
+
+/*
+#    OpenTTD Galician Roads, Trams & Vehicles (GALRTV) -  Copyright (C) 2021  Pablo Villaverde Castro
+#    This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+#    This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+#	 You should have received a copy of the GNU General Public License along with this program.  If not, see <https://github.com/pvillaverde/openttd-spanish-railsets/blob/main/LICENSE>.
+*/
+
+    sort(FEAT_ROADVEHS, [AUGA_FLUMELOG]);  
+
+	template logFlumeTemplate() {
+		[  0, 20,  8, 18, -12, -10, ANIM]
+		[ 16, 20, 15, 18,  -9, -13, ANIM]
+		[ 48, 20, 20, 16, -10, -15, ANIM]
+		[ 80, 20, 15, 18,   2, -10, ANIM] 
+		[  0,  0,  8, 18,   4, -10, ANIM]
+		[ 16,  0, 15, 18,  -7, -6, ANIM]
+		[ 48,  0, 20, 16, -10, -8, ANIM]
+		[ 80,  0, 15, 18, -12, -9, ANIM]	// NW-SE
+	}
+
+	spriteset (logFlumeEmptySpriteset, "src/gfx/vehicles/AUGA/log_empty.gimp.png") { logFlumeTemplate()}
+	spriteset (logFlumeFullWOODSpriteset, "src/gfx/vehicles/AUGA/log_full_wood.gimp.png") { logFlumeTemplate()}
+	spriteset (logFlumeFullWDPRSpriteset, "src/gfx/vehicles/AUGA/log_full_wdpr.gimp.png") { logFlumeTemplate()}
+	spriteset (logFlumePurchase, "src/gfx/vehicles/AUGA/log_full.gimp.png") { [ 48,  0, 20, 16, -10, -8]}
+
+	spritegroup logFlumeWOODSpritegroup {
+		loading: [logFlumeEmptySpriteset,logFlumeFullWOODSpriteset];
+		loaded: [logFlumeEmptySpriteset,logFlumeFullWOODSpriteset];
+	}
+	spritegroup logFlumeWDPRSpritegroup {
+		loading: [logFlumeEmptySpriteset,logFlumeFullWDPRSpriteset];
+		loaded: [logFlumeEmptySpriteset,logFlumeFullWDPRSpriteset];
+	}
+	switch(FEAT_ROADVEHS, SELF, logFlumePowerSwitch, cargo_count) {
+		0: 1000;
+		1;
+	}
+
+    item(FEAT_ROADVEHS, AUGA_FLUMELOG) {
+
+        property {
+            // common properties 
+            name:							string(STR_VEHICLES_AUGA_FLUMELOG_NAME);
+            climates_available:				ALL_CLIMATES;
+            introduction_date :				0;
+            sprite_id:						SPRITE_ID_NEW_ROADVEH; //use custom sprites
+
+            // Spec
+            power:							0 hp;
+            speed:							160 km/h;
+            weight:							1 ton;
+            length:							1;
+			tractive_effort_coefficient:	0.97;
+		//	air_drag_coefficient:			1;
+
+            // model
+            model_life:						VEHICLE_NEVER_EXPIRES;
+            vehicle_life:					255;
+            retire_early:					0;
+            reliability_decay:				0;
+
+            // cargo 
+            cargo_capacity:					12;
+            refittable_cargo_classes:		NO_CARGO_CLASS;
+            non_refittable_cargo_classes:	NO_CARGO_CLASS;
+            cargo_allow_refit:				[WOOD,WDPR];
+            loading_speed:					2;
+
+            // Costs   
+            cost_factor:					1;
+            running_cost_base:				RUNNING_COST_ROADVEH;
+            running_cost_factor:			1;
+
+            // Flags
+			visual_effect:					VISUAL_EFFECT_ELECTRIC;
+			tram_type:						AUGA;
+            misc_flags:						bitmask(ROADVEH_FLAG_TRAM); //make this a tram
+        }
+
+        graphics {
+            additional_text:			return string(STR_VEHICLES_AUGA_FLUMELOG_DESC);
+            default:					logFlumeWOODSpritegroup;
+			WDPR:						logFlumeWDPRSpritegroup;
+            purchase:					logFlumePurchase;
+			// callbacks
+			power:						logFlumePowerSwitch;
+        }
+    }  

@@ -23,3 +23,7 @@ roadtypetable {
 tramtypetable {
  	AUGA, RAIL, ELRL, TIND
 }
+
+cargotable {
+	PASS, WOOD, WDPR
+}

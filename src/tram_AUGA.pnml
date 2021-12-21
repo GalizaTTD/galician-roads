@@ -1,4 +1,10 @@
 
+/*
+#    OpenTTD Galician Roads, Trams & Vehicles (GALRTV) -  Copyright (C) 2021  Pablo Villaverde Castro
+#    This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+#    This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+#	 You should have received a copy of the GNU General Public License along with this program.  If not, see <https://github.com/pvillaverde/openttd-spanish-railsets/blob/main/LICENSE>.
+*/
 // Underlays
 template augaUnderlayTemplate () {
 	[   0,        0,       64,    31,     -31,        0, ANIM]  // NW-SE
@@ -116,9 +122,9 @@ item(FEAT_TRAMTYPES, item_tram_AUGA) {
 		name:                        string(STR_TRAM_AUGA_NAME);
 		toolbar_caption:             string(STR_TRAM_AUGA_TOOLBAR);
 		menu_text:                   string(STR_TRAM_AUGA_MENU);
-		build_window_caption:        string(STR_TRAM_BUILD_VEHICLE);
-		autoreplace_text:            string(STR_TRAM_AUTOREPLACE);
-		new_engine_text:             string(STR_TRAM_NEW_ENGINE);
+		build_window_caption:        string(STR_AUGA_BUILD_VEHICLE);
+		autoreplace_text:            string(STR_AUGA_AUTOREPLACE);
+		new_engine_text:             string(STR_AUGA_NEW_ENGINE);
 		powered_tramtype_list:       ["AUGA"];
 		tramtype_flags:              bitmask(TRAMTYPE_FLAG_CATENARY, TRAMTYPE_FLAG_NO_HOUSES);
 		speed_limit:                 100 km/h;
