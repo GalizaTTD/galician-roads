@@ -22,7 +22,7 @@
 	spriteset (logFlumeEmptySpriteset, "src/gfx/vehicles/AUGA/log_empty.gimp.png") { logFlumeTemplate()}
 	spriteset (logFlumeFullWOODSpriteset, "src/gfx/vehicles/AUGA/log_full_wood.gimp.png") { logFlumeTemplate()}
 	spriteset (logFlumeFullWDPRSpriteset, "src/gfx/vehicles/AUGA/log_full_wdpr.gimp.png") { logFlumeTemplate()}
-	spriteset (logFlumePurchase, "src/gfx/vehicles/AUGA/log_full.gimp.png") { [ 48,  0, 20, 16, -10, -8]}
+	spriteset (logFlumePurchase, "src/gfx/vehicles/AUGA/log_full_wood.gimp.png") { [ 48,  0, 20, 16, -10, -8]}
 
 	spritegroup logFlumeWOODSpritegroup {
 		loading: [logFlumeEmptySpriteset,logFlumeFullWOODSpriteset];

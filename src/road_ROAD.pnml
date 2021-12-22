@@ -37,27 +37,27 @@ switch (FEAT_ROADTYPES, SELF, ROAD_underlayTownZoneSwitch, town_zone) {
 }
 
 if (param_speed_units == SPEED_UNITY_MPH) {
-	item(FEAT_ROADTYPES, item_road_SETT) {
+	item(FEAT_ROADTYPES, item_road_ROAD) {
 		property {	
 			speed_limit:                 param_speedlimit_SETT mph;
 		}
 	}
 }
 if (param_speed_units == SPEED_UNITY_KMH) {
-	item(FEAT_ROADTYPES, item_road_SETT) {
+	item(FEAT_ROADTYPES, item_road_ROAD) {
 		property {	
 			speed_limit:                 param_speedlimit_SETT km/h;
 		}
 	}
 }
 if (param_speed_units == SPEED_UNITY_MPS) {
-	item(FEAT_ROADTYPES, item_road_SETT) {
+	item(FEAT_ROADTYPES, item_road_ROAD) {
 		property {	
 			speed_limit:                 param_speedlimit_SETT m/s;
 		}
 	}
 }
-item(FEAT_ROADTYPES, item_road_SETT) {
+item(FEAT_ROADTYPES, item_road_ROAD) {
 	property {
 		label:                       "ROAD";
 		introduction_date:           0;

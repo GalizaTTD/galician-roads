@@ -17,7 +17,6 @@
 #include "src/04_road_misc.pnml" 
 #include "src/05_road_tunnels.pnml"
 
-#include "src/road_SETT.pnml"
 #include "src/road_GRAV.pnml"
 #include "src/road_R4X4.pnml"
 #include "src/road_DIRT.pnml"
@@ -26,6 +25,7 @@
 #include "src/road_ASF1.pnml"
 #include "src/road_ASF2.pnml"
 #include "src/road_HWAY.pnml"
+#include "src/road_SETT.pnml"
 
 #include "src/tram_AUGA.pnml"
 #include "src/tram_RAIL.pnml"
