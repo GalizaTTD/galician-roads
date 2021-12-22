@@ -8,8 +8,8 @@ STR_GRF_DESCRIPTION :{TITLE} - Set of Roads, Trams & Road Vehicles for GalizaTTD
 STR_MIN_OPENTTD_VERSION  :Requires OpenTTD >= 1.12.0
 
 STR_PARAM_INTRO_YEAR_NAME      :Roadtype Availability
-STR_PARAM_INTRO_YEAR_DESC      :This parameter changes the availability of roadtypes based on date. {ORANGE}Year-Dependent{BLACK} is default behavior where each roadtype is introduced only after certain years, while {ORANGE}Always Available{BLACK} makes all roadtypes, well, always available
-STR_PARAM_INTRO_YEAR_DEF       :Year-Dependent {SILVER}(Default)
+STR_PARAM_INTRO_YEAR_DESC      :Controls when are roadypes available. {}{ORANGE}Historical{BLACK} is default behavior where each roadtype is introduced at specific dates. {}{ORANGE}Always Available{BLACK} makes all roadtypes, well, always available
+STR_PARAM_INTRO_YEAR_DEF       :Historical {SILVER}(Default)
 STR_PARAM_INTRO_YEAR_REMOVE    :Always Available
 
 STR_PARAM_TUNNELS_NAME             		 	:Tunnel Sprites
@@ -20,18 +20,18 @@ STR_PARAM_TUNNELS_CLASSIC					:Classic
 STR_PARAM_TUNNELS_UBIFY						:Ubify U&RaTT (default)
 
 STR_PARAM_CUSTOM_ROAD_STOPS_NAME             :Custom Road Stops
-STR_PARAM_CUSTOM_ROAD_STOPS_DESC             :Choose Road Stops style
+STR_PARAM_CUSTOM_ROAD_STOPS_DESC             :Choose truck, bus & tram stops sprites
 
 STR_PARAM_SIGNALS_NAME             		 	:Custom One Way Signals
 STR_PARAM_SIGNALS_DESC              		:Choose the type of one way signals
 STR_PARAM_SIGNALS_DISABLED					:Disabled
-STR_PARAM_SIGNALS_VERTICAL					:Vertical signs (default)
-STR_PARAM_SIGNALS_HORIZONTAL				:Horizontal signs (painted arrows)
+STR_PARAM_SIGNALS_VERTICAL					:Vertical signs
+STR_PARAM_SIGNALS_HORIZONTAL				:Horizontal signs (default painted arrows)
 
 STR_PARAM_SPEED_UNITS_NAME     :Speed Units
-STR_PARAM_SPEED_UNITS_DESC     :Choose your preferred units for speed {ORANGE}(make sure this is the same as your game setting!){BLACK}. This makes sure your speed limits look 'realistic', e.g. no more silly 57 km/h speed limits due to unit conversions
+STR_PARAM_SPEED_UNITS_DESC     :Choose your preferred units for speed.
 STR_PARAM_UNITS_MPH            :MPH
-STR_PARAM_UNITS_KMH            :KM/H
+STR_PARAM_UNITS_KMH            :KM/H (default)
 STR_PARAM_UNITS_MPS            :M/S
 
 STR_PARAM_SPEED_LIMIT_NAME               :Speed Limits for {WHITE}{STRING}

@@ -1,0 +1,112 @@
+##grflangid 0x04
+##plural 0
+# This is the English language file
+
+# GRF name and description
+STR_GRF_NAME        :Carreteras, Tranvías y Vehículos de Galicia (GALRTV) {VERSION}
+STR_GRF_DESCRIPTION :{TITLE} - Conjunto de carreteras, tranvías y vehículos de carretera para GalizaTTD.
+STR_MIN_OPENTTD_VERSION  :Require OpenTTD >= 1.12.0
+
+STR_PARAM_INTRO_YEAR_NAME      :Disponibilidad de las carreteras
+STR_PARAM_INTRO_YEAR_DESC      :Controla cuando están disponibles las carreteras:{}{ORANGE}Histórico{BLACK} es el comportamiento por defecto donde se introducen en unas fechas determinadas.{}{ORANGE}Siempre disponibles{BLACK} hace que las carreteras siempre estean disponibles
+STR_PARAM_INTRO_YEAR_DEF       :Histórico {SILVER}(por defecto)
+STR_PARAM_INTRO_YEAR_REMOVE    :Siempre disponibles
+
+STR_PARAM_TUNNELS_NAME             		 	:Gráficos de los túneles
+STR_PARAM_TUNNELS_DESC              		:Escoje los sprites que utilizan los túneles de carretera
+STR_PARAM_TUNNELS_DISABLED					:Deshabilitado
+STR_PARAM_TUNNELS_OPENGFX					:OpenGFX
+STR_PARAM_TUNNELS_CLASSIC					:Clásicos
+STR_PARAM_TUNNELS_UBIFY						:Ubify U&RaTT (por defecto)
+
+STR_PARAM_CUSTOM_ROAD_STOPS_NAME             :Paradas personalizadas
+STR_PARAM_CUSTOM_ROAD_STOPS_DESC             :Escoje los sprites de las paradas de autobús, tranvía y camión
+
+STR_PARAM_SIGNALS_NAME             		 	:Señales de un solo sentido personalizadas
+STR_PARAM_SIGNALS_DESC              		:Escoje el tipo de señales de un solo sentido
+STR_PARAM_SIGNALS_DISABLED					:Deshabilitado
+STR_PARAM_SIGNALS_VERTICAL					:Señales verticales
+STR_PARAM_SIGNALS_HORIZONTAL				:Señales horizontales (flechas pintadas, por defecto)
+
+STR_PARAM_SPEED_UNITS_NAME     :Unidad de velocidad
+STR_PARAM_SPEED_UNITS_DESC     :Escoje tu unidad preferida de velocidad para definir los límites.
+STR_PARAM_UNITS_MPH            :MPH
+STR_PARAM_UNITS_KMH            :KM/H (por defecto)
+STR_PARAM_UNITS_MPS            :M/S
+
+STR_PARAM_SPEED_LIMIT_NAME               :Límite de velocidad para: {WHITE}{STRING}
+STR_PARAM_SPEED_LIMIT_DESC               :Ajusta el límite de velocidad de: {LTBLUE}{STRING}{WHITE}.{}Hay un problema con el redondeo de unidades. Si ves que pasa, añade o quita una unidad según lo que necesites.
+
+# Cadenas de texto xenéricas para todas as estradas
+STR_GENERIC_BUILD_VEHICLE            :Construír nuevos vehículos de carretera
+STR_GENERIC_AUTOREPLACE              :Vehículos de carretera
+STR_GENERIC_NEW_ENGINE               :carretera
+
+STR_TRAM_BUILD_VEHICLE             :Construír nuevos tranvías
+STR_TRAM_AUTOREPLACE               :Tranvías
+STR_TRAM_NEW_ENGINE                :tranvía
+
+STR_AUGA_BUILD_VEHICLE             :Nuevos troncos
+STR_AUGA_AUTOREPLACE               :Troncos de arboriducto
+STR_AUGA_NEW_ENGINE                :arboriducto
+
+# Cadeas de texto das estradas 
+STR_ROAD_SETT_NAME          :Calzada de piedra
+STR_ROAD_SETT_TOOLBAR       :Construír Calzada de piedra{LTBLUE}
+STR_ROAD_SETT_MENU          :Construír Calzada de piedra{LTBLUE}
+
+STR_ROAD_R4X4_NAME          :Pista forestal
+STR_ROAD_R4X4_TOOLBAR       :Construír pista forestal{LTBLUE}
+STR_ROAD_R4X4_MENU          :Construír pista forestal{LTBLUE}
+
+STR_ROAD_DIRT_NAME          :Pista de tierra
+STR_ROAD_DIRT_TOOLBAR       :Construír pista de tierra{LTBLUE}
+STR_ROAD_DIRT_MENU          :Construír pista de tierra{LTBLUE}
+
+STR_ROAD_GRAV_NAME          :Pista de grava
+STR_ROAD_GRAV_TOOLBAR       :Construír pista de grava{LTBLUE}
+STR_ROAD_GRAV_MENU          :Construír pista de grava{LTBLUE}
+
+STR_ROAD_EIND_NAME          :Carretera industrial
+STR_ROAD_EIND_TOOLBAR       :Construír carretera industrial{LTBLUE}
+STR_ROAD_EIND_MENU          :Construír carretera industrial{LTBLUE}
+
+STR_ROAD_ASF0_NAME          :Pista de asfalto
+STR_ROAD_ASF0_TOOLBAR       :Construír pista de asfalto{LTBLUE}
+STR_ROAD_ASF0_MENU          :Construír pista de asfalto{LTBLUE}
+
+STR_ROAD_ASF1_NAME          :Carretera con señalización
+STR_ROAD_ASF1_TOOLBAR       :Construír carretera con señalización{LTBLUE}
+STR_ROAD_ASF1_MENU          :Construír carretera con señalización{LTBLUE}
+
+STR_ROAD_ASF2_NAME          :Carretera moderna con señalización
+STR_ROAD_ASF2_TOOLBAR       :Construír carretera moderna con señalización{LTBLUE}
+STR_ROAD_ASF2_MENU          :Construír carretera moderna con señalización{LTBLUE}
+
+STR_ROAD_HWAY_NAME          :Autopista
+STR_ROAD_HWAY_TOOLBAR       :Construír autopista{LTBLUE}
+STR_ROAD_HWAY_MENU          :Construír autopista{LTBLUE}
+
+STR_TRAM_AUGA_NAME          :Arboriducto
+STR_TRAM_AUGA_TOOLBAR       :Construír arboriducto{LTBLUE}
+STR_TRAM_AUGA_MENU          :Construír arboriducto{LTBLUE}
+
+STR_TRAM_RAIL_NAME          :Tranvía
+STR_TRAM_RAIL_TOOLBAR       :Construír tranvía{LTBLUE}
+STR_TRAM_RAIL_MENU          :Construír tranvía{LTBLUE}
+
+STR_TRAM_ELRL_NAME          :Tranvía eléctrico
+STR_TRAM_ELRL_TOOLBAR       :Construír tranvía eléctrico{LTBLUE}
+STR_TRAM_ELRL_MENU          :Construír tranvía eléctrico{LTBLUE}
+
+STR_TRAM_TIND_NAME          :Tranvía industrial
+STR_TRAM_TIND_TOOLBAR       :Construír tranvía industrial{LTBLUE}
+STR_TRAM_TIND_MENU          :Construír tranvía industrial{LTBLUE}
+
+# Vehicles
+
+STR_VEHICLES_AUGA_FLUMELOG_NAME		:Tronco
+STR_VEHICLES_AUGA_FLUMELOG_DESC		:{LTBLUE}Transporta madera mediante arboriductos
+
+STR_VEHICLES_TRAM_CORU32_NAME		:Tranvía Histórico de A Coruña
+STR_VEHICLES_TRAM_CORU32_DESC		:{LTBLUE}Tranvías históricos de A Coruña (32/27) utilizados entre 1997 u 2011. El modelo 32 se utiliza cuando se construye en años pares. El modelo 27 en los años impares.
