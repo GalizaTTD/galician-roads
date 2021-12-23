@@ -52,16 +52,16 @@ STR_AUGA_NEW_ENGINE                :arboriducto
 
 # Cadeas de texto das estradas 
 STR_ROAD_SETT_NAME          :Calzada de piedra
-STR_ROAD_SETT_TOOLBAR       :Construír Calzada de piedra{LTBLUE}
-STR_ROAD_SETT_MENU          :Construír Calzada de piedra{LTBLUE}
+STR_ROAD_SETT_TOOLBAR       :Construír calzada de piedra{LTBLUE}
+STR_ROAD_SETT_MENU          :Construír calzada de piedra{LTBLUE}
 
 STR_ROAD_R4X4_NAME          :Pista forestal
 STR_ROAD_R4X4_TOOLBAR       :Construír pista forestal{LTBLUE}
 STR_ROAD_R4X4_MENU          :Construír pista forestal{LTBLUE}
 
-STR_ROAD_DIRT_NAME          :Pista de tierra
-STR_ROAD_DIRT_TOOLBAR       :Construír pista de tierra{LTBLUE}
-STR_ROAD_DIRT_MENU          :Construír pista de tierra{LTBLUE}
+STR_ROAD_DIRT_NAME          :Camino de tierra
+STR_ROAD_DIRT_TOOLBAR       :Construír camino de tierra{LTBLUE}
+STR_ROAD_DIRT_MENU          :Construír camino de tierra{LTBLUE}
 
 STR_ROAD_GRAV_NAME          :Pista de grava
 STR_ROAD_GRAV_TOOLBAR       :Construír pista de grava{LTBLUE}
@@ -71,17 +71,17 @@ STR_ROAD_EIND_NAME          :Carretera industrial
 STR_ROAD_EIND_TOOLBAR       :Construír carretera industrial{LTBLUE}
 STR_ROAD_EIND_MENU          :Construír carretera industrial{LTBLUE}
 
-STR_ROAD_ASF0_NAME          :Pista de asfalto
-STR_ROAD_ASF0_TOOLBAR       :Construír pista de asfalto{LTBLUE}
-STR_ROAD_ASF0_MENU          :Construír pista de asfalto{LTBLUE}
+STR_ROAD_ASF0_NAME          :Carretera asfaltada
+STR_ROAD_ASF0_TOOLBAR       :Construír carretera asfaltada{LTBLUE}
+STR_ROAD_ASF0_MENU          :Construír carretera asfaltada{LTBLUE}
 
-STR_ROAD_ASF1_NAME          :Carretera con señalización
-STR_ROAD_ASF1_TOOLBAR       :Construír carretera con señalización{LTBLUE}
-STR_ROAD_ASF1_MENU          :Construír carretera con señalización{LTBLUE}
+STR_ROAD_ASF1_NAME          :Carretera moderna
+STR_ROAD_ASF1_TOOLBAR       :Construír carretera moderna{LTBLUE}
+STR_ROAD_ASF1_MENU          :Construír carretera moderna{LTBLUE}
 
-STR_ROAD_ASF2_NAME          :Carretera moderna con señalización
-STR_ROAD_ASF2_TOOLBAR       :Construír carretera moderna con señalización{LTBLUE}
-STR_ROAD_ASF2_MENU          :Construír carretera moderna con señalización{LTBLUE}
+STR_ROAD_ASF2_NAME          :Carretera moderna mejorada
+STR_ROAD_ASF2_TOOLBAR       :Construír carretera moderna mejorada{LTBLUE}
+STR_ROAD_ASF2_MENU          :Construír carretera moderna mejorada{LTBLUE}
 
 STR_ROAD_HWAY_NAME          :Autopista
 STR_ROAD_HWAY_TOOLBAR       :Construír autopista{LTBLUE}
@@ -95,9 +95,9 @@ STR_TRAM_RAIL_NAME          :Tranvía
 STR_TRAM_RAIL_TOOLBAR       :Construír tranvía{LTBLUE}
 STR_TRAM_RAIL_MENU          :Construír tranvía{LTBLUE}
 
-STR_TRAM_ELRL_NAME          :Tranvía eléctrico
-STR_TRAM_ELRL_TOOLBAR       :Construír tranvía eléctrico{LTBLUE}
-STR_TRAM_ELRL_MENU          :Construír tranvía eléctrico{LTBLUE}
+STR_TRAM_ELRL_NAME          :Tranvía electrificado
+STR_TRAM_ELRL_TOOLBAR       :Construír tranvía electrificado{LTBLUE}
+STR_TRAM_ELRL_MENU          :Construír tranvía electrificado{LTBLUE}
 
 STR_TRAM_TIND_NAME          :Tranvía industrial
 STR_TRAM_TIND_TOOLBAR       :Construír tranvía industrial{LTBLUE}

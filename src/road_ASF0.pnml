@@ -107,7 +107,7 @@ item(FEAT_ROADTYPES, item_road_ASF0) {
 		roadtype_flags:              bitmask(ROADTYPE_FLAG_TOWN_BUILD);
 		construction_cost:           4;
 		maintenance_cost:            8;
-		sort_order:                  04;
+		sort_order:                  05;
 	}
 	graphics {
 		gui:						 ASF0_guiSpriteset;

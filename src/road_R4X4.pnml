@@ -72,7 +72,7 @@ item(FEAT_ROADTYPES, item_road_R4X4) {
 	//	roadtype_flags:              bitmask(ROADTYPE_FLAG_TOWN_BUILD);
 		construction_cost:           1;
 		maintenance_cost:            2;
-		sort_order:                  01;		
+		sort_order:                  02;		
 	}
 	graphics {
 		gui:						 R4X4_guiSpriteset;

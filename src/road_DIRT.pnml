@@ -86,7 +86,7 @@ item(FEAT_ROADTYPES, item_road_DIRT) {
 	//	roadtype_flags:              bitmask(ROADTYPE_FLAG_TOWN_BUILD);
 		construction_cost:           2;
 		maintenance_cost:            4;
-		sort_order:                  02;			
+		sort_order:                  01;			
 	}
 	graphics {
 		gui:						 DIRT_guiSpriteset;
