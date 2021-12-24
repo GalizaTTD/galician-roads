@@ -1,14 +1,14 @@
-# Galician Roads, Trams & Vehicles (GALRTV)
+# Galician Roads, Trams & Vehicles (GALVET)
 [![GitHub license][license-shield]][license-url] [![BaNaNaS URL][bananas-shield]][bananas-url]
 
-![Galician Roads, Trams & Vehicles (GALRTV)](https://i.imgur.com/rK4ZdOV.png)
+![Galician Roads, Trams & Vehicles (GALVET)](https://i.imgur.com/rK4ZdOV.png)
 
 <!-- TABLE OF CONTENTS, generated with gh-md-toc README.md (see #acknowledgements) -->
 
 Table of Contents
 =================
 
-* [Galician Roads, Trams &amp; Vehicles (GALRTV)](#galician-roads-trams--vehicles-galrtv)
+* [Galician Roads, Trams &amp; Vehicles (GALVET)](#galician-roads-trams--vehicles-galvet)
 * [Table of Contents](#table-of-contents)
    * [About The Project](#about-the-project)
    * [Getting Started](#getting-started)

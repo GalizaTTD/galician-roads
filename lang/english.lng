@@ -3,7 +3,7 @@
 # This is the English language file
 
 # GRF name and description
-STR_GRF_NAME        :Galician Roads, Trams & Vehicles (GALRTV) {VERSION}
+STR_GRF_NAME        :GALVET {VERSION}
 STR_GRF_DESCRIPTION :{TITLE} - Set of Roads, Trams & Road Vehicles for GalizaTTD.
 STR_MIN_OPENTTD_VERSION  :Requires OpenTTD >= 1.12.0
 

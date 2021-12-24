@@ -3,7 +3,7 @@
 # This is the English language file
 
 # GRF name and description
-STR_GRF_NAME        :Carreteras, Tranvías y Vehículos de Galicia (GALRTV) {VERSION}
+STR_GRF_NAME        :GALVET {VERSION}
 STR_GRF_DESCRIPTION :{TITLE} - Conjunto de carreteras, tranvías y vehículos de carretera para GalizaTTD.
 STR_MIN_OPENTTD_VERSION  :Require OpenTTD >= 1.12.0
 
