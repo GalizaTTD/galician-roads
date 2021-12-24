@@ -1,14 +1,14 @@
 # Galician Roads, Trams & Vehicles (GALRTV)
 [![GitHub license][license-shield]][license-url] [![BaNaNaS URL][bananas-shield]][bananas-url]
 
-<!-- ![Galician Roads, Trams & Vehicles (GALRTV)](https://i.imgur.com/hh4OoUU.png) -->
+![Galician Roads, Trams & Vehicles (GALRTV)](https://i.imgur.com/rK4ZdOV.png)
 
 <!-- TABLE OF CONTENTS, generated with gh-md-toc README.md (see #acknowledgements) -->
 
 Table of Contents
 =================
 
-* [Galician Roads, Trams & Vehicles (GALRTV)](#spanish-railsets)
+* [Galician Roads, Trams &amp; Vehicles (GALRTV)](#galician-roads-trams--vehicles-galrtv)
 * [Table of Contents](#table-of-contents)
    * [About The Project](#about-the-project)
    * [Getting Started](#getting-started)
@@ -25,7 +25,7 @@ Table of Contents
 
 ## About The Project
 
-Customizes your landscapes by choosing which foundations or tunnels to use.
+Set of Roads, Trams & Road Vehicles for GalizaTTD.
 
 
 <!-- GETTING STARTED -->
@@ -52,7 +52,7 @@ Customizes your landscapes by choosing which foundations or tunnels to use.
 
 - Once installed, choose parameters that best suit your needs and start a new game.
 
-<!-- ![Available Tracks](https://i.imgur.com/JyuMzEy.png) -->
+![Available Roads](https://i.imgur.com/Aaxqk1p.png)
 
 <!-- CONTRIBUTING -->
 
@@ -69,9 +69,9 @@ If you want to add any missing feature or report a bug, you [can request ir or r
 ## Authors
 
 - Pablo Villaverde Castro - [@clankirfed](https://twitter.com/clankirfed)
-- OpenGFX(Foundations, RoadTunnels, Trees) - https://github.com/OpenTTD/OpenGFX
-- EmperorJake ([LGBT Flags](https://github.com/EmperorJake/LGBTflags))
-- SAC ([INFRA "Stolen Trees"](http://www.simuscape.net/simutalk/viewtopic.php?p=1597#p1597))
+- OpenGFX(RoadTunnels) - https://github.com/OpenTTD/OpenGFX
+- Andrew350 ([RaTTRoads](https://www.tt-forums.net/viewtopic.php?t=76183))
+- Ubify ([URaTT](https://github.com/Ufiby/U-RaTT))
 
 
 <!-- ACKNOWLEDGEMENTS -->
