@@ -67,6 +67,7 @@ elif [ -d "$ROOT_DIR/.git" ] || [ -f "$ROOT_DIR/.git" ]; then
 	ISODATE=`LC_ALL=C git show -s --pretty='format:%ci' HEAD | "$AWK" '{ gsub("-", "", $1); print $1 }'`
 	BRANCH="`git symbolic-ref -q HEAD 2>/dev/null | sed 's@.*/@@'`"
 	TAG="`git name-rev --name-only --tags --no-undefined HEAD 2>/dev/null | sed 's@\^0$@@'`"
+	LASTTAG="`git describe --abbrev=0 2>/dev/null`"
 
 	if [ "$MODIFIED" -eq "0" ]; then
 		hashprefix="-g"
@@ -78,14 +79,21 @@ elif [ -d "$ROOT_DIR/.git" ] || [ -f "$ROOT_DIR/.git" ]; then
 
 	if [ -n "$TAG" ]; then
 		VERSION="${TAG}"
+		VERSION_STRING="${VERSION}-${ISODATE}-${BRANCH}${hashprefix}${SHORTHASH}"
 		ISTAG="1"
 		if [ -n "`echo \"${TAG}\" | grep \"^[0-9.]*$\"`" ]; then
 			ISSTABLETAG="1"
 		else
 			ISSTABLETAG="0"
 		fi
+	elif [ -n "$LASTTAG" ]; then
+		VERSION="${LASTTAG}-rc.`git rev-list ${LASTTAG}.. --count`"
+		VERSION_STRING="${VERSION}-${ISODATE}-${BRANCH}${hashprefix}${SHORTHASH}"
+		ISTAG="0"
+		ISSTABLETAG="0"
 	else
-		VERSION="${ISODATE}-${BRANCH}${hashprefix}${SHORTHASH}"
+		VERSION="alpha-`git rev-list HEAD --count`"
+		VERSION_STRING="${VERSION}-${ISODATE}-${BRANCH}${hashprefix}${SHORTHASH}"
 		ISTAG="0"
 		ISSTABLETAG="0"
 	fi
@@ -102,4 +110,4 @@ else
 	ISSTABLETAG="0"
 fi
 
-echo "$VERSION	$ISODATE	$MODIFIED	$HASH	$ISTAG	$ISSTABLETAG"
+echo "$VERSION	$ISODATE	$MODIFIED	$HASH	$ISTAG	$ISSTABLETAG	$VERSION_STRING"

@@ -3,8 +3,8 @@
 # This is the English language file
 
 # GRF name and description
-STR_GRF_NAME        :GALVET {VERSION}
-STR_GRF_DESCRIPTION :{TITLE} - Conxunto de estradas, tranvías e vehículos de estrada para GalizaTTD.
+STR_GRF_NAME        :{TITLE} {VERSION}
+STR_GRF_DESCRIPTION :{LTBLUE}Versión: {VERSION_STRING}{}{ORANGE}{TITLE} - {SILVER}Conxunto de estradas, tranvías e vehículos de estrada para GalizaTTD.{}{}{COPYRIGHT}{AUTHORS}
 STR_MIN_OPENTTD_VERSION  :Require OpenTTD >= 1.12.0
 
 STR_PARAM_INTRO_YEAR_NAME      :Dispoñibilidade das estradas
