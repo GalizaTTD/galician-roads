@@ -72,6 +72,7 @@ If you want to add any missing feature or report a bug, you [can request ir or r
 - OpenGFX(RoadTunnels) - https://github.com/OpenTTD/OpenGFX
 - Andrew350 ([RaTTRoads](https://www.tt-forums.net/viewtopic.php?t=76183))
 - Ubify ([URaTT](https://github.com/Ufiby/U-RaTT))
+- Supermop ([Flumes](https://www.tt-forums.net/viewtopic.php?style=4&f=67&t=88702))
 
 
 <!-- ACKNOWLEDGEMENTS -->
