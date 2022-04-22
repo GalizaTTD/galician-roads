@@ -12,6 +12,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 ### Fixed
 -->
+## [1.0.1]
+
+### Fixed
+
+- Wrong orientation in most vehicle depots, causing confussion when placing them.
 ## [1.0.0]
 
 ### Added
@@ -23,4 +28,3 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Road tunnels parameter (Choose tunnels between Classic, OpenGFX and Ubify)
 - Speed limit customization for each track via parameter
 - Choose original or Ubify road stops.
-- 

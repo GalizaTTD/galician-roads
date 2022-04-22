@@ -42,7 +42,7 @@ Set of Roads, Trams & Road Vehicles for GalizaTTD.
 ### How to Compile it (from Linux)
 
 - [Install NML with its requirements](http://newgrf-specs.tt-wiki.net/wiki/NML:Getting_started)
-- Download last version from this repository <https://github.com/GalizaTTD/galician-landscape>
+- Download last version from this repository <https://github.com/GalizaTTD/galician-roads>
 - "pandoc" command is used to generate txt docs from github docs (LICENSE, CHANGELOG & README)
 - In order to compile the NewGRF you only need to execute `make` command.
 - You can install it directly on the game customizing `INSTALL_DIR` on `Makefile.config` and running `make install`.
@@ -95,8 +95,8 @@ Distributed under the GNU GPL-v3 License. See [LICENSE][license-url] on for more
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [license-shield]: https://img.shields.io/badge/license-GNU%20GPL--v3-brightgreen
-[bananas-shield]: https://img.shields.io/badge/BaNaNaS-1.0-informational
-[license-url]: https://github.com/GalizaTTD/galician-landscape/blob/main/LICENSE
-[project-url]: https://github.com/GalizaTTD/galician-landscape
-[issues-url]: https://github.com/GalizaTTD/galician-landscape/issues
-[bananas-url]: https://bananas.openttd.org/package/newgrf/4b463031
+[bananas-shield]: https://img.shields.io/badge/BaNaNaS-1.0.1-informational
+[license-url]: https://github.com/GalizaTTD/galician-roads/blob/main/LICENSE
+[project-url]: https://github.com/GalizaTTD/galician-roads
+[issues-url]: https://github.com/GalizaTTD/galician-roads/issues
+[bananas-url]: https://bananas.openttd.org/manager/newgrf/4b463034
