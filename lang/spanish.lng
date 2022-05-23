@@ -40,7 +40,7 @@ STR_PARAM_SPEED_LIMIT_DESC               :Ajusta el límite de velocidad de: {LT
 # Cadenas de texto xenéricas para todas as estradas
 STR_GENERIC_BUILD_VEHICLE            :Construír nuevos vehículos de carretera
 STR_GENERIC_AUTOREPLACE              :Vehículos de carretera
-STR_GENERIC_NEW_ENGINE               :carretera
+STR_GENERIC_NEW_ENGINE               :vehículo de carretera
 
 STR_TRAM_BUILD_VEHICLE             :Construír nuevos tranvías
 STR_TRAM_AUTOREPLACE               :Tranvías

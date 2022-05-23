@@ -1,6 +1,7 @@
 ##grflangid 0x31
 ##plural 0
-# This is the English language file
+##gender m f
+# This is the Galician language file
 
 # GRF name and description
 STR_GRF_NAME        :{TITLE} {VERSION}
@@ -40,15 +41,15 @@ STR_PARAM_SPEED_LIMIT_DESC               :Axusta o límite de velocidade de: {LT
 # Cadenas de texto xenéricas para todas as estradas
 STR_GENERIC_BUILD_VEHICLE            :Construír novos vehículos de estrada
 STR_GENERIC_AUTOREPLACE              :Vehículos de estrada
-STR_GENERIC_NEW_ENGINE               :estrada
+STR_GENERIC_NEW_ENGINE               :{G=m}vehículo de estrada
 
 STR_TRAM_BUILD_VEHICLE             :Construír novos tranvías
 STR_TRAM_AUTOREPLACE               :Tranvías
-STR_TRAM_NEW_ENGINE                :tranvía
+STR_TRAM_NEW_ENGINE                :{G=m}tranvía
 
 STR_AUGA_BUILD_VEHICLE             :Novos troncos
 STR_AUGA_AUTOREPLACE               :Troncos de arboriducto
-STR_AUGA_NEW_ENGINE                :arboriducto
+STR_AUGA_NEW_ENGINE                :{G=m}arboriducto
 
 # Cadeas de texto das estradas 
 STR_ROAD_SETT_NAME          :Calzada de pedra
