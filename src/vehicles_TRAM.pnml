@@ -65,7 +65,7 @@
 
             // Flags
 			visual_effect:					VISUAL_EFFECT_ELECTRIC;
-			sound_effect:					SOUND_ELECTRIC_SPARK;
+			sound_effect:					sound("src/wav/tram_bell.wav");
 			tram_type:						ELRL;
             misc_flags:						bitmask(ROADVEH_FLAG_TRAM); //make this a tram
         }
