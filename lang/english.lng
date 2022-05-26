@@ -19,6 +19,11 @@ STR_PARAM_TUNNELS_OPENGFX					:OpenGFX
 STR_PARAM_TUNNELS_CLASSIC					:Classic
 STR_PARAM_TUNNELS_UBIFY						:Ubify U&RaTT (default)
 
+STR_PARAM_FLUME_NAME             		 	:Flume transport
+STR_PARAM_FLUME_DESC              			:Choose to enable or not the flume transport (logs down the mountain in water)
+STR_PARAM_FLUME_DISABLED					:Disabled
+STR_PARAM_FLUME_ENABLED						:Enabled
+
 STR_PARAM_CUSTOM_ROAD_STOPS_NAME             :Custom Road Stops
 STR_PARAM_CUSTOM_ROAD_STOPS_DESC             :Choose truck, bus & tram stops sprites
 

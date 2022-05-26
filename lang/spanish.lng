@@ -19,6 +19,11 @@ STR_PARAM_TUNNELS_OPENGFX					:OpenGFX
 STR_PARAM_TUNNELS_CLASSIC					:Clásicos
 STR_PARAM_TUNNELS_UBIFY						:Ubify U&RaTT (por defecto)
 
+STR_PARAM_FLUME_NAME             		 	:Transporte por arboriductos
+STR_PARAM_FLUME_DESC              			:Habilitar o no el transporte por arboriductos(madera montaña abajo)
+STR_PARAM_FLUME_DISABLED					:Deshabilitado
+STR_PARAM_FLUME_ENABLED						:Habilitado
+
 STR_PARAM_CUSTOM_ROAD_STOPS_NAME             :Paradas personalizadas
 STR_PARAM_CUSTOM_ROAD_STOPS_DESC             :Escoje los sprites de las paradas de autobús, tranvía y camión
 

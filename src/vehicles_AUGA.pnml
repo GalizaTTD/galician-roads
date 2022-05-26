@@ -6,37 +6,38 @@
 #	 You should have received a copy of the GNU General Public License along with this program.  If not, see <https://github.com/pvillaverde/openttd-spanish-railsets/blob/main/LICENSE>.
 */
 
-    sort(FEAT_ROADVEHS, [AUGA_FLUMELOG]);  
+sort(FEAT_ROADVEHS, [AUGA_FLUMELOG]);  
 
-	template logFlumeTemplate() {
-		[  0, 20,  8, 18, -12, -10, ANIM]
-		[ 16, 20, 15, 18,  -9, -13, ANIM]
-		[ 48, 20, 20, 16, -10, -15, ANIM]
-		[ 80, 20, 15, 18,   2, -10, ANIM] 
-		[  0,  0,  8, 18,   4, -10, ANIM]
-		[ 16,  0, 15, 18,  -7, -6, ANIM]
-		[ 48,  0, 20, 16, -10, -8, ANIM]
-		[ 80,  0, 15, 18, -12, -9, ANIM]	// NW-SE
-	}
+template logFlumeTemplate() {
+	[  0, 20,  8, 18, -12, -10, ANIM]
+	[ 16, 20, 15, 18,  -9, -13, ANIM]
+	[ 48, 20, 20, 16, -10, -15, ANIM]
+	[ 80, 20, 15, 18,   2, -10, ANIM] 
+	[  0,  0,  8, 18,   4, -10, ANIM]
+	[ 16,  0, 15, 18,  -7, -6, ANIM]
+	[ 48,  0, 20, 16, -10, -8, ANIM]
+	[ 80,  0, 15, 18, -12, -9, ANIM]	// NW-SE
+}
 
-	spriteset (logFlumeEmptySpriteset, "src/gfx/vehicles/AUGA/log_empty.gimp.png") { logFlumeTemplate()}
-	spriteset (logFlumeFullWOODSpriteset, "src/gfx/vehicles/AUGA/log_full_wood.gimp.png") { logFlumeTemplate()}
-	spriteset (logFlumeFullWDPRSpriteset, "src/gfx/vehicles/AUGA/log_full_wdpr.gimp.png") { logFlumeTemplate()}
-	spriteset (logFlumePurchase, "src/gfx/vehicles/AUGA/log_full_wood.gimp.png") { [ 48,  0, 20, 16, -10, -8]}
+spriteset (logFlumeEmptySpriteset, "src/gfx/vehicles/AUGA/log_empty.gimp.png") { logFlumeTemplate()}
+spriteset (logFlumeFullWOODSpriteset, "src/gfx/vehicles/AUGA/log_full_wood.gimp.png") { logFlumeTemplate()}
+spriteset (logFlumeFullWDPRSpriteset, "src/gfx/vehicles/AUGA/log_full_wdpr.gimp.png") { logFlumeTemplate()}
+spriteset (logFlumePurchase, "src/gfx/vehicles/AUGA/log_full_wood.gimp.png") { [ 48,  0, 20, 16, -10, -8]}
 
-	spritegroup logFlumeWOODSpritegroup {
-		loading: [logFlumeEmptySpriteset,logFlumeFullWOODSpriteset];
-		loaded: [logFlumeEmptySpriteset,logFlumeFullWOODSpriteset];
-	}
-	spritegroup logFlumeWDPRSpritegroup {
-		loading: [logFlumeEmptySpriteset,logFlumeFullWDPRSpriteset];
-		loaded: [logFlumeEmptySpriteset,logFlumeFullWDPRSpriteset];
-	}
-	switch(FEAT_ROADVEHS, SELF, logFlumePowerSwitch, cargo_count) {
-		0: 1000;
-		1;
-	}
+spritegroup logFlumeWOODSpritegroup {
+	loading: [logFlumeEmptySpriteset,logFlumeFullWOODSpriteset];
+	loaded: [logFlumeEmptySpriteset,logFlumeFullWOODSpriteset];
+}
+spritegroup logFlumeWDPRSpritegroup {
+	loading: [logFlumeEmptySpriteset,logFlumeFullWDPRSpriteset];
+	loaded: [logFlumeEmptySpriteset,logFlumeFullWDPRSpriteset];
+}
+switch(FEAT_ROADVEHS, SELF, logFlumePowerSwitch, cargo_count) {
+	0: 1000;
+	1;
+}
 
+if(param_flume == 1) {
     item(FEAT_ROADVEHS, AUGA_FLUMELOG) {
 
         property {
@@ -55,7 +56,7 @@
 		//	air_drag_coefficient:			1;
 
             // model
-            model_life:						VEHICLE_NEVER_EXPIRES;
+            model_life:						100;
             vehicle_life:					255;
             retire_early:					0;
             reliability_decay:				0;
@@ -87,3 +88,4 @@
 			power:						logFlumePowerSwitch;
         }
     }  
+}

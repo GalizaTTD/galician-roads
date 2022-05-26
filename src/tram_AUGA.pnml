@@ -6,6 +6,7 @@
 #	 You should have received a copy of the GNU General Public License along with this program.  If not, see <https://github.com/pvillaverde/openttd-spanish-railsets/blob/main/LICENSE>.
 */
 // Underlays
+		
 template augaUnderlayTemplate () {
 	[   0,        0,       64,    31,     -31,        0, ANIM]  // NW-SE
 	[  70,        0,       64,    31,     -31,        0, ANIM]  // NE-SW
@@ -55,90 +56,92 @@ template augaBridgeOverlayTemplate() {
 }
 // Depots
 template augaDepotsTemplate () {
-    [140, 0, 64, 61, -31, -30, ANIM]  // SE Road
-    [210, 0, 64, 61, -1, -45, ANIM]   // SE Building
-    [  0, 0, 64, 61, -31, -30, ANIM]  // SW Road
-    [ 70, 0, 64, 61, -61, -45, ANIM]  // SW Building
-    [280, 0, 64, 61, -61, -45, ANIM]  // NE Building
-    [350, 0, 64, 61, -1, -45, ANIM]   // NW Building
+	[140, 0, 64, 61, -31, -30, ANIM]  // SE Road
+	[210, 0, 64, 61, -1, -45, ANIM]   // SE Building
+	[  0, 0, 64, 61, -31, -30, ANIM]  // SW Road
+	[ 70, 0, 64, 61, -61, -45, ANIM]  // SW Building
+	[280, 0, 64, 61, -61, -45, ANIM]  // NE Building
+	[350, 0, 64, 61, -1, -45, ANIM]   // NW Building
 }
 
 // Catenaries
 
 template augaCatenaryTemplate () {
-    [  0,   0, 64, 54, -31, -23, ANIM]  // NW-SE
-    [ 80,   0, 64, 54, -31, -23, ANIM]  // NE-SW
-    [160,   0, 64, 54, -31, -23, ANIM]  // 4-way
-    [240,   0, 64, 54, -31, -23, ANIM]  // NE Cross
-    [320,   0, 64, 54, -31, -23, ANIM]  // NW Cross
-    [400,   0, 64, 54, -31, -23, ANIM]  // SW Cross
-    [  0,  60, 64, 54, -31, -23, ANIM]  // SE Cross
-    [ 80,  60, 64, 54, -31, -23, ANIM]  // E Corner
-    [160,  60, 64, 54, -31, -23, ANIM]  // S Corner
-    [240,  60, 64, 54, -31, -23, ANIM]  // W Corner
-    [320,  60, 64, 54, -31, -23, ANIM]  // N Corner
-    [400,  60, 64, 54, -31, -23, ANIM]  // NE Slope
-    [  0, 120, 64, 46, -31, -23, ANIM]  // SE Slope
-    [ 80, 120, 64, 46, -31, -23, ANIM]  // SW Slope
-    [160, 120, 64, 54, -31, -23, ANIM]  // NW Slope
-    [240, 120, 64, 54, -31, -23, ANIM]  // SW end
-    [320, 120, 64, 54, -31, -23, ANIM]  // NW end
-    [400, 120, 64, 54, -31, -23, ANIM]  // NE end
-    [  0, 180, 64, 54, -31, -23, ANIM]  // SE end
-    [ 80, 180, 64, 54, -31, -23, ANIM]  // Tunnel NE
-    [160, 180, 64, 54, -31, -23, ANIM]  // Tunnel SE
-    [240, 180, 64, 54, -31, -23, ANIM]  // Tunnel SW
-    [320, 180, 64, 54, -31, -23, ANIM]  // Tunnel NW
-    [400, 180, 64, 54, -31, -23, ANIM]  // Bridge NW-SE Flat
-    [  0, 240, 64, 54, -31, -23, ANIM]  // Bridge NE-SW Flat
-    [ 80, 240, 64, 54, -31, -23, ANIM]  // Bridge NE Slope
-    [160, 240, 64, 46, -31, -23, ANIM]  // Bridge SE Slope
-    [240, 240, 64, 46, -31, -23, ANIM]  // Bridge SW Slope
-    [320, 240, 64, 54, -31, -23, ANIM]  // Bridge NW Slope
+	[  0,   0, 64, 54, -31, -23, ANIM]  // NW-SE
+	[ 80,   0, 64, 54, -31, -23, ANIM]  // NE-SW
+	[160,   0, 64, 54, -31, -23, ANIM]  // 4-way
+	[240,   0, 64, 54, -31, -23, ANIM]  // NE Cross
+	[320,   0, 64, 54, -31, -23, ANIM]  // NW Cross
+	[400,   0, 64, 54, -31, -23, ANIM]  // SW Cross
+	[  0,  60, 64, 54, -31, -23, ANIM]  // SE Cross
+	[ 80,  60, 64, 54, -31, -23, ANIM]  // E Corner
+	[160,  60, 64, 54, -31, -23, ANIM]  // S Corner
+	[240,  60, 64, 54, -31, -23, ANIM]  // W Corner
+	[320,  60, 64, 54, -31, -23, ANIM]  // N Corner
+	[400,  60, 64, 54, -31, -23, ANIM]  // NE Slope
+	[  0, 120, 64, 46, -31, -23, ANIM]  // SE Slope
+	[ 80, 120, 64, 46, -31, -23, ANIM]  // SW Slope
+	[160, 120, 64, 54, -31, -23, ANIM]  // NW Slope
+	[240, 120, 64, 54, -31, -23, ANIM]  // SW end
+	[320, 120, 64, 54, -31, -23, ANIM]  // NW end
+	[400, 120, 64, 54, -31, -23, ANIM]  // NE end
+	[  0, 180, 64, 54, -31, -23, ANIM]  // SE end
+	[ 80, 180, 64, 54, -31, -23, ANIM]  // Tunnel NE
+	[160, 180, 64, 54, -31, -23, ANIM]  // Tunnel SE
+	[240, 180, 64, 54, -31, -23, ANIM]  // Tunnel SW
+	[320, 180, 64, 54, -31, -23, ANIM]  // Tunnel NW
+	[400, 180, 64, 54, -31, -23, ANIM]  // Bridge NW-SE Flat
+	[  0, 240, 64, 54, -31, -23, ANIM]  // Bridge NE-SW Flat
+	[ 80, 240, 64, 54, -31, -23, ANIM]  // Bridge NE Slope
+	[160, 240, 64, 46, -31, -23, ANIM]  // Bridge SE Slope
+	[240, 240, 64, 46, -31, -23, ANIM]  // Bridge SW Slope
+	[320, 240, 64, 54, -31, -23, ANIM]  // Bridge NW Slope
 }
 
-spriteset (AUGA_guiSpriteset, "src/gfx/roads/AUGA/gui.gimp.png") { augaGuiTemplate() }
+	spriteset (AUGA_guiSpriteset, "src/gfx/roads/AUGA/gui.gimp.png") { augaGuiTemplate() }
 
-spriteset (AUGA_underlaySpriteset, "src/gfx/roads/AUGA/underlay.gimp.png") { augaUnderlayTemplate() }
+	spriteset (AUGA_underlaySpriteset, "src/gfx/roads/AUGA/underlay.gimp.png") { augaUnderlayTemplate() }
 
-spriteset (AUGA_bridgesSpriteset, "src/gfx/roads/AUGA/bridges.gimp.png") { augaBridgeOverlayTemplate() }
+	spriteset (AUGA_bridgesSpriteset, "src/gfx/roads/AUGA/bridges.gimp.png") { augaBridgeOverlayTemplate() }
 
-spriteset (AUGA_depotsSpriteset, "src/gfx/roads/AUGA/depots.gimp.png") { augaDepotsTemplate() }
-spriteset (AUGA_depotsSnowSpriteset, "src/gfx/roads/AUGA/depotsSnow.gimp.png") { augaDepotsTemplate() }
+	spriteset (AUGA_depotsSpriteset, "src/gfx/roads/AUGA/depots.gimp.png") { augaDepotsTemplate() }
+	spriteset (AUGA_depotsSnowSpriteset, "src/gfx/roads/AUGA/depotsSnow.gimp.png") { augaDepotsTemplate() }
 
-spriteset (AUGA_catenaryFronOldSpriteset, "src/gfx/roads/AUGA/catenaryFronAuga.gimp.png") { augaCatenaryTemplate() }
-spriteset (AUGA_catenaryBackOldSpriteset, "src/gfx/roads/AUGA/catenaryBackAuga.gimp.png") { augaCatenaryTemplate() }
+	spriteset (AUGA_catenaryFronOldSpriteset, "src/gfx/roads/AUGA/catenaryFronAuga.gimp.png") { augaCatenaryTemplate() }
+	spriteset (AUGA_catenaryBackOldSpriteset, "src/gfx/roads/AUGA/catenaryBackAuga.gimp.png") { augaCatenaryTemplate() }
 
 
-switch (FEAT_TRAMTYPES, SELF, AUGA_depotsTerrainCheckSwitch, terrain_type) {
-	TILETYPE_SNOW: AUGA_depotsSnowSpriteset;
-	AUGA_depotsSpriteset;
-}
-
-item(FEAT_TRAMTYPES, item_tram_AUGA) {
-	property {
-		label:                       "AUGA";
-		introduction_date:           0;
-		name:                        string(STR_TRAM_AUGA_NAME);
-		toolbar_caption:             string(STR_TRAM_AUGA_TOOLBAR);
-		menu_text:                   string(STR_TRAM_AUGA_MENU);
-		build_window_caption:        string(STR_AUGA_BUILD_VEHICLE);
-		autoreplace_text:            string(STR_AUGA_AUTOREPLACE);
-		new_engine_text:             string(STR_AUGA_NEW_ENGINE);
-		powered_tramtype_list:       ["AUGA"];
-		tramtype_flags:              bitmask(TRAMTYPE_FLAG_CATENARY, TRAMTYPE_FLAG_NO_HOUSES);
-		speed_limit:                 100 km/h;
-		construction_cost:           4;
-		maintenance_cost:            8;
-		sort_order:                  00;		
+	switch (FEAT_TRAMTYPES, SELF, AUGA_depotsTerrainCheckSwitch, terrain_type) {
+		TILETYPE_SNOW: AUGA_depotsSnowSpriteset;
+		AUGA_depotsSpriteset;
 	}
-	graphics {
-		gui:						 AUGA_guiSpriteset;
-		track_overlay:               AUGA_underlaySpriteset;
-		underlay:                    AUGA_underlaySpriteset;
-		bridge_surfaces:             AUGA_bridgesSpriteset;
-		catenary_front:              AUGA_catenaryFronOldSpriteset;
-		catenary_back:               AUGA_catenaryBackOldSpriteset;
-		depots:	                     AUGA_depotsTerrainCheckSwitch;
+
+if(param_flume == 1) {
+	item(FEAT_TRAMTYPES, item_tram_AUGA) {
+		property {
+			label:                       "AUGA";
+			introduction_date:           0;
+			name:                        string(STR_TRAM_AUGA_NAME);
+			toolbar_caption:             string(STR_TRAM_AUGA_TOOLBAR);
+			menu_text:                   string(STR_TRAM_AUGA_MENU);
+			build_window_caption:        string(STR_AUGA_BUILD_VEHICLE);
+			autoreplace_text:            string(STR_AUGA_AUTOREPLACE);
+			new_engine_text:             string(STR_AUGA_NEW_ENGINE);
+			powered_tramtype_list:       ["AUGA"];
+			tramtype_flags:              bitmask(TRAMTYPE_FLAG_CATENARY, TRAMTYPE_FLAG_NO_HOUSES);
+			speed_limit:                 100 km/h;
+			construction_cost:           4;
+			maintenance_cost:            8;
+			sort_order:                  00;		
+		}
+		graphics {
+			gui:						 AUGA_guiSpriteset;
+			track_overlay:               AUGA_underlaySpriteset;
+			underlay:                    AUGA_underlaySpriteset;
+			bridge_surfaces:             AUGA_bridgesSpriteset;
+			catenary_front:              AUGA_catenaryFronOldSpriteset;
+			catenary_back:               AUGA_catenaryBackOldSpriteset;
+			depots:	                     AUGA_depotsTerrainCheckSwitch;
+		}
 	}
 }
