@@ -11,6 +11,8 @@ src/gfx/roads/R4X4/_road.xcf2png
 src/gfx/roads/RAIL/_road.xcf2png
 src/gfx/roads/SETT/_road.xcf2png
 src/gfx/roads/TIND/_road.xcf2png
+src/gfx/roads/UGRT/_road.xcf2png
+src/gfx/roads/URRT/_road.xcf2png
 src/gfx/roads/tunnels/_tunnels.xcf2png
 src/gfx/vehicles/AUGA/_vehicles.xcf2png
 src/gfx/vehicles/ROAD/_vehicles.xcf2png

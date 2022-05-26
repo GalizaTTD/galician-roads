@@ -60,13 +60,13 @@
 
             // Costs   
             cost_factor:					20;
-            running_cost_base:				RUNNING_COST_ROADVEH;
+            running_cost_base:				RUNNING_COST_ELECTRIC;
             running_cost_factor:			20;
 
             // Flags
 			visual_effect:					VISUAL_EFFECT_ELECTRIC;
 			sound_effect:					sound("src/wav/tram_bell.wav");
-			tram_type:						ELRL;
+			tram_type:						UGRT;
             misc_flags:						bitmask(ROADVEH_FLAG_TRAM); //make this a tram
         }
 

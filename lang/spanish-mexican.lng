@@ -103,6 +103,14 @@ STR_TRAM_TIND_NAME          :Tranvía industrial
 STR_TRAM_TIND_TOOLBAR       :Construír tranvía industrial{LTBLUE}
 STR_TRAM_TIND_MENU          :Construír tranvía industrial{LTBLUE}
 
+STR_TRAM_UGRT_NAME          :Tranvía urbano línea verde
+STR_TRAM_UGRT_TOOLBAR       :Construír línea verde del tranvía urbano{LTBLUE}
+STR_TRAM_UGRT_MENU          :Construír línea verde del tranvía urbano{LTBLUE}
+
+STR_TRAM_URRT_NAME          :Tranvía urbano línea roja
+STR_TRAM_URRT_TOOLBAR       :Construír línea roja del tranvía urbano{LTBLUE}
+STR_TRAM_URRT_MENU          :Construír línea roja del tranvía urbano{LTBLUE}
+
 # Vehicles
 
 STR_VEHICLES_AUGA_FLUMELOG_NAME		:Tronco

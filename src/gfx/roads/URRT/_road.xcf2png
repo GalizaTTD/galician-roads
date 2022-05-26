@@ -1,0 +1,11 @@
+src/gfx/roads/URRT/underlay.gimp.png          src/xcf/roads/underlay.xcf     Background URRT
+src/gfx/roads/URRT/underlaySnow.gimp.png          src/xcf/roads/underlay.xcf     Background URRT_SNOW
+src/gfx/roads/URRT/overlay.gimp.png          src/xcf/roads/underlay.xcf     Background URRT_OVERLAY
+
+src/gfx/roads/URRT/bridges.gimp.png          src/xcf/roads/bridges.xcf     Background URRT
+src/gfx/roads/URRT/bridgesSnow.gimp.png          src/xcf/roads/bridges.xcf     Background URRT_SNOW
+
+src/gfx/roads/URRT/gui.gimp.png          src/xcf/roads/gui.xcf     Background URRT
+
+src/gfx/roads/URRT/depots.gimp.png          src/xcf/roads/depots.xcf     Background URRT
+src/gfx/roads/URRT/depotsSnow.gimp.png          src/xcf/roads/depots.xcf     Background URRT_SNOW

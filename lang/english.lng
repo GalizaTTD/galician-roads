@@ -103,6 +103,14 @@ STR_TRAM_TIND_NAME          :Industrial tramway
 STR_TRAM_TIND_TOOLBAR       :Industrial tramway construction{LTBLUE}
 STR_TRAM_TIND_MENU          :Industrial tramway construction{LTBLUE}
 
+STR_TRAM_UGRT_NAME          :Urban Modern Green Tramway
+STR_TRAM_UGRT_TOOLBAR       :Urban Modern Green Tramway construction{LTBLUE}
+STR_TRAM_UGRT_MENU          :Urban Modern Green Tramway construction{LTBLUE}
+
+STR_TRAM_URRT_NAME          :Urban Modern Red Tramway
+STR_TRAM_URRT_TOOLBAR       :Urban Modern Red Tramway construction{LTBLUE}
+STR_TRAM_URRT_MENU          :Urban Modern Red Tramway construction{LTBLUE}
+
 # Vehicles
 
 STR_VEHICLES_AUGA_FLUMELOG_NAME		:Log

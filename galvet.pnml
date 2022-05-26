@@ -31,6 +31,8 @@
 #include "src/tram_RAIL.pnml"
 #include "src/tram_ELRL.pnml"
 #include "src/tram_TIND.pnml"
+#include "src/tram_UGRT.pnml"
+#include "src/tram_URRT.pnml"
 
 
 #include "src/road_ROAD.pnml"

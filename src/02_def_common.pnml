@@ -21,7 +21,7 @@ roadtypetable {
 }
 
 tramtypetable {
- 	AUGA, RAIL, ELRL, TIND
+ 	AUGA, RAIL, ELRL, TIND, UGRT, URRT
 }
 
 cargotable {
