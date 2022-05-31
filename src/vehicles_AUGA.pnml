@@ -56,7 +56,7 @@ if(param_flume == 1) {
 		//	air_drag_coefficient:			1;
 
             // model
-            model_life:						100;
+            model_life:						VEHICLE_NEVER_EXPIRES;
             vehicle_life:					255;
             retire_early:					0;
             reliability_decay:				0;
