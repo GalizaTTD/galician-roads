@@ -1,0 +1,13 @@
+src/gfx/roads/WALK/underlay.gimp.png          src/xcf/roads/underlay.xcf     Background WALK
+src/gfx/roads/WALK/underlaySnow.gimp.png          src/xcf/roads/underlay.xcf     Background WALK_SNOW
+
+src/gfx/roads/WALK/bridges.gimp.png          src/xcf/roads/bridges.xcf     Background WALK
+src/gfx/roads/WALK/bridgesSnow.gimp.png          src/xcf/roads/bridges.xcf     Background WALK_SNOW
+
+src/gfx/roads/WALK/gui.gimp.png          src/xcf/roads/gui.xcf     Background WALK
+
+src/gfx/roads/WALK/stops.gimp.png          src/xcf/roads/stops.xcf     Background WALK
+src/gfx/roads/WALK/stopsSnow.gimp.png          src/xcf/roads/stops.xcf     Background WALK_SNOW
+
+src/gfx/roads/WALK/depots.gimp.png          src/xcf/roads/depots.xcf     Background WALK
+src/gfx/roads/WALK/depotsSnow.gimp.png          src/xcf/roads/depots.xcf     Background WALK_SNOW

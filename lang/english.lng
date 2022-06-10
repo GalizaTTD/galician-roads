@@ -55,6 +55,10 @@ STR_AUGA_BUILD_VEHICLE             :New Logs
 STR_AUGA_AUTOREPLACE               :Flume Logs
 STR_AUGA_NEW_ENGINE                :flume
 
+STR_EYECANDY_BUILD_VEHICLE             :Build Eyecandy Vehicles
+STR_EYECANDY_AUTOREPLACE               :Eyecandy Vehicles
+STR_EYECANDY_NEW_ENGINE                :eyecandy
+
 # Cadeas de texto das estradas 
 STR_ROAD_SETT_NAME          :Stone paved road
 STR_ROAD_SETT_TOOLBAR       :Stone paved road construction{LTBLUE}
@@ -115,6 +119,30 @@ STR_TRAM_UGRT_MENU          :Urban Modern Green Tramway construction{LTBLUE}
 STR_TRAM_URRT_NAME          :Urban Modern Red Tramway
 STR_TRAM_URRT_TOOLBAR       :Urban Modern Red Tramway construction{LTBLUE}
 STR_TRAM_URRT_MENU          :Urban Modern Red Tramway construction{LTBLUE}
+
+STR_EYECANDY_SETO_NAME          :Eyecandy: Hedge Fence
+STR_EYECANDY_SETO_TOOLBAR       :{GREEN}Eyecandy: Hedge Fence
+STR_EYECANDY_SETO_MENU          :{GREEN}Eyecandy: Hedge Fence construction
+
+STR_EYECANDY_PDRA_NAME          :Eyecandy: Stone Fence
+STR_EYECANDY_PDRA_TOOLBAR       :{GREEN}Eyecandy: Stone Fence
+STR_EYECANDY_PDRA_MENU          :{GREEN}Eyecandy: Stone Fence construction
+
+STR_EYECANDY_VALO_NAME          :Eyecandy: Wood Fence
+STR_EYECANDY_VALO_TOOLBAR       :{GREEN}Eyecandy: Wood Fence
+STR_EYECANDY_VALO_MENU          :{GREEN}Eyecandy: Wood Fence construction
+
+STR_EYECANDY_REXA_NAME          :Eyecandy: Wire Fence
+STR_EYECANDY_REXA_TOOLBAR       :{GREEN}Eyecandy: Wire Fence
+STR_EYECANDY_REXA_MENU          :{GREEN}Eyecandy: Wire Fence construction
+
+STR_EYECANDY_TREE_NAME          :Eyecandy: Trees
+STR_EYECANDY_TREE_TOOLBAR       :{GREEN}Eyecandy: Trees
+STR_EYECANDY_TREE_MENU          :{GREEN}Eyecandy: Trees construction
+
+STR_EYECANDY_WALK_NAME          :Eyecandy: Pedestrian Way
+STR_EYECANDY_WALK_TOOLBAR       :{GREEN}Eyecandy: Pedestrian Way
+STR_EYECANDY_WALK_MENU          :{GREEN}Eyecandy: Pedestrian Way construction
 
 # Vehicles
 

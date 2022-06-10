@@ -34,6 +34,13 @@
 #include "src/tram_UGRT.pnml"
 #include "src/tram_URRT.pnml"
 
+#include "src/eyecandy_WALK.pnml"
+
+#include "src/eyecandy_VALO.pnml"
+#include "src/eyecandy_REXA.pnml"
+#include "src/eyecandy_SETO.pnml"
+#include "src/eyecandy_PDRA.pnml"
+#include "src/eyecandy_TREE.pnml"
 
 #include "src/road_ROAD.pnml"
 

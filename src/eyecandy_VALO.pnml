@@ -1,0 +1,40 @@
+/*
+#    OpenTTD Galician Roads, Trams & Vehicles (GALVET) -  Copyright (C) 2021  Pablo Villaverde Castro
+#    This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+#    This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+#	 You should have received a copy of the GNU General Public License along with this program.  If not, see <https://github.com/pvillaverde/openttd-spanish-railsets/blob/main/LICENSE>.
+*/
+spriteset (VALO_guiSpriteset, "src/gfx/roads/EYECANDY/VALO.gimp.png") { eyecandyGuiTemplate() }
+spriteset (VALO_underlaySpriteset, "src/gfx/roads/EYECANDY/VALO.gimp.png") { eyecandyUnderOverlayTemplate(296) }
+spriteset (VALO_bridgesSpriteset, "src/gfx/roads/EYECANDY/VALO.gimp.png") { eyecandyBridgeTemplate() }
+spriteset (VALO_depotsSpriteset, "src/gfx/roads/EYECANDY/VALO.gimp.png") { eyecandyDepotTemplate() }
+spriteset (VALO_catenaryFronCorSpriteset, "src/gfx/roads/EYECANDY/VALO.gimp.png") { eyecandyAlternativeCatenaryTemplate(980) }
+spriteset (VALO_catenaryBackCorSpriteset, "src/gfx/roads/EYECANDY/VALO.gimp.png") { eyecandyAlternativeCatenaryTemplate(580) }
+
+item(FEAT_TRAMTYPES, item_tram_VALO) {
+	property {
+		label:                       "VALO";
+		introduction_date:           0;
+		name:                        string(STR_EYECANDY_VALO_NAME);
+		toolbar_caption:             string(STR_EYECANDY_VALO_TOOLBAR);
+		menu_text:                   string(STR_EYECANDY_VALO_MENU);
+		build_window_caption:        string(STR_EYECANDY_BUILD_VEHICLE);
+		autoreplace_text:            string(STR_EYECANDY_AUTOREPLACE);
+		new_engine_text:             string(STR_EYECANDY_NEW_ENGINE);
+		powered_tramtype_list:       ["WALK"];
+		alternative_tramtype_list:	 ["WALK"];
+		tramtype_flags:              bitmask(TRAMTYPE_FLAG_CATENARY);
+		construction_cost:           2;
+		maintenance_cost:            4;
+		sort_order:                  20;	
+	}
+	graphics {
+		gui:						 VALO_guiSpriteset;
+		track_overlay:               VALO_underlaySpriteset;
+		underlay:                    VALO_underlaySpriteset;
+		bridge_surfaces:             VALO_bridgesSpriteset;
+		catenary_front:              VALO_catenaryFronCorSpriteset;
+		catenary_back:               VALO_catenaryBackCorSpriteset;
+		depots:	                     VALO_depotsSpriteset;
+	}
+}

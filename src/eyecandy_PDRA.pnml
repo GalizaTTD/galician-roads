@@ -1,0 +1,40 @@
+/*
+#    OpenTTD Galician Roads, Trams & Vehicles (GALVET) -  Copyright (C) 2021  Pablo Villaverde Castro
+#    This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+#    This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+#	 You should have received a copy of the GNU General Public License along with this program.  If not, see <https://github.com/pvillaverde/openttd-spanish-railsets/blob/main/LICENSE>.
+*/
+spriteset (PDRA_guiSpriteset, "src/gfx/roads/EYECANDY/PDRA.gimp.png") { eyecandyGuiTemplate() }
+spriteset (PDRA_underlaySpriteset, "src/gfx/roads/EYECANDY/PDRA.gimp.png") { eyecandyUnderOverlayTemplate(296) }
+spriteset (PDRA_bridgesSpriteset, "src/gfx/roads/EYECANDY/PDRA.gimp.png") { eyecandyBridgeTemplate() }
+spriteset (PDRA_depotsSpriteset, "src/gfx/roads/EYECANDY/PDRA.gimp.png") { eyecandyDepotTemplate() }
+spriteset (PDRA_catenaryFronCorSpriteset, "src/gfx/roads/EYECANDY/PDRA.gimp.png") { eyecandyAlternativeCatenaryTemplate(980) }
+spriteset (PDRA_catenaryBackCorSpriteset, "src/gfx/roads/EYECANDY/PDRA.gimp.png") { eyecandyAlternativeCatenaryTemplate(580) }
+
+item(FEAT_TRAMTYPES, item_tram_PDRA) {
+	property {
+		label:                       "PDRA";
+		introduction_date:           0;
+		name:                        string(STR_EYECANDY_PDRA_NAME);
+		toolbar_caption:             string(STR_EYECANDY_PDRA_TOOLBAR);
+		menu_text:                   string(STR_EYECANDY_PDRA_MENU);
+		build_window_caption:        string(STR_EYECANDY_BUILD_VEHICLE);
+		autoreplace_text:            string(STR_EYECANDY_AUTOREPLACE);
+		new_engine_text:             string(STR_EYECANDY_NEW_ENGINE);
+		powered_tramtype_list:       ["WALK"];
+		alternative_tramtype_list:	 ["WALK"];
+		tramtype_flags:              bitmask(TRAMTYPE_FLAG_CATENARY);
+		construction_cost:           2;
+		maintenance_cost:            4;
+		sort_order:                  20;	
+	}
+	graphics {
+		gui:						 PDRA_guiSpriteset;
+		track_overlay:               PDRA_underlaySpriteset;
+		underlay:                    PDRA_underlaySpriteset;
+		bridge_surfaces:             PDRA_bridgesSpriteset;
+		catenary_front:              PDRA_catenaryFronCorSpriteset;
+		catenary_back:               PDRA_catenaryBackCorSpriteset;
+		depots:	                     PDRA_depotsSpriteset;
+	}
+}

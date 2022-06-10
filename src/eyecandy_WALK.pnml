@@ -1,0 +1,63 @@
+/*
+#    OpenTTD Galician Roads, Trams & Vehicles (GALVET) -  Copyright (C) 2021  Pablo Villaverde Castro
+#    This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+#    This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+#	 You should have received a copy of the GNU General Public License along with this program.  If not, see <https://github.com/pvillaverde/openttd-spanish-railsets/blob/main/LICENSE>.
+*/
+spriteset (WALK_guiSpriteset, "src/gfx/roads/WALK/gui.gimp.png") { roadGuiTemplate() }
+
+spriteset (WALK_underlaySpriteset, "src/gfx/roads/WALK/underlay.gimp.png") { roadUnderlayTemplate() }
+spriteset (WALK_underlaySnowSpriteset, "src/gfx/roads/WALK/underlaySnow.gimp.png") { roadUnderlayTemplate() }
+
+spriteset (WALK_bridgesSpriteset, "src/gfx/roads/WALK/bridges.gimp.png") { roadBridgeOverlayTemplate() }
+spriteset (WALK_bridgesSnowSpriteset, "src/gfx/roads/WALK/bridgesSnow.gimp.png") { roadBridgeOverlayTemplate() }
+
+spriteset (WALK_stopsSpriteset, "src/gfx/roads/WALK/stops.gimp.png") { roadStopsTemplate() }
+spriteset (WALK_stopsSnowSpriteset, "src/gfx/roads/WALK/stopsSnow.gimp.png") { roadStopsTemplate() }
+
+spriteset (WALK_depotsSpriteset, "src/gfx/roads/WALK/depots.gimp.png") { roadDepotsTemplate() }
+spriteset (WALK_depotsSnowSpriteset, "src/gfx/roads/WALK/depotsSnow.gimp.png") { roadDepotsTemplate() }
+
+
+switch (FEAT_ROADTYPES, SELF, WALK_stopsTerrainCheckSwitch, terrain_type) {
+	TILETYPE_SNOW: WALK_stopsSnowSpriteset;
+	WALK_stopsSpriteset;
+}
+switch (FEAT_ROADTYPES, SELF, WALK_bridgesTerrainCheckSwitch, terrain_type) {
+	TILETYPE_SNOW: WALK_bridgesSnowSpriteset;
+	WALK_bridgesSpriteset;
+}
+switch (FEAT_ROADTYPES, SELF, WALK_depotsTerrainCheckSwitch, terrain_type) {
+	TILETYPE_SNOW: WALK_depotsSnowSpriteset;
+	WALK_depotsSpriteset;
+}
+
+switch (FEAT_ROADTYPES, SELF, WALK_underlayTerrainCheckSwitch, terrain_type) {
+	TILETYPE_SNOW: WALK_underlaySnowSpriteset;
+	WALK_underlaySpriteset;
+}
+
+item(FEAT_ROADTYPES, item_road_WALK) {
+	property {
+		label:                       "WALK";
+		introduction_date:           0;
+		name:                        string(STR_EYECANDY_WALK_NAME);
+		toolbar_caption:             string(STR_EYECANDY_WALK_TOOLBAR);
+		menu_text:                   string(STR_EYECANDY_WALK_MENU);
+		build_window_caption:        string(STR_EYECANDY_BUILD_VEHICLE);
+		autoreplace_text:            string(STR_EYECANDY_AUTOREPLACE);
+		new_engine_text:             string(STR_EYECANDY_NEW_ENGINE);
+		powered_roadtype_list:       ["WALK"];
+	//	roadtype_flags:              bitmask(ROADTYPE_FLAG_TOWN_BUILD);
+		construction_cost:           2;
+		maintenance_cost:            4;
+		sort_order:                  20;		
+	}
+	graphics {
+		gui:						 WALK_guiSpriteset;
+		underlay:                    WALK_underlayTerrainCheckSwitch;
+		roadstops:                   WALK_stopsTerrainCheckSwitch;
+		bridge_surfaces:             WALK_bridgesTerrainCheckSwitch;
+		depots:	                     WALK_depotsTerrainCheckSwitch;
+	}
+}
