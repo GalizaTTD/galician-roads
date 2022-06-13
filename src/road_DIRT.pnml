@@ -82,7 +82,7 @@ item(FEAT_ROADTYPES, item_road_DIRT) {
 		build_window_caption:        string(STR_GENERIC_BUILD_VEHICLE);
 		autoreplace_text:            string(STR_GENERIC_AUTOREPLACE);
 		new_engine_text:             string(STR_GENERIC_NEW_ENGINE);
-		powered_roadtype_list:       ["ROAD", "SETT", "R4X4", "DIRT", "GRAV", "ASF0", "EIND", "ASF1", "ASF2", "HWAY"];
+		powered_roadtype_list:       ["ROAD", "SETT", "STON", "R4X4", "DIRT", "GRAV", "ASF0", "EIND", "ASF1", "ASF2", "HWAY"];
 	//	roadtype_flags:              bitmask(ROADTYPE_FLAG_TOWN_BUILD);
 		construction_cost:           2;
 		maintenance_cost:            4;

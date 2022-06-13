@@ -26,6 +26,7 @@
 #include "src/road_ASF2.pnml"
 #include "src/road_HWAY.pnml"
 #include "src/road_SETT.pnml"
+#include "src/road_STON.pnml"
 
 #include "src/tram_AUGA.pnml"
 #include "src/tram_RAIL.pnml"

@@ -17,7 +17,7 @@
 #define SPEED_UNITY_MPS	2
 
 roadtypetable {
-	ROAD, SETT, R4X4, DIRT, GRAV, ASF0, EIND, ASF1, ASF2, HWAY, WALK
+	ROAD, SETT, STON, R4X4, DIRT, GRAV, ASF0, EIND, ASF1, ASF2, HWAY, WALK
 }
 
 tramtypetable {

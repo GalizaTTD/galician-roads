@@ -62,64 +62,68 @@ STR_EYECANDY_NEW_ENGINE                :decorativos
 
 # Cadeas de texto das estradas 
 STR_ROAD_SETT_NAME          :Calzada de pedra
-STR_ROAD_SETT_TOOLBAR       :Construír calzada de pedra{LTBLUE}
-STR_ROAD_SETT_MENU          :Construír calzada de pedra{LTBLUE}
+STR_ROAD_SETT_TOOLBAR       :Construír calzada de pedra{WHITE}
+STR_ROAD_SETT_MENU          :Construír calzada de pedra{WHITE}
+
+STR_ROAD_STON_NAME          :Calzada de pedra moderna
+STR_ROAD_STON_TOOLBAR       :Construír calzada de pedra moderna{WHITE}
+STR_ROAD_STON_MENU          :Construír calzada de pedra moderna{WHITE}
 
 STR_ROAD_R4X4_NAME          :Pista forestal
-STR_ROAD_R4X4_TOOLBAR       :Construír pista forestal{LTBLUE}
-STR_ROAD_R4X4_MENU          :Construír pista forestal{LTBLUE}
+STR_ROAD_R4X4_TOOLBAR       :Construír pista forestal{WHITE}
+STR_ROAD_R4X4_MENU          :Construír pista forestal{WHITE}
 
 STR_ROAD_DIRT_NAME          :Camiño de terra
-STR_ROAD_DIRT_TOOLBAR       :Construír camiño de terra{LTBLUE}
-STR_ROAD_DIRT_MENU          :Construír camiño de terra{LTBLUE}
+STR_ROAD_DIRT_TOOLBAR       :Construír camiño de terra{WHITE}
+STR_ROAD_DIRT_MENU          :Construír camiño de terra{WHITE}
 
 STR_ROAD_GRAV_NAME          :Pista de grava
-STR_ROAD_GRAV_TOOLBAR       :Construír pista de grava{LTBLUE}
-STR_ROAD_GRAV_MENU          :Construír pista de grava{LTBLUE}
+STR_ROAD_GRAV_TOOLBAR       :Construír pista de grava{WHITE}
+STR_ROAD_GRAV_MENU          :Construír pista de grava{WHITE}
 
 STR_ROAD_EIND_NAME          :Estrada industrial
-STR_ROAD_EIND_TOOLBAR       :Construír estrada industrial{LTBLUE}
-STR_ROAD_EIND_MENU          :Construír estrada industrial{LTBLUE}
+STR_ROAD_EIND_TOOLBAR       :Construír estrada industrial{WHITE}
+STR_ROAD_EIND_MENU          :Construír estrada industrial{WHITE}
 
 STR_ROAD_ASF0_NAME          :Estrada asfaltada
-STR_ROAD_ASF0_TOOLBAR       :Construír estrada asfaltada{LTBLUE}
-STR_ROAD_ASF0_MENU          :Construír estrada asfaltada{LTBLUE}
+STR_ROAD_ASF0_TOOLBAR       :Construír estrada asfaltada{WHITE}
+STR_ROAD_ASF0_MENU          :Construír estrada asfaltada{WHITE}
 
 STR_ROAD_ASF1_NAME          :Estrada moderna
-STR_ROAD_ASF1_TOOLBAR       :Construír estrada moderna{LTBLUE}
-STR_ROAD_ASF1_MENU          :Construír estrada moderna{LTBLUE}
+STR_ROAD_ASF1_TOOLBAR       :Construír estrada moderna{WHITE}
+STR_ROAD_ASF1_MENU          :Construír estrada moderna{WHITE}
 
 STR_ROAD_ASF2_NAME          :Estrada moderna mellorada
-STR_ROAD_ASF2_TOOLBAR       :Construír estrada moderna mellorada{LTBLUE}
-STR_ROAD_ASF2_MENU          :Construír estrada moderna mellorada{LTBLUE}
+STR_ROAD_ASF2_TOOLBAR       :Construír estrada moderna mellorada{WHITE}
+STR_ROAD_ASF2_MENU          :Construír estrada moderna mellorada{WHITE}
 
 STR_ROAD_HWAY_NAME          :Autoestrada
-STR_ROAD_HWAY_TOOLBAR       :Construír autoestrada{LTBLUE}
-STR_ROAD_HWAY_MENU          :Construír autoestrada{LTBLUE}
+STR_ROAD_HWAY_TOOLBAR       :Construír autoestrada{WHITE}
+STR_ROAD_HWAY_MENU          :Construír autoestrada{WHITE}
 
 STR_TRAM_AUGA_NAME          :Arboriducto
-STR_TRAM_AUGA_TOOLBAR       :Construír arboriducto{LTBLUE}
-STR_TRAM_AUGA_MENU          :Construír arboriducto{LTBLUE}
+STR_TRAM_AUGA_TOOLBAR       :Construír arboriducto{WHITE}
+STR_TRAM_AUGA_MENU          :Construír arboriducto{WHITE}
 
 STR_TRAM_RAIL_NAME          :Tranvía
-STR_TRAM_RAIL_TOOLBAR       :Construír tranvía{LTBLUE}
-STR_TRAM_RAIL_MENU          :Construír tranvía{LTBLUE}
+STR_TRAM_RAIL_TOOLBAR       :Construír tranvía{WHITE}
+STR_TRAM_RAIL_MENU          :Construír tranvía{WHITE}
 
 STR_TRAM_ELRL_NAME          :Tranvía electrificado
-STR_TRAM_ELRL_TOOLBAR       :Construír tranvía electrificado{LTBLUE}
-STR_TRAM_ELRL_MENU          :Construír tranvía electrificado{LTBLUE}
+STR_TRAM_ELRL_TOOLBAR       :Construír tranvía electrificado{WHITE}
+STR_TRAM_ELRL_MENU          :Construír tranvía electrificado{WHITE}
 
 STR_TRAM_TIND_NAME          :Tranvía industrial
-STR_TRAM_TIND_TOOLBAR       :Construír tranvía industrial{LTBLUE}
-STR_TRAM_TIND_MENU          :Construír tranvía industrial{LTBLUE}
+STR_TRAM_TIND_TOOLBAR       :Construír tranvía industrial{WHITE}
+STR_TRAM_TIND_MENU          :Construír tranvía industrial{WHITE}
 
 STR_TRAM_UGRT_NAME          :Tranvía urbano liña verde
-STR_TRAM_UGRT_TOOLBAR       :Construír liña verde do tranvía urbano{LTBLUE}
-STR_TRAM_UGRT_MENU          :Construír liña verde do tranvía urbano{LTBLUE}
+STR_TRAM_UGRT_TOOLBAR       :Construír liña verde do tranvía urbano{WHITE}
+STR_TRAM_UGRT_MENU          :Construír liña verde do tranvía urbano{WHITE}
 
 STR_TRAM_URRT_NAME          :Tranvía urbano liña vermella
-STR_TRAM_URRT_TOOLBAR       :Construír liña vermella do tranvía urbano{LTBLUE}
-STR_TRAM_URRT_MENU          :Construír liña vermella do tranvía urbano{LTBLUE}
+STR_TRAM_URRT_TOOLBAR       :Construír liña vermella do tranvía urbano{WHITE}
+STR_TRAM_URRT_MENU          :Construír liña vermella do tranvía urbano{WHITE}
 
 STR_EYECANDY_SETO_NAME          :Decorativo: Valado de seto
 STR_EYECANDY_SETO_TOOLBAR       :{GREEN}Decorativo: Valado de seto

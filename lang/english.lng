@@ -61,64 +61,68 @@ STR_EYECANDY_NEW_ENGINE                :eyecandy
 
 # Cadeas de texto das estradas 
 STR_ROAD_SETT_NAME          :Stone paved road
-STR_ROAD_SETT_TOOLBAR       :Stone paved road construction{LTBLUE}
-STR_ROAD_SETT_MENU          :Stone paved road construction{LTBLUE}
+STR_ROAD_SETT_TOOLBAR       :Stone paved road construction{WHITE}
+STR_ROAD_SETT_MENU          :Stone paved road construction{WHITE}
+
+STR_ROAD_STON_NAME          :Modern stone paved road
+STR_ROAD_STON_TOOLBAR       :Modern stone paved road construction{WHITE}
+STR_ROAD_STON_MENU          :Modern stone paved road construction{WHITE}
 
 STR_ROAD_R4X4_NAME          :Forest track
-STR_ROAD_R4X4_TOOLBAR       :Forest track construction{LTBLUE}
-STR_ROAD_R4X4_MENU          :Forest track construction{LTBLUE}
+STR_ROAD_R4X4_TOOLBAR       :Forest track construction{WHITE}
+STR_ROAD_R4X4_MENU          :Forest track construction{WHITE}
 
 STR_ROAD_DIRT_NAME          :Dirt track
-STR_ROAD_DIRT_TOOLBAR       :Dirt track construction{LTBLUE}
-STR_ROAD_DIRT_MENU          :Dirt track construction{LTBLUE}
+STR_ROAD_DIRT_TOOLBAR       :Dirt track construction{WHITE}
+STR_ROAD_DIRT_MENU          :Dirt track construction{WHITE}
 
 STR_ROAD_GRAV_NAME          :Gravel track
-STR_ROAD_GRAV_TOOLBAR       :Gravel track construction{LTBLUE}
-STR_ROAD_GRAV_MENU          :Gravel track construction{LTBLUE}
+STR_ROAD_GRAV_TOOLBAR       :Gravel track construction{WHITE}
+STR_ROAD_GRAV_MENU          :Gravel track construction{WHITE}
 
 STR_ROAD_EIND_NAME          :Industrial road
-STR_ROAD_EIND_TOOLBAR       :Industrial road construction{LTBLUE}
-STR_ROAD_EIND_MENU          :Industrial road construction{LTBLUE}
+STR_ROAD_EIND_TOOLBAR       :Industrial road construction{WHITE}
+STR_ROAD_EIND_MENU          :Industrial road construction{WHITE}
 
 STR_ROAD_ASF0_NAME          :Asphalt track
-STR_ROAD_ASF0_TOOLBAR       :Asphalt track construction{LTBLUE}
-STR_ROAD_ASF0_MENU          :Asphalt track construction{LTBLUE}
+STR_ROAD_ASF0_TOOLBAR       :Asphalt track construction{WHITE}
+STR_ROAD_ASF0_MENU          :Asphalt track construction{WHITE}
 
 STR_ROAD_ASF1_NAME          :Asphalt road w/ stripes
-STR_ROAD_ASF1_TOOLBAR       :Asphalt road w/ stripes construction{LTBLUE}
-STR_ROAD_ASF1_MENU          :Asphalt road w/ stripes construction{LTBLUE}
+STR_ROAD_ASF1_TOOLBAR       :Asphalt road w/ stripes construction{WHITE}
+STR_ROAD_ASF1_MENU          :Asphalt road w/ stripes construction{WHITE}
 
 STR_ROAD_ASF2_NAME          :Modern asphalt road
-STR_ROAD_ASF2_TOOLBAR       :Modern asphalt road construction{LTBLUE}
-STR_ROAD_ASF2_MENU          :Modern asphalt road construction{LTBLUE}
+STR_ROAD_ASF2_TOOLBAR       :Modern asphalt road construction{WHITE}
+STR_ROAD_ASF2_MENU          :Modern asphalt road construction{WHITE}
 
 STR_ROAD_HWAY_NAME          :Highway
-STR_ROAD_HWAY_TOOLBAR       :Highway construction{LTBLUE}
-STR_ROAD_HWAY_MENU          :Highway construction{LTBLUE}
+STR_ROAD_HWAY_TOOLBAR       :Highway construction{WHITE}
+STR_ROAD_HWAY_MENU          :Highway construction{WHITE}
 
 STR_TRAM_AUGA_NAME          :Flume
-STR_TRAM_AUGA_TOOLBAR       :Flume construction{LTBLUE}
-STR_TRAM_AUGA_MENU          :Flume construction{LTBLUE}
+STR_TRAM_AUGA_TOOLBAR       :Flume construction{WHITE}
+STR_TRAM_AUGA_MENU          :Flume construction{WHITE}
 
 STR_TRAM_RAIL_NAME          :Tramway
-STR_TRAM_RAIL_TOOLBAR       :Tramway construction{LTBLUE}
-STR_TRAM_RAIL_MENU          :Tramway construction{LTBLUE}
+STR_TRAM_RAIL_TOOLBAR       :Tramway construction{WHITE}
+STR_TRAM_RAIL_MENU          :Tramway construction{WHITE}
 
 STR_TRAM_ELRL_NAME          :Electric tramway
-STR_TRAM_ELRL_TOOLBAR       :Electric tramway construction{LTBLUE}
-STR_TRAM_ELRL_MENU          :Electric tramway construction{LTBLUE}
+STR_TRAM_ELRL_TOOLBAR       :Electric tramway construction{WHITE}
+STR_TRAM_ELRL_MENU          :Electric tramway construction{WHITE}
 
 STR_TRAM_TIND_NAME          :Industrial tramway
-STR_TRAM_TIND_TOOLBAR       :Industrial tramway construction{LTBLUE}
-STR_TRAM_TIND_MENU          :Industrial tramway construction{LTBLUE}
+STR_TRAM_TIND_TOOLBAR       :Industrial tramway construction{WHITE}
+STR_TRAM_TIND_MENU          :Industrial tramway construction{WHITE}
 
 STR_TRAM_UGRT_NAME          :Urban Modern Green Tramway
-STR_TRAM_UGRT_TOOLBAR       :Urban Modern Green Tramway construction{LTBLUE}
-STR_TRAM_UGRT_MENU          :Urban Modern Green Tramway construction{LTBLUE}
+STR_TRAM_UGRT_TOOLBAR       :Urban Modern Green Tramway construction{WHITE}
+STR_TRAM_UGRT_MENU          :Urban Modern Green Tramway construction{WHITE}
 
 STR_TRAM_URRT_NAME          :Urban Modern Red Tramway
-STR_TRAM_URRT_TOOLBAR       :Urban Modern Red Tramway construction{LTBLUE}
-STR_TRAM_URRT_MENU          :Urban Modern Red Tramway construction{LTBLUE}
+STR_TRAM_URRT_TOOLBAR       :Urban Modern Red Tramway construction{WHITE}
+STR_TRAM_URRT_MENU          :Urban Modern Red Tramway construction{WHITE}
 
 STR_EYECANDY_SETO_NAME          :Eyecandy: Hedge Fence
 STR_EYECANDY_SETO_TOOLBAR       :{GREEN}Eyecandy: Hedge Fence

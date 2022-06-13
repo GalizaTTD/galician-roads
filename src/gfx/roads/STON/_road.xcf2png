@@ -1,0 +1,13 @@
+src/gfx/roads/STON/underlay.gimp.png          src/xcf/roads/underlay.xcf     Background STON
+src/gfx/roads/STON/underlaySnow.gimp.png          src/xcf/roads/underlay.xcf     Background STON_SNOW
+
+src/gfx/roads/STON/bridges.gimp.png          src/xcf/roads/bridges.xcf     Background STON
+src/gfx/roads/STON/bridgesSnow.gimp.png          src/xcf/roads/bridges.xcf     Background STON_SNOW
+
+src/gfx/roads/STON/gui.gimp.png          src/xcf/roads/gui.xcf     Background STON
+
+src/gfx/roads/STON/stops.gimp.png          src/xcf/roads/stops.xcf     Background STON
+src/gfx/roads/STON/stopsSnow.gimp.png          src/xcf/roads/stops.xcf     Background STON
+
+src/gfx/roads/STON/depots.gimp.png          src/xcf/roads/depots.xcf     Background STON
+src/gfx/roads/STON/depotsSnow.gimp.png          src/xcf/roads/depots.xcf     Background STON_SNOW
