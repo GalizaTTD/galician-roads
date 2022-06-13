@@ -3,6 +3,12 @@ src/gfx/roads/EYECANDY/PDRA.gimp.png          src/xcf/roads/eyecandy.xcf     Bac
 src/gfx/roads/EYECANDY/REXA.gimp.png          src/xcf/roads/eyecandy.xcf     Background REXA
 src/gfx/roads/EYECANDY/VALO.gimp.png          src/xcf/roads/eyecandy.xcf     Background VALO
 src/gfx/roads/EYECANDY/PALM.gimp.png          src/xcf/roads/eyecandy.xcf     Background PALM
-src/gfx/roads/EYECANDY/TREE.gimp.png          src/xcf/roads/eyecandy.xcf     Background TREE
+src/gfx/roads/EYECANDY/TREE_1.gimp.png          src/xcf/roads/eyecandy.xcf     Background TREE_1
 src/gfx/roads/EYECANDY/TREE_2.gimp.png          src/xcf/roads/eyecandy.xcf     Background TREE_2
+src/gfx/roads/EYECANDY/TREE_3.gimp.png          src/xcf/roads/eyecandy.xcf     Background TREE_3
+src/gfx/roads/EYECANDY/TREE_4.gimp.png          src/xcf/roads/eyecandy.xcf     Background TREE_4
+src/gfx/roads/EYECANDY/TREE_5.gimp.png          src/xcf/roads/eyecandy.xcf     Background TREE_5
+src/gfx/roads/EYECANDY/TREE_6.gimp.png          src/xcf/roads/eyecandy.xcf     Background TREE_6
 src/gfx/roads/EYECANDY/MEDO.gimp.png          src/xcf/roads/eyecandy.xcf     Background MEDO
+src/gfx/roads/EYECANDY/LAMP.gimp.png          src/xcf/roads/eyecandy.xcf     Background LAMP
+src/gfx/roads/EYECANDY/MEMP.gimp.png          src/xcf/roads/eyecandy.xcf     Background MEMP

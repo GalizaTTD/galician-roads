@@ -36,11 +36,14 @@
 
 #include "src/eyecandy_WALK.pnml"
 
+#include "src/eyecandy_TREE.pnml"
 #include "src/eyecandy_VALO.pnml"
 #include "src/eyecandy_REXA.pnml"
 #include "src/eyecandy_SETO.pnml"
 #include "src/eyecandy_PDRA.pnml"
-#include "src/eyecandy_TREE.pnml"
+#include "src/eyecandy_MEDO.pnml"
+#include "src/eyecandy_LAMP.pnml"
+#include "src/eyecandy_MEMP.pnml"
 
 #include "src/road_ROAD.pnml"
 

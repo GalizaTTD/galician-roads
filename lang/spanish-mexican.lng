@@ -55,6 +55,10 @@ STR_AUGA_BUILD_VEHICLE             :Nuevos troncos
 STR_AUGA_AUTOREPLACE               :Troncos de arboriducto
 STR_AUGA_NEW_ENGINE                :arboriducto
 
+STR_EYECANDY_BUILD_VEHICLE             :Construír vehículos decorativos
+STR_EYECANDY_AUTOREPLACE               :Vehículos decorativos
+STR_EYECANDY_NEW_ENGINE                :decorativos
+
 # Cadeas de texto das estradas 
 STR_ROAD_SETT_NAME          :Calzada de piedra
 STR_ROAD_SETT_TOOLBAR       :Construír calzada de piedra{LTBLUE}
@@ -115,6 +119,42 @@ STR_TRAM_UGRT_MENU          :Construír línea verde del tranvía urbano{LTBLUE}
 STR_TRAM_URRT_NAME          :Tranvía urbano línea roja
 STR_TRAM_URRT_TOOLBAR       :Construír línea roja del tranvía urbano{LTBLUE}
 STR_TRAM_URRT_MENU          :Construír línea roja del tranvía urbano{LTBLUE}
+
+STR_EYECANDY_SETO_NAME          :Decorativo: Vallado de seto
+STR_EYECANDY_SETO_TOOLBAR       :{GREEN}Decorativo: Vallado de seto
+STR_EYECANDY_SETO_MENU          :{GREEN}Decorativo: Construír vallado de seto
+
+STR_EYECANDY_PDRA_NAME          :Decorativo: Muros de piedra
+STR_EYECANDY_PDRA_TOOLBAR       :{GREEN}Decorativo: Muros de piedra
+STR_EYECANDY_PDRA_MENU          :{GREEN}Decorativo: Construír muros de piedra
+
+STR_EYECANDY_VALO_NAME          :Decorativo: Vallado de madera
+STR_EYECANDY_VALO_TOOLBAR       :{GREEN}Decorativo: Vallado de madera
+STR_EYECANDY_VALO_MENU          :{GREEN}Decorativo: Construír vallado de madera
+
+STR_EYECANDY_REXA_NAME          :Decorativo: Verja
+STR_EYECANDY_REXA_TOOLBAR       :{GREEN}Decorativo: Verja
+STR_EYECANDY_REXA_MENU          :{GREEN}Decorativo: Construír verja
+
+STR_EYECANDY_MEDO_NAME          :Decorativo: Quitamiedos
+STR_EYECANDY_MEDO_TOOLBAR       :{GREEN}Decorativo: Quitamiedos
+STR_EYECANDY_MEDO_MENU          :{GREEN}Decorativo: Construír quitamiedos
+
+STR_EYECANDY_LAMP_NAME          :Decorativo: Alumbrado
+STR_EYECANDY_LAMP_TOOLBAR       :{GREEN}Decorativo: Alumbrado
+STR_EYECANDY_LAMP_MENU          :{GREEN}Decorativo: Construír alumbrado
+
+STR_EYECANDY_MEMP_NAME          :Decorativo: Quitamiedos y alumbrado
+STR_EYECANDY_MEMP_TOOLBAR       :{GREEN}Decorativo: Quitamiedos y alumbrado
+STR_EYECANDY_MEMP_MENU          :{GREEN}Decorativo: Construír quitamiedos y alumbrado
+
+STR_EYECANDY_TREE_NAME          :Decorativo: Bulevar
+STR_EYECANDY_TREE_TOOLBAR       :{GREEN}Decorativo: Bulevar
+STR_EYECANDY_TREE_MENU          :{GREEN}Decorativo: Construír bulevar
+
+STR_EYECANDY_WALK_NAME          :Decorativo: Zona peatonal
+STR_EYECANDY_WALK_TOOLBAR       :{GREEN}Decorativo: Zona peatonal
+STR_EYECANDY_WALK_MENU          :{GREEN}Decorativo: Construír zona peatonal
 
 # Vehicles
 

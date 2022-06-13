@@ -136,6 +136,18 @@ STR_EYECANDY_REXA_NAME          :Eyecandy: Wire Fence
 STR_EYECANDY_REXA_TOOLBAR       :{GREEN}Eyecandy: Wire Fence
 STR_EYECANDY_REXA_MENU          :{GREEN}Eyecandy: Wire Fence construction
 
+STR_EYECANDY_MEDO_NAME          :Eyecandy: Guardrails
+STR_EYECANDY_MEDO_TOOLBAR       :{GREEN}Eyecandy: Guardrails
+STR_EYECANDY_MEDO_MENU          :{GREEN}Eyecandy: Guardrails construction
+
+STR_EYECANDY_LAMP_NAME          :Eyecandy: Street lamps
+STR_EYECANDY_LAMP_TOOLBAR       :{GREEN}Eyecandy: Street lamps
+STR_EYECANDY_LAMP_MENU          :{GREEN}Eyecandy: Street lamps construction
+
+STR_EYECANDY_MEMP_NAME          :Eyecandy: Street lamps & Guardrails
+STR_EYECANDY_MEMP_TOOLBAR       :{GREEN}Eyecandy: Street lamps & Guardrails
+STR_EYECANDY_MEMP_MENU          :{GREEN}Eyecandy: Street lamps & Guardrails construction
+
 STR_EYECANDY_TREE_NAME          :Eyecandy: Trees
 STR_EYECANDY_TREE_TOOLBAR       :{GREEN}Eyecandy: Trees
 STR_EYECANDY_TREE_MENU          :{GREEN}Eyecandy: Trees construction

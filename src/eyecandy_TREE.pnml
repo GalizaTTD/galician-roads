@@ -4,28 +4,56 @@
 #    This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 #	 You should have received a copy of the GNU General Public License along with this program.  If not, see <https://github.com/pvillaverde/openttd-spanish-railsets/blob/main/LICENSE>.
 */
-spriteset (TREE_guiSpriteset, "src/gfx/roads/EYECANDY/TREE.gimp.png") { eyecandyGuiTemplate() }
+spriteset (TREE_guiSpriteset, "src/gfx/roads/EYECANDY/TREE_1.gimp.png") { eyecandyGuiTemplate() }
 
-spriteset (TREE_underlaySpriteset, "src/gfx/roads/EYECANDY/TREE.gimp.png") { eyecandyUnderOverlayTemplate(296) }
-spriteset (TREE_underlaySnowSpriteset, "src/gfx/roads/EYECANDY/TREE.gimp.png") { eyecandyUnderOverlayTemplate(343) }
-spriteset (TREE_overlaySpriteset, "src/gfx/roads/EYECANDY/TREE.gimp.png") { eyecandyUnderOverlayTemplate(496) }
+spriteset (TREE_underlaySpriteset, "src/gfx/roads/EYECANDY/TREE_1.gimp.png") { eyecandyUnderOverlayTemplate(296) }
+spriteset (TREE_underlaySnowSpriteset, "src/gfx/roads/EYECANDY/TREE_1.gimp.png") { eyecandyUnderOverlayTemplate(343) }
+spriteset (TREE_overlaySpriteset, "src/gfx/roads/EYECANDY/TREE_1.gimp.png") { eyecandyUnderOverlayTemplate(496) }
 
-spriteset (TREE_bridgesSpriteset, "src/gfx/roads/EYECANDY/TREE.gimp.png") { eyecandyBridgeTemplate() }
+spriteset (TREE_bridgesSpriteset, "src/gfx/roads/EYECANDY/TREE_1.gimp.png") { eyecandyBridgeTemplate() }
 
-spriteset (TREE_depotsSpriteset, "src/gfx/roads/EYECANDY/TREE.gimp.png") { eyecandyDepotTemplate() }
+spriteset (TREE_depotsSpriteset, "src/gfx/roads/EYECANDY/TREE_1.gimp.png") { eyecandyDepotTemplate() }
 
-spriteset (TREE_catenaryFronSpriteset, "src/gfx/roads/EYECANDY/TREE.gimp.png") { eyecandyAlternativeCatenaryTemplate(980) }
-spriteset (TREE_2_catenaryFronSpriteset, "src/gfx/roads/EYECANDY/TREE_2.gimp.png") { eyecandyAlternativeCatenaryTemplate(980) }
-spriteset (TREE_catenaryBackSpriteset, "src/gfx/roads/EYECANDY/TREE.gimp.png") { eyecandyAlternativeCatenaryTemplate(580) }
-spriteset (TREE_2_catenaryBackSpriteset, "src/gfx/roads/EYECANDY/TREE_2.gimp.png") { eyecandyAlternativeCatenaryTemplate(580) }
+spriteset (TREE_1_catenaryFronSpriteset, "src/gfx/roads/EYECANDY/TREE_1.gimp.png") { eyecandyCatenaryTemplate(1000) }
+spriteset (TREE_2_catenaryFronSpriteset, "src/gfx/roads/EYECANDY/TREE_2.gimp.png") { eyecandyCatenaryTemplate(1000) }
+spriteset (TREE_3_catenaryFronSpriteset, "src/gfx/roads/EYECANDY/TREE_3.gimp.png") { eyecandyCatenaryTemplate(1000) }
+spriteset (TREE_4_catenaryFronSpriteset, "src/gfx/roads/EYECANDY/TREE_4.gimp.png") { eyecandyCatenaryTemplate(1000) }
+spriteset (TREE_5_catenaryFronSpriteset, "src/gfx/roads/EYECANDY/TREE_5.gimp.png") { eyecandyCatenaryTemplate(1000) }
+spriteset (TREE_6_catenaryFronSpriteset, "src/gfx/roads/EYECANDY/TREE_6.gimp.png") { eyecandyCatenaryTemplate(1000) }
+spriteset (TREE_1_catenaryBackSpriteset, "src/gfx/roads/EYECANDY/TREE_1.gimp.png") { eyecandyCatenaryTemplate(600) }
+spriteset (TREE_2_catenaryBackSpriteset, "src/gfx/roads/EYECANDY/TREE_2.gimp.png") { eyecandyCatenaryTemplate(600) }
+spriteset (TREE_3_catenaryBackSpriteset, "src/gfx/roads/EYECANDY/TREE_3.gimp.png") { eyecandyCatenaryTemplate(600) }
+spriteset (TREE_4_catenaryBackSpriteset, "src/gfx/roads/EYECANDY/TREE_4.gimp.png") { eyecandyCatenaryTemplate(600) }
+spriteset (TREE_5_catenaryBackSpriteset, "src/gfx/roads/EYECANDY/TREE_5.gimp.png") { eyecandyCatenaryTemplate(600) }
+spriteset (TREE_6_catenaryBackSpriteset, "src/gfx/roads/EYECANDY/TREE_6.gimp.png") { eyecandyCatenaryTemplate(600) }
 
 switch (FEAT_TRAMTYPES, SELF, TREE_catenaryFronCheckSwitch, current_month) {
-	0..5: TREE_2_catenaryFronSpriteset;
-	TREE_catenaryFronSpriteset;
+	0: TREE_1_catenaryFronSpriteset;
+	1: TREE_2_catenaryFronSpriteset;
+	2: TREE_2_catenaryFronSpriteset;
+	3: TREE_3_catenaryFronSpriteset;
+	4: TREE_3_catenaryFronSpriteset;
+	5: TREE_4_catenaryFronSpriteset;
+	6: TREE_4_catenaryFronSpriteset;
+	7: TREE_5_catenaryFronSpriteset;
+	8: TREE_5_catenaryFronSpriteset;
+	9: TREE_6_catenaryFronSpriteset;
+	10: TREE_6_catenaryFronSpriteset;
+	11: TREE_1_catenaryFronSpriteset;
 }
 switch (FEAT_TRAMTYPES, SELF, TREE_catenaryBackCheckSwitch, current_month) {
-	0..5: TREE_2_catenaryBackSpriteset;
-	TREE_catenaryBackSpriteset;
+	0: TREE_1_catenaryBackSpriteset;
+	1: TREE_2_catenaryBackSpriteset;
+	2: TREE_2_catenaryBackSpriteset;
+	3: TREE_3_catenaryBackSpriteset;
+	4: TREE_3_catenaryBackSpriteset;
+	5: TREE_4_catenaryBackSpriteset;
+	6: TREE_4_catenaryBackSpriteset;
+	7: TREE_5_catenaryBackSpriteset;
+	8: TREE_5_catenaryBackSpriteset;
+	9: TREE_6_catenaryBackSpriteset;
+	10: TREE_6_catenaryBackSpriteset;
+	11: TREE_1_catenaryBackSpriteset;
 }
 
 item(FEAT_TRAMTYPES, item_tram_TREE) {

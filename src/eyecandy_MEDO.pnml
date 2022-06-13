@@ -1,0 +1,42 @@
+/*
+#    OpenTTD Galician Roads, Trams & Vehicles (GALVET) -  Copyright (C) 2021  Pablo Villaverde Castro
+#    This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+#    This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+#	 You should have received a copy of the GNU General Public License along with this program.  If not, see <https://github.com/pvillaverde/openttd-spanish-railsets/blob/main/LICENSE>.
+*/
+spriteset (MEDO_guiSpriteset, "src/gfx/roads/EYECANDY/MEDO.gimp.png") { eyecandyGuiTemplate() }
+spriteset (MEDO_underlaySpriteset, "src/gfx/roads/EYECANDY/MEDO.gimp.png") { eyecandyUnderOverlayTemplate(296) }
+spriteset (MEDO_fencesSpriteset, "src/gfx/roads/EYECANDY/MEDO.gimp.png") { eyecandyUnderOverlayTemplate(496) }
+spriteset (MEDO_bridgesSpriteset, "src/gfx/roads/EYECANDY/MEDO.gimp.png") { eyecandyBridgeTemplate() }
+spriteset (MEDO_depotsSpriteset, "src/gfx/roads/EYECANDY/MEDO.gimp.png") { eyecandyDepotTemplate() }
+spriteset (MEDO_catenaryFronCorSpriteset, "src/gfx/roads/EYECANDY/MEDO.gimp.png") { eyecandyCatenaryTemplate(1000) }
+spriteset (MEDO_catenaryBackCorSpriteset, "src/gfx/roads/EYECANDY/MEDO.gimp.png") { eyecandyCatenaryTemplate(600) }
+
+
+item(FEAT_TRAMTYPES, item_tram_MEDO) {
+	property {
+		label:                       "MEDO";
+		introduction_date:           0;
+		name:                        string(STR_EYECANDY_MEDO_NAME);
+		toolbar_caption:             string(STR_EYECANDY_MEDO_TOOLBAR);
+		menu_text:                   string(STR_EYECANDY_MEDO_MENU);
+		build_window_caption:        string(STR_EYECANDY_BUILD_VEHICLE);
+		autoreplace_text:            string(STR_EYECANDY_AUTOREPLACE);
+		new_engine_text:             string(STR_EYECANDY_NEW_ENGINE);
+		powered_tramtype_list:       ["WALK"];
+		alternative_tramtype_list:	 ["WALK"];
+		tramtype_flags:              bitmask(TRAMTYPE_FLAG_CATENARY);
+		construction_cost:           2;
+		maintenance_cost:            4;
+		sort_order:                  20;	
+	}
+	graphics {
+		gui:						 MEDO_guiSpriteset;
+		track_overlay:               MEDO_fencesSpriteset;
+		underlay:                    MEDO_underlaySpriteset;
+		bridge_surfaces:             MEDO_bridgesSpriteset;
+		catenary_front:              MEDO_catenaryFronCorSpriteset;
+		catenary_back:               MEDO_catenaryBackCorSpriteset;
+		depots:	                     MEDO_depotsSpriteset;
+	}
+}
