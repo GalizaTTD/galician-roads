@@ -1,0 +1,90 @@
+/*
+#    OpenTTD Galician Roads, Trams & Vehicles (GALVET) -  Copyright (C) 2021  Pablo Villaverde Castro
+#    This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+#    This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+#	 You should have received a copy of the GNU General Public License along with this program.  If not, see <https://github.com/pvillaverde/openttd-spanish-railsets/blob/main/LICENSE>.
+*/
+spriteset (ECUT_guiSpriteset, "src/gfx/roads/EYECANDY/ECUT.gimp.png") { eyecandyGuiTemplate() }
+
+spriteset (ECUT_underlaySpriteset, "src/gfx/roads/EYECANDY/ECUT.gimp.png") { eyecandyUnderOverlayTemplate(296) }
+spriteset (ECUT_underlaySnowSpriteset, "src/gfx/roads/EYECANDY/ECUT.gimp.png") { eyecandyUnderOverlayTemplate(343) }
+spriteset (ECUT_overlaySpriteset, "src/gfx/roads/EYECANDY/ECUT.gimp.png") { eyecandyUnderOverlayTemplate(496) }
+
+spriteset (ECUT_bridgesSpriteset, "src/gfx/roads/EYECANDY/ECUT.gimp.png") { eyecandyBridgeTemplate() }
+
+spriteset (ECUT_depotsSpriteset, "src/gfx/roads/EYECANDY/ECUT.gimp.png") { eyecandyDepotTemplate() }
+
+spriteset (ECUT_SNOW_catenaryFronSpriteset, "src/gfx/roads/EYECANDY/ECUT_SNOW.gimp.png") { eyecandyCatenaryTemplate(1000) }
+spriteset (ECUT_AUTUMN_catenaryFronSpriteset, "src/gfx/roads/EYECANDY/ECUT_AUTUMN.gimp.png") { eyecandyCatenaryTemplate(1000) }
+spriteset (ECUT_SPRING_catenaryFronSpriteset, "src/gfx/roads/EYECANDY/ECUT_SPRING.gimp.png") { eyecandyCatenaryTemplate(1000) }
+spriteset (ECUT_catenaryFronSpriteset, "src/gfx/roads/EYECANDY/ECUT.gimp.png") { eyecandyCatenaryTemplate(1000) }
+
+spriteset (ECUT_SNOW_catenaryBackSpriteset, "src/gfx/roads/EYECANDY/ECUT_SNOW.gimp.png") { eyecandyCatenaryTemplate(600) }
+spriteset (ECUT_AUTUMN_catenaryBackSpriteset, "src/gfx/roads/EYECANDY/ECUT_AUTUMN.gimp.png") { eyecandyCatenaryTemplate(600) }
+spriteset (ECUT_SPRING_catenaryBackSpriteset, "src/gfx/roads/EYECANDY/ECUT_SPRING.gimp.png") { eyecandyCatenaryTemplate(600) }
+spriteset (ECUT_catenaryBackSpriteset, "src/gfx/roads/EYECANDY/ECUT.gimp.png") { eyecandyCatenaryTemplate(600) }
+
+switch (FEAT_TRAMTYPES, SELF, ECUT_catenaryFronCheckSwitch, current_month) {
+	0: ECUT_AUTUMN_catenaryFronSpriteset;
+	1: ECUT_AUTUMN_catenaryFronSpriteset;
+	2: ECUT_AUTUMN_catenaryFronSpriteset;
+	3: ECUT_SPRING_catenaryFronSpriteset;
+	4: ECUT_SPRING_catenaryFronSpriteset;
+	5: ECUT_SPRING_catenaryFronSpriteset;
+	6: ECUT_catenaryFronSpriteset;
+	7: ECUT_catenaryFronSpriteset;
+	8: ECUT_catenaryFronSpriteset;
+	9: ECUT_catenaryFronSpriteset;
+	10: ECUT_AUTUMN_catenaryFronSpriteset;
+	11: ECUT_AUTUMN_catenaryFronSpriteset;
+}
+switch (FEAT_TRAMTYPES, SELF, ECUT_catenaryBackCheckSwitch, current_month) {
+	0: ECUT_AUTUMN_catenaryBackSpriteset;
+	1: ECUT_AUTUMN_catenaryBackSpriteset;
+	2: ECUT_AUTUMN_catenaryBackSpriteset;
+	3: ECUT_SPRING_catenaryBackSpriteset;
+	4: ECUT_SPRING_catenaryBackSpriteset;
+	5: ECUT_SPRING_catenaryBackSpriteset;
+	6: ECUT_catenaryBackSpriteset;
+	7: ECUT_catenaryBackSpriteset;
+	8: ECUT_catenaryBackSpriteset;
+	9: ECUT_catenaryBackSpriteset;
+	10: ECUT_AUTUMN_catenaryBackSpriteset;
+	11: ECUT_AUTUMN_catenaryBackSpriteset;
+}
+
+switch (FEAT_TRAMTYPES, SELF, ECUT_catenaryFronTerrainCheckSwitch, terrain_type) {
+	TILETYPE_SNOW: ECUT_SNOW_catenaryFronSpriteset;
+	ECUT_catenaryFronCheckSwitch;
+}
+switch (FEAT_TRAMTYPES, SELF, ECUT_catenaryBackTerrainCheckSwitch, terrain_type) {
+	TILETYPE_SNOW: ECUT_SNOW_catenaryBackSpriteset;
+	ECUT_catenaryBackCheckSwitch;
+}
+item(FEAT_TRAMTYPES, item_tram_ECUT) {
+	property {
+		label:                       "ECUT";
+		introduction_date:           0;
+		name:                        string(STR_EYECANDY_ECUT_NAME);
+		toolbar_caption:             string(STR_EYECANDY_ECUT_TOOLBAR);
+		menu_text:                   string(STR_EYECANDY_ECUT_MENU);
+		build_window_caption:        string(STR_EYECANDY_BUILD_VEHICLE);
+		autoreplace_text:            string(STR_EYECANDY_AUTOREPLACE);
+		new_engine_text:             string(STR_EYECANDY_NEW_ENGINE);
+		powered_tramtype_list:       ["WALK"];
+		alternative_tramtype_list:	 ["WALK"];
+		tramtype_flags:              bitmask(TRAMTYPE_FLAG_CATENARY);
+		construction_cost:           2;
+		maintenance_cost:            4;
+		sort_order:                  20;	
+	}
+	graphics {
+		gui:						 ECUT_guiSpriteset;
+		track_overlay:               ECUT_overlaySpriteset;
+		underlay:                    ECUT_underlaySpriteset;
+		bridge_surfaces:             ECUT_bridgesSpriteset;
+		catenary_front:              ECUT_catenaryFronTerrainCheckSwitch;
+		catenary_back:               ECUT_catenaryBackTerrainCheckSwitch;
+		depots:	                     ECUT_depotsSpriteset;
+	}
+}

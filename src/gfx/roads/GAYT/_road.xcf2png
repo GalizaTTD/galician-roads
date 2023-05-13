@@ -1,0 +1,11 @@
+src/gfx/roads/GAYT/underlay.gimp.png          src/xcf/roads/underlay.xcf     Background UGRT GAYT_OVERLAY
+src/gfx/roads/GAYT/underlaySnow.gimp.png          src/xcf/roads/underlay.xcf     Background UGRT_SNOW GAYT_OVERLAY
+src/gfx/roads/GAYT/overlay.gimp.png          src/xcf/roads/underlay.xcf     Background GAYT_OVERLAY
+
+src/gfx/roads/GAYT/bridges.gimp.png          src/xcf/roads/bridges.xcf     Background UGRT GAYT_OVERLAY
+src/gfx/roads/GAYT/bridgesSnow.gimp.png          src/xcf/roads/bridges.xcf     Background UGRT_SNOW GAYT_OVERLAY
+
+src/gfx/roads/GAYT/gui.gimp.png          src/xcf/roads/gui.xcf     Background GAYT
+
+src/gfx/roads/GAYT/depots.gimp.png          src/xcf/roads/depots.xcf     Background UGRT
+src/gfx/roads/GAYT/depotsSnow.gimp.png          src/xcf/roads/depots.xcf     Background UGRT_SNOW

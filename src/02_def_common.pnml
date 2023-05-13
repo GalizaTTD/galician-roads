@@ -21,7 +21,7 @@ roadtypetable {
 }
 
 tramtypetable {
- 	AUGA, RAIL, ELRL, TIND, UGRT, URRT, REXA, VALO, PDRA, SETO, MEDO, LAMP, MEMP, TREE
+ 	AUGA, RAIL, ELRL, TIND, UGRT, URRT, GAYT, REXA, VALO, PDRA, SETO, MEDO, LAMP, MEMP, TREE, PALM, PINE, ECUT
 }
 
 cargotable {

@@ -1,0 +1,56 @@
+/*
+#    OpenTTD Galician Roads, Trams & Vehicles (GALVET) -  Copyright (C) 2021  Pablo Villaverde Castro
+#    This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+#    This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+#	 You should have received a copy of the GNU General Public License along with this program.  If not, see <https://github.com/pvillaverde/openttd-spanish-railsets/blob/main/LICENSE>.
+*/
+spriteset (PINE_guiSpriteset, "src/gfx/roads/EYECANDY/PINE.gimp.png") { eyecandyGuiTemplate() }
+
+spriteset (PINE_underlaySpriteset, "src/gfx/roads/EYECANDY/PINE.gimp.png") { eyecandyUnderOverlayTemplate(296) }
+spriteset (PINE_underlaySnowSpriteset, "src/gfx/roads/EYECANDY/PINE.gimp.png") { eyecandyUnderOverlayTemplate(343) }
+spriteset (PINE_overlaySpriteset, "src/gfx/roads/EYECANDY/PINE.gimp.png") { eyecandyUnderOverlayTemplate(496) }
+
+spriteset (PINE_bridgesSpriteset, "src/gfx/roads/EYECANDY/PINE.gimp.png") { eyecandyBridgeTemplate() }
+
+spriteset (PINE_depotsSpriteset, "src/gfx/roads/EYECANDY/PINE.gimp.png") { eyecandyDepotTemplate() }
+
+spriteset (PINE_catenaryFronSpriteset, "src/gfx/roads/EYECANDY/PINE.gimp.png") { eyecandyCatenaryTemplate(1000) }
+spriteset (PINE_catenaryBackSpriteset, "src/gfx/roads/EYECANDY/PINE.gimp.png") { eyecandyCatenaryTemplate(600) }
+spriteset (PINE_catenaryFronSpritesetSnow, "src/gfx/roads/EYECANDY/PINE_SNOW.gimp.png") { eyecandyCatenaryTemplate(1000) }
+spriteset (PINE_catenaryBackSpritesetSnow, "src/gfx/roads/EYECANDY/PINE_SNOW.gimp.png") { eyecandyCatenaryTemplate(600) }
+
+switch (FEAT_TRAMTYPES, SELF, PINE_catenaryFronTerrainCheckSwitch, terrain_type) {
+	TILETYPE_SNOW: PINE_catenaryFronSpritesetSnow;
+	PINE_catenaryFronSpriteset;
+}
+switch (FEAT_TRAMTYPES, SELF, PINE_catenaryBackTerrainCheckSwitch, terrain_type) {
+	TILETYPE_SNOW: PINE_catenaryBackSpritesetSnow;
+	PINE_catenaryBackSpriteset;
+}
+item(FEAT_TRAMTYPES, item_tram_PINE) {
+	property {
+		label:                       "PINE";
+		introduction_date:           0;
+		name:                        string(STR_EYECANDY_PINE_NAME);
+		toolbar_caption:             string(STR_EYECANDY_PINE_TOOLBAR);
+		menu_text:                   string(STR_EYECANDY_PINE_MENU);
+		build_window_caption:        string(STR_EYECANDY_BUILD_VEHICLE);
+		autoreplace_text:            string(STR_EYECANDY_AUTOREPLACE);
+		new_engine_text:             string(STR_EYECANDY_NEW_ENGINE);
+		powered_tramtype_list:       ["WALK"];
+		alternative_tramtype_list:	 ["WALK"];
+		tramtype_flags:              bitmask(TRAMTYPE_FLAG_CATENARY);
+		construction_cost:           2;
+		maintenance_cost:            4;
+		sort_order:                  20;	
+	}
+	graphics {
+		gui:						        PINE_guiSpriteset;
+		track_overlay:               PINE_overlaySpriteset;
+		underlay:                    PINE_underlaySpriteset;
+		bridge_surfaces:             PINE_bridgesSpriteset;
+		catenary_front:              PINE_catenaryFronTerrainCheckSwitch;
+		catenary_back:               PINE_catenaryBackTerrainCheckSwitch;
+		depots:	                    PINE_depotsSpriteset;
+	}
+}

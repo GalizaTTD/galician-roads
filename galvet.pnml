@@ -34,10 +34,14 @@
 #include "src/tram_TIND.pnml"
 #include "src/tram_UGRT.pnml"
 #include "src/tram_URRT.pnml"
+#include "src/tram_GAYT.pnml"
 
 #include "src/eyecandy_WALK.pnml"
 
 #include "src/eyecandy_TREE.pnml"
+#include "src/eyecandy_PALM.pnml"
+#include "src/eyecandy_PINE.pnml"
+#include "src/eyecandy_ECUT.pnml"
 #include "src/eyecandy_VALO.pnml"
 #include "src/eyecandy_REXA.pnml"
 #include "src/eyecandy_SETO.pnml"

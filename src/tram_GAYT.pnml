@@ -1,0 +1,84 @@
+/*
+#    OpenTTD Galician Roads, Trams & Vehicles (GALVET) -  Copyright (C) 2021  Pablo Villaverde Castro
+#    This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+#    This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+#	 You should have received a copy of the GNU General Public License along with this program.  If not, see <https://github.com/pvillaverde/openttd-spanish-railsets/blob/main/LICENSE>.
+*/
+spriteset (GAYT_guiSpriteset, "src/gfx/roads/GAYT/gui.gimp.png") { roadGuiTemplate() }
+
+spriteset (GAYT_underlaySpriteset, "src/gfx/roads/GAYT/underlay.gimp.png") { roadUnderlayTemplate() }
+spriteset (GAYT_underlaySnowSpriteset, "src/gfx/roads/GAYT/underlaySnow.gimp.png") { roadUnderlayTemplate() }
+spriteset (GAYT_overlaySpriteset, "src/gfx/roads/GAYT/overlay.gimp.png") { roadUnderlayTemplate() }
+
+spriteset (GAYT_bridgesSpriteset, "src/gfx/roads/GAYT/bridges.gimp.png") { roadBridgeOverlayTemplate() }
+spriteset (GAYT_bridgesSnowSpriteset, "src/gfx/roads/GAYT/bridgesSnow.gimp.png") { roadBridgeOverlayTemplate() }
+
+spriteset (GAYT_depotsSpriteset, "src/gfx/roads/GAYT/depots.gimp.png") { roadDepotsTemplate() }
+spriteset (GAYT_depotsSnowSpriteset, "src/gfx/roads/GAYT/depotsSnow.gimp.png") { roadDepotsTemplate() }
+
+spriteset (GAYT_catenaryFronCorSpriteset, "src/gfx/roads/ELRL/catenaryFronCor.gimp.png") { roadCatenaryTemplate() }
+spriteset (GAYT_catenaryBackCorSpriteset, "src/gfx/roads/ELRL/catenaryBackCor.gimp.png") { roadCatenaryTemplate() }
+
+switch (FEAT_TRAMTYPES, SELF, GAYT_bridgesTerrainCheckSwitch, terrain_type) {
+	TILETYPE_SNOW: GAYT_bridgesSnowSpriteset;
+	GAYT_bridgesSpriteset;
+}
+switch (FEAT_TRAMTYPES, SELF, GAYT_depotsTerrainCheckSwitch, terrain_type) {
+	TILETYPE_SNOW: GAYT_depotsSnowSpriteset;
+	GAYT_depotsSpriteset;
+}
+switch (FEAT_TRAMTYPES, SELF, GAYT_underlayTerrainCheckSwitch, terrain_type) {
+	TILETYPE_SNOW: GAYT_underlaySnowSpriteset;
+	GAYT_underlaySpriteset;
+}
+
+if (param_speed_units == SPEED_UNITY_MPH) {
+	item(FEAT_TRAMTYPES, item_tram_GAYT) {
+		property {	
+			speed_limit:                 param_speedlimit_ELRL mph;
+		}
+	}
+}
+if (param_speed_units == SPEED_UNITY_KMH) {
+	item(FEAT_TRAMTYPES, item_tram_GAYT) {
+		property {	
+			speed_limit:                 param_speedlimit_ELRL km/h;
+		}
+	}
+}
+if (param_speed_units == SPEED_UNITY_MPS) {
+	item(FEAT_TRAMTYPES, item_tram_GAYT) {
+		property {	
+			speed_limit:                 param_speedlimit_ELRL m/s;
+		}
+	}
+}
+
+item(FEAT_TRAMTYPES, item_tram_GAYT) {
+	property {
+		label:                       "GAYT";
+		introduction_date:           (param_intro_year == 0) ? date(1975,01,01) : 0;
+		name:                        string(STR_TRAM_GAYT_NAME);
+		toolbar_caption:             string(STR_TRAM_GAYT_TOOLBAR);
+		menu_text:                   string(STR_TRAM_GAYT_MENU);
+		build_window_caption:        string(STR_TRAM_BUILD_VEHICLE);
+		autoreplace_text:            string(STR_TRAM_AUTOREPLACE);
+		new_engine_text:             string(STR_TRAM_NEW_ENGINE);
+		powered_tramtype_list:       ["ELRL","TIND","UGRT","URRT","GAYT"];
+		alternative_tramtype_list:	  ["ELRL","TIND","UGRT","URRT","GAYT"];
+		requires_tramtype_list:      ["ELRL"];
+		tramtype_flags:              bitmask(TRAMTYPE_FLAG_CATENARY);
+		construction_cost:           24;
+		maintenance_cost:            32;
+		sort_order:                  04;	
+	}
+	graphics {
+		gui:						 GAYT_guiSpriteset;
+		track_overlay:               GAYT_overlaySpriteset;
+		underlay:                    GAYT_underlayTerrainCheckSwitch;
+		bridge_surfaces:             GAYT_bridgesTerrainCheckSwitch;
+		catenary_front:              GAYT_catenaryFronCorSpriteset;
+		catenary_back:               GAYT_catenaryBackCorSpriteset;
+		depots:	                     GAYT_depotsTerrainCheckSwitch;
+	}
+}

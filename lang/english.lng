@@ -116,6 +116,10 @@ STR_TRAM_TIND_NAME          :Industrial tramway
 STR_TRAM_TIND_TOOLBAR       :Industrial tramway construction{WHITE}
 STR_TRAM_TIND_MENU          :Industrial tramway construction{WHITE}
 
+STR_TRAM_GAYT_NAME          :Urban Modern LGBT Tramway
+STR_TRAM_GAYT_TOOLBAR       :Urban Modern LGBT Tramway construction{WHITE}
+STR_TRAM_GAYT_MENU          :Urban Modern LGBT Tramway construction{WHITE}
+
 STR_TRAM_UGRT_NAME          :Urban Modern Green Tramway
 STR_TRAM_UGRT_TOOLBAR       :Urban Modern Green Tramway construction{WHITE}
 STR_TRAM_UGRT_MENU          :Urban Modern Green Tramway construction{WHITE}
@@ -155,6 +159,18 @@ STR_EYECANDY_MEMP_MENU          :{GREEN}Eyecandy: Street lamps & Guardrails cons
 STR_EYECANDY_TREE_NAME          :Eyecandy: Trees
 STR_EYECANDY_TREE_TOOLBAR       :{GREEN}Eyecandy: Trees
 STR_EYECANDY_TREE_MENU          :{GREEN}Eyecandy: Trees construction
+
+STR_EYECANDY_PALM_NAME          :Eyecandy: Palm Trees
+STR_EYECANDY_PALM_TOOLBAR       :{GREEN}Eyecandy: Palm Trees
+STR_EYECANDY_PALM_MENU          :{GREEN}Eyecandy: Palm Trees construction
+
+STR_EYECANDY_PINE_NAME          :Eyecandy: Pine Trees
+STR_EYECANDY_PINE_TOOLBAR       :{GREEN}Eyecandy: Pine Trees
+STR_EYECANDY_PINE_MENU          :{GREEN}Eyecandy: Pine Trees construction
+
+STR_EYECANDY_ECUT_NAME          :Eyecandy: Urban Trees
+STR_EYECANDY_ECUT_TOOLBAR       :{GREEN}Eyecandy: Urban Trees
+STR_EYECANDY_ECUT_MENU          :{GREEN}Eyecandy: Urban Trees construction
 
 STR_EYECANDY_WALK_NAME          :Eyecandy: Pedestrian Way
 STR_EYECANDY_WALK_TOOLBAR       :{GREEN}Eyecandy: Pedestrian Way

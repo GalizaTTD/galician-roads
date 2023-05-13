@@ -64,8 +64,8 @@ item(FEAT_TRAMTYPES, item_tram_UGRT) {
 		build_window_caption:        string(STR_TRAM_BUILD_VEHICLE);
 		autoreplace_text:            string(STR_TRAM_AUTOREPLACE);
 		new_engine_text:             string(STR_TRAM_NEW_ENGINE);
-		powered_tramtype_list:       ["ELRL","TIND","UGRT","URRT"];
-		alternative_tramtype_list:	 ["ELRL","TIND","UGRT","URRT"];
+		powered_tramtype_list:       ["ELRL","TIND","UGRT","URRT","GAYT"];
+		alternative_tramtype_list:	 ["ELRL","TIND","UGRT","URRT","GAYT"];
 		requires_tramtype_list:      ["ELRL"];
 		tramtype_flags:              bitmask(TRAMTYPE_FLAG_CATENARY);
 		construction_cost:           24;

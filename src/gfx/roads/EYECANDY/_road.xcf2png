@@ -3,6 +3,12 @@ src/gfx/roads/EYECANDY/PDRA.gimp.png          src/xcf/roads/eyecandy.xcf     Bac
 src/gfx/roads/EYECANDY/REXA.gimp.png          src/xcf/roads/eyecandy.xcf     Background REXA
 src/gfx/roads/EYECANDY/VALO.gimp.png          src/xcf/roads/eyecandy.xcf     Background VALO
 src/gfx/roads/EYECANDY/PALM.gimp.png          src/xcf/roads/eyecandy.xcf     Background PALM
+src/gfx/roads/EYECANDY/PINE.gimp.png          src/xcf/roads/eyecandy.xcf     Background PINE
+src/gfx/roads/EYECANDY/PINE_SNOW.gimp.png          src/xcf/roads/eyecandy.xcf     Background PINE_SNOW
+src/gfx/roads/EYECANDY/ECUT.gimp.png          src/xcf/roads/eyecandy.xcf     Background ECUT
+src/gfx/roads/EYECANDY/ECUT_SNOW.gimp.png          src/xcf/roads/eyecandy.xcf     Background ECUT_SNOW
+src/gfx/roads/EYECANDY/ECUT_AUTUMN.gimp.png          src/xcf/roads/eyecandy.xcf     Background ECUT_AUTUMN
+src/gfx/roads/EYECANDY/ECUT_SPRING.gimp.png          src/xcf/roads/eyecandy.xcf     Background ECUT_SPRING
 src/gfx/roads/EYECANDY/TREE_1.gimp.png          src/xcf/roads/eyecandy.xcf     Background TREE_1
 src/gfx/roads/EYECANDY/TREE_2.gimp.png          src/xcf/roads/eyecandy.xcf     Background TREE_2
 src/gfx/roads/EYECANDY/TREE_3.gimp.png          src/xcf/roads/eyecandy.xcf     Background TREE_3

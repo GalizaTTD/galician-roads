@@ -116,6 +116,10 @@ STR_TRAM_TIND_NAME          :Tranvía industrial
 STR_TRAM_TIND_TOOLBAR       :Construír tranvía industrial{WHITE}
 STR_TRAM_TIND_MENU          :Construír tranvía industrial{WHITE}
 
+STR_TRAM_GAYT_NAME          :Tranvía urbano línea LGBT
+STR_TRAM_GAYT_TOOLBAR       :Construír línea LGBT del tranvía urbano{WHITE}
+STR_TRAM_GAYT_MENU          :Construír línea LGBT del tranvía urbano{WHITE}
+
 STR_TRAM_UGRT_NAME          :Tranvía urbano línea verde
 STR_TRAM_UGRT_TOOLBAR       :Construír línea verde del tranvía urbano{WHITE}
 STR_TRAM_UGRT_MENU          :Construír línea verde del tranvía urbano{WHITE}
@@ -155,6 +159,18 @@ STR_EYECANDY_MEMP_MENU          :{GREEN}Decorativo: Construír quitamiedos y alu
 STR_EYECANDY_TREE_NAME          :Decorativo: Bulevar
 STR_EYECANDY_TREE_TOOLBAR       :{GREEN}Decorativo: Bulevar
 STR_EYECANDY_TREE_MENU          :{GREEN}Decorativo: Construír bulevar
+
+STR_EYECANDY_PALM_NAME          :Decorativo: Palmeiras
+STR_EYECANDY_PALM_TOOLBAR       :{GREEN}Decorativo: Palmeiras
+STR_EYECANDY_PALM_MENU          :{GREEN}Decorativo: Sementar palmeiras
+
+STR_EYECANDY_PINE_NAME          :Decorativo: Pinos
+STR_EYECANDY_PINE_TOOLBAR       :{GREEN}Decorativo: Pinos
+STR_EYECANDY_PINE_MENU          :{GREEN}Decorativo: Plantar pinos
+
+STR_EYECANDY_ECUT_NAME          :Decorativo: Árboles urbanos
+STR_EYECANDY_ECUT_TOOLBAR       :{GREEN}Decorativo: Árboles urbanos
+STR_EYECANDY_ECUT_MENU          :{GREEN}Decorativo: Plantar árboles urbanos
 
 STR_EYECANDY_WALK_NAME          :Decorativo: Zona peatonal
 STR_EYECANDY_WALK_TOOLBAR       :{GREEN}Decorativo: Zona peatonal
