@@ -5,54 +5,5 @@
 #	 You should have received a copy of the GNU General Public License along with this program.  If not, see <https://github.com/pvillaverde/openttd-spanish-railsets/blob/main/LICENSE>.
 */
 
-/* Newgrf parameters */
+#include "src/code/main.pnml"
 
-#include "src/01_header.pnml" 
-
-
-/* Common definitions */
-
-#include "src/02_def_common.pnml" 
-#include "src/03_road_templates.pnml" 
-#include "src/04_road_misc.pnml" 
-#include "src/05_road_tunnels.pnml"
-
-#include "src/road_GRAV.pnml"
-#include "src/road_R4X4.pnml"
-#include "src/road_DIRT.pnml"
-#include "src/road_EIND.pnml"
-#include "src/road_ASF0.pnml"
-#include "src/road_ASF1.pnml"
-#include "src/road_ASF2.pnml"
-#include "src/road_HWAY.pnml"
-#include "src/road_SETT.pnml"
-#include "src/road_STON.pnml"
-
-#include "src/tram_AUGA.pnml"
-#include "src/tram_RAIL.pnml"
-#include "src/tram_ELRL.pnml"
-#include "src/tram_TIND.pnml"
-#include "src/tram_UGRT.pnml"
-#include "src/tram_URRT.pnml"
-#include "src/tram_GAYT.pnml"
-
-#include "src/eyecandy_WALK.pnml"
-
-#include "src/eyecandy_TREE.pnml"
-#include "src/eyecandy_PALM.pnml"
-#include "src/eyecandy_PINE.pnml"
-#include "src/eyecandy_ECUT.pnml"
-#include "src/eyecandy_VALO.pnml"
-#include "src/eyecandy_REXA.pnml"
-#include "src/eyecandy_SETO.pnml"
-#include "src/eyecandy_PDRA.pnml"
-#include "src/eyecandy_MEDO.pnml"
-#include "src/eyecandy_LAMP.pnml"
-#include "src/eyecandy_MEMP.pnml"
-
-#include "src/road_ROAD.pnml"
-
-
-#include "src/vehicles_AUGA.pnml"
-#include "src/vehicles_TRAM.pnml"
-#include "src/vehicles_PEOPLE.pnml"

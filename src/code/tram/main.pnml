@@ -1,0 +1,7 @@
+#include "_AUGA.pnml"
+#include "_RAIL.pnml"
+#include "_ELRL.pnml"
+#include "_TIND.pnml"
+#include "_UGRT.pnml"
+#include "_URRT.pnml"
+#include "_GAYT.pnml"

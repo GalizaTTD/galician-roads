@@ -1,0 +1,16 @@
+/* Newgrf parameters */
+
+#include "01_header.pnml"
+
+
+/* Common definitions */
+
+#include "02_def_common.pnml"
+#include "03_road_templates.pnml"
+#include "04_road_misc.pnml"
+#include "05_road_tunnels.pnml"
+
+#include "eyecandy/main.pnml"
+#include "road/main.pnml"
+#include "tram/main.pnml"
+#include "vehicles/main.pnml"
