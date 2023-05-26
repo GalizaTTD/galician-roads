@@ -59,7 +59,7 @@ STR_EYECANDY_BUILD_VEHICLE             :Construír vehículos decorativos
 STR_EYECANDY_AUTOREPLACE               :Vehículos decorativos
 STR_EYECANDY_NEW_ENGINE                :decorativos
 
-# Cadeas de texto das estradas 
+# Cadeas de texto das estradas
 STR_ROAD_SETT_NAME          :Calzada de piedra
 STR_ROAD_SETT_TOOLBAR       :Construír calzada de piedra{WHITE}
 STR_ROAD_SETT_MENU          :Construír calzada de piedra{WHITE}
@@ -183,3 +183,6 @@ STR_VEHICLES_AUGA_FLUMELOG_DESC		:{LTBLUE}Transporta madera mediante arboriducto
 
 STR_VEHICLES_TRAM_CORU32_NAME		:Tranvía Histórico de A Coruña
 STR_VEHICLES_TRAM_CORU32_DESC		:{LTBLUE}Tranvías históricos de A Coruña (32/27) utilizados entre 1997 u 2011. El modelo 32 se utiliza cuando se construye en años pares. El modelo 27 en los años impares.
+
+STR_VEHICLES_WALK_PEOPLE_NAME		:{GREEN}Vaiapé
+STR_VEHICLES_WALK_PEOPLE_DESC		:{LTBLUE}Di adiós a los atascos y da la bienvenida a "Vaiapé". Es un esquema de movilidad centrado en los peatones que llenará las calles de vida.

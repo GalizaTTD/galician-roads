@@ -55,3 +55,4 @@
 
 #include "src/vehicles_AUGA.pnml"
 #include "src/vehicles_TRAM.pnml"
+#include "src/vehicles_PEOPLE.pnml"

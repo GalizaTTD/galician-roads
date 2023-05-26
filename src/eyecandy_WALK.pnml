@@ -47,11 +47,11 @@ item(FEAT_ROADTYPES, item_road_WALK) {
 		build_window_caption:        string(STR_EYECANDY_BUILD_VEHICLE);
 		autoreplace_text:            string(STR_EYECANDY_AUTOREPLACE);
 		new_engine_text:             string(STR_EYECANDY_NEW_ENGINE);
-		powered_roadtype_list:       ["WALK"];
+		powered_roadtype_list:       ["WALK", "ROAD","SETT","STON"];
 	//	roadtype_flags:              bitmask(ROADTYPE_FLAG_TOWN_BUILD);
 		construction_cost:           2;
 		maintenance_cost:            4;
-		sort_order:                  20;		
+		sort_order:                  20;
 	}
 	graphics {
 		gui:						 WALK_guiSpriteset;

@@ -59,7 +59,7 @@ STR_EYECANDY_BUILD_VEHICLE             :Build Eyecandy Vehicles
 STR_EYECANDY_AUTOREPLACE               :Eyecandy Vehicles
 STR_EYECANDY_NEW_ENGINE                :eyecandy
 
-# Cadeas de texto das estradas 
+# Cadeas de texto das estradas
 STR_ROAD_SETT_NAME          :Stone paved road
 STR_ROAD_SETT_TOOLBAR       :Stone paved road construction{WHITE}
 STR_ROAD_SETT_MENU          :Stone paved road construction{WHITE}
@@ -183,3 +183,6 @@ STR_VEHICLES_AUGA_FLUMELOG_DESC		:{LTBLUE}Transport Logs by flume water channels
 
 STR_VEHICLES_TRAM_CORU32_NAME		:A Coruña Tram
 STR_VEHICLES_TRAM_CORU32_DESC		:{LTBLUE}A Coruña Historical 32/27 Tram, used between 1997-2011. Model 32 is used when built on even years, Model 27 on odd years.
+
+STR_VEHICLES_WALK_PEOPLE_NAME		:{GREEN}Happy Feet Express
+STR_VEHICLES_WALK_PEOPLE_DESC		:{LTBLUE}Say goodbye to traffic jams and hello to the "Happy Feet Express". It's the ultimate pedestrian-powered adventure through bustling city streets!

@@ -6,73 +6,73 @@
 #	 You should have received a copy of the GNU General Public License along with this program.  If not, see <https://github.com/pvillaverde/openttd-spanish-railsets/blob/main/LICENSE>.
 */
 
-    sort(FEAT_ROADVEHS, [TRAM_CORU32]);  
+sort(FEAT_ROADVEHS, [TRAM_CORU32]);  
 
-	template tramCoruTemplate() {
-		[   0,  0,   8,  18,  -2, -11]
-		[   9,  0,  16,  14,  -8,  -6]
-		[  26,  0,  22,  16, -11, -11]
-		[  49,  0,  16,  17,  -2,  -7]
-		[  66,  0,   8,  22,  -5, -12] 
-		[  75,  0,  16,  17, -14,  -8]
-		[  92,  0,  22,  16, -12, -11]
-		[ 115,  0,  16,  14,  -8,  -9] 
-	}
-	template tramCoruPurchaseTemplate() { [  0, 20, 60, 15, -24, -8]}
+template tramCoruTemplate() {
+   [   0,  0,   8,  18,  -2, -11]
+   [   9,  0,  16,  14,  -8,  -6]
+   [  26,  0,  22,  16, -11, -11]
+   [  49,  0,  16,  17,  -2,  -7]
+   [  66,  0,   8,  22,  -5, -12] 
+   [  75,  0,  16,  17, -14,  -8]
+   [  92,  0,  22,  16, -12, -11]
+   [ 115,  0,  16,  14,  -8,  -9] 
+}
+template tramCoruPurchaseTemplate() { [  0, 20, 60, 15, -24, -8]}
 
-	spriteset (tramCoru32, "src/gfx/vehicles/TRAM/coru32.gimp.png") { tramCoruTemplate()}
-	spriteset (tramCoru27, "src/gfx/vehicles/TRAM/coru27.gimp.png") { tramCoruTemplate()}
-	spriteset (tramCoruPurchase32, "src/gfx/vehicles/TRAM/coru32.gimp.png") { tramCoruPurchaseTemplate()}
+spriteset (tramCoru32, "src/gfx/vehicles/TRAM/coru32.gimp.png") { tramCoruTemplate()}
+spriteset (tramCoru27, "src/gfx/vehicles/TRAM/coru27.gimp.png") { tramCoruTemplate()}
+spriteset (tramCoruPurchase32, "src/gfx/vehicles/TRAM/coru32.gimp.png") { tramCoruPurchaseTemplate()}
 
-	switch(FEAT_ROADVEHS, SELF, tramCoruSwitch, build_year % 2) {
-		0: tramCoru32;
-		1: tramCoru27;
-	}
-    item(FEAT_ROADVEHS, TRAM_CORU32) {
+switch(FEAT_ROADVEHS, SELF, tramCoruSwitch, build_year % 2) {
+   0: tramCoru32;
+   1: tramCoru27;
+}
+item(FEAT_ROADVEHS, TRAM_CORU32) {
 
-        property {
-            // common properties 
-            name:							string(STR_VEHICLES_TRAM_CORU32_NAME);
-            climates_available:				ALL_CLIMATES;
-            introduction_date :				date(1997,01,01);
-            sprite_id:						SPRITE_ID_NEW_ROADVEH; //use custom sprites
+   property {
+      // common properties 
+      name:							string(STR_VEHICLES_TRAM_CORU32_NAME);
+      climates_available:				ALL_CLIMATES;
+      introduction_date :				date(1997,01,01);
+      sprite_id:						SPRITE_ID_NEW_ROADVEH; //use custom sprites
 
-            // Spec
-            power:							203 hp;
-            speed:							50 km/h;
-            weight:							18 ton;
-            length:							1;
-			tractive_effort_coefficient:	0.6;
-		//	air_drag_coefficient:			1;
+      // Spec
+      power:							203 hp;
+      speed:							50 km/h;
+      weight:							18 ton;
+      length:							1;
+   tractive_effort_coefficient:	0.6;
+//	air_drag_coefficient:			1;
 
-            // model
-            model_life:						VEHICLE_NEVER_EXPIRES;
-            vehicle_life:					100;
-            retire_early:					0;
-            reliability_decay:				0;
+      // model
+      model_life:						VEHICLE_NEVER_EXPIRES;
+      vehicle_life:					100;
+      retire_early:					0;
+      reliability_decay:				0;
 
-            // cargo 
-            cargo_capacity:					22;
-            refittable_cargo_classes:		NO_CARGO_CLASS;
-            non_refittable_cargo_classes:	NO_CARGO_CLASS;
-            cargo_allow_refit:				[PASS];
-            loading_speed:					2;
+      // cargo 
+      cargo_capacity:					22;
+      refittable_cargo_classes:		NO_CARGO_CLASS;
+      non_refittable_cargo_classes:	NO_CARGO_CLASS;
+      cargo_allow_refit:				[PASS];
+      loading_speed:					2;
 
-            // Costs   
-            cost_factor:					20;
-            running_cost_base:				RUNNING_COST_ELECTRIC;
-            running_cost_factor:			20;
+      // Costs   
+      cost_factor:					20;
+      running_cost_base:				RUNNING_COST_ELECTRIC;
+      running_cost_factor:			20;
 
-            // Flags
-			visual_effect:					VISUAL_EFFECT_ELECTRIC;
-			sound_effect:					sound("src/wav/tram_bell.wav");
-			tram_type:						UGRT;
-            misc_flags:						bitmask(ROADVEH_FLAG_TRAM); //make this a tram
-        }
+      // Flags
+   visual_effect:					VISUAL_EFFECT_ELECTRIC;
+   sound_effect:					sound("src/wav/tram_bell.wav");
+   tram_type:						UGRT;
+      misc_flags:						bitmask(ROADVEH_FLAG_TRAM); //make this a tram
+   }
 
-        graphics {
-            additional_text:			return string(STR_VEHICLES_TRAM_CORU32_DESC);
-            default:					tramCoruSwitch;
-            purchase:					tramCoruPurchase32;
-        }
-    }  
+   graphics {
+      additional_text:			return string(STR_VEHICLES_TRAM_CORU32_DESC);
+      default:					tramCoruSwitch;
+      purchase:					tramCoruPurchase32;
+   }
+}  

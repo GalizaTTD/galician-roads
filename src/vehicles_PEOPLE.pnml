@@ -1,0 +1,80 @@
+
+/*
+#    OpenTTD Galician Roads, Trams & Vehicles (GALVET) -  Copyright (C) 2021  Pablo Villaverde Castro
+#    This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+#    This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+#	 You should have received a copy of the GNU General Public License along with this program.  If not, see <https://github.com/pvillaverde/openttd-spanish-railsets/blob/main/LICENSE>.
+*/
+
+sort(FEAT_ROADVEHS, [WALK_PEOPLE]);
+
+template peopleTemplate() {
+   [ 0,   0, 30, 32, -25,  -17]
+   [ 34,  0, 48, 32, -23,  -20]
+   [ 86,  0, 52, 26, -26,  -19]
+   [ 142, 0, 48, 32, -15,  -16]
+
+   [ 0,   33, 30, 32, -5,  -15]
+   [ 34,  33, 48, 32, -25,  -11]
+   [ 86,  33, 52, 26, -27,  -11]
+   [ 142, 33, 48, 32, -33,  -17]
+}
+
+spriteset (peopleEmptySpriteset, "src/gfx/vehicles/WALK/people_empty.gimp.png") { peopleTemplate()}
+spriteset (peopleHalfSpriteset, "src/gfx/vehicles/WALK/people_half.gimp.png") { peopleTemplate()}
+spriteset (peopleFullSpriteset, "src/gfx/vehicles/WALK/people_full.gimp.png") { peopleTemplate()}
+spriteset (peoplePurchaseIcon, "src/gfx/vehicles/WALK/people_full.gimp.png") { [ 86,  33, 52, 26, -26,  -19]}
+
+spritegroup peopleSpritegroup {
+	loading: [peopleEmptySpriteset,peopleFullSpriteset];
+	loaded: [peopleEmptySpriteset,peopleHalfSpriteset,peopleFullSpriteset];
+}
+
+item(FEAT_ROADVEHS, WALK_PEOPLE) {
+
+   property {
+      // common properties
+      name:							      string(STR_VEHICLES_WALK_PEOPLE_NAME);
+      climates_available:				ALL_CLIMATES;
+      introduction_date :				0;
+      sprite_id:						   SPRITE_ID_NEW_ROADVEH; //use custom sprites
+
+      // Spec
+      power:							      100 hp;
+      speed:							      3 km/h;
+      weight:							      1 ton;
+      length:							      1;
+      tractive_effort_coefficient:	   0.97;
+      //	air_drag_coefficient:			1;
+
+      // model
+      model_life:						   VEHICLE_NEVER_EXPIRES;
+      vehicle_life:					   255;
+      retire_early:					   0;
+      reliability_decay:				0;
+
+      // cargo
+      cargo_capacity:					150;
+      cargo_age_period:             0; // ageing disabled
+      refittable_cargo_classes:		NO_CARGO_CLASS;
+      non_refittable_cargo_classes:	NO_CARGO_CLASS;
+      cargo_allow_refit:				[PASS];
+      loading_speed:					   10;
+
+      // Costs
+      cost_factor:					0;
+      running_cost_base:			0;
+      running_cost_factor:			0;
+
+      // Flags
+      /* sound_effect:					SOUND_APPLAUSE; */
+      road_type:						WALK;
+      misc_flags:						bitmask(ROADVEH_FLAG_2CC);
+   }
+
+   graphics {
+      additional_text:			return string(STR_VEHICLES_WALK_PEOPLE_DESC);
+      default:					   peopleSpritegroup;
+      purchase:					peoplePurchaseIcon;
+   }
+}
