@@ -8,10 +8,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 <!--
 ## [Unreleased]
 
-### Added 
+### Added
 ### Changed
 ### Fixed
 -->
+
+## [2.0.0]
+
+### Added
+- Happy Feet Express: "People" vehicle for pedestrian zones.
+### Changed
+- Refactored whole code repo for easier maintenance.
+## [1.1.0]
+
+### Added
+Added LGBT Tram, Eyecandy PALM, PINE, ECUT
 ## [1.0.1]
 
 ### Fixed
